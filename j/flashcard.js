@@ -1,0 +1,209 @@
+// TODO: only allow adding to review set once
+// TODO: extract the templates for each to minimize if blocks
+
+
+/* SCRAPING CODE
+
+var arr = [];
+$('.character-item').each(function (i, item) {
+  let thisOne;
+  const kanji = $(item).find('.character').text().trim();
+  const name = $(item).find('ul li:last').text();
+  const reading = $(item).find('ul li:first').text().trim();
+  const level = $(item).closest('section').get(0).id.split('-')[1];
+
+  thisOne = {
+    symbol: kanji,
+    name: name,
+    reading: reading,
+    level: level
+  };
+  arr.push(thisOne);
+});
+
+*/
+
+var flashcard = (function () {
+
+  // Constants
+  const LEVEL_CLASS = 'level-selector';
+  const LEVEL_ALL_CLASS = 'level-all';
+  const LEVEL_ITEM_CLASS = 'level-item';
+  const LEVEL_SUBMIT_CLASS = 'level-submit';
+  const CONTENT_CLASS = 'flashcard-content';
+  const NUMBER_CLASS = 'number';
+  const CARD_CLASS = 'flashcard';
+  const OVERLAY_CLASS = 'overlay';
+  const TIP_CLASS = 'temp-show';
+  const FLAG_CLASS = 'flagged';
+
+  // State FTW
+  let $el;
+  let pos = 0;
+  let count = 0;
+  let followUpReviewSet = [];
+
+  function start (id, data) {
+    $el = $(`#${id}`);
+
+    const reviewSet = _.shuffle(data);
+    count = reviewSet.length;
+    count > 0 && review(reviewSet);
+  }
+
+  /*
+   * Makes an HTML image if we need one, because template shouldn't care and JS templates are dumb
+   */
+  function decorateImage (item) {
+    if (item.symbolImage) {
+      item.symbol = `<img src="${item.symbolImage}"/>`
+    }
+    return item;
+  }
+
+  /*
+   * Creates the HTML for a single card
+   */
+  function makeCard (item, number) {
+    const decoratedItem = decorateImage(item);
+
+    let html = `<div class="${CARD_CLASS}">`;
+    html += `<h3 class="${NUMBER_CLASS}">${decoratedItem.level}–${number + 1}/${count}</h3>`;
+    html += `<dl>`;
+    html += `<dt>${decoratedItem.name}</dt>`;
+    html += `<dd lang="ja">${decoratedItem.symbol}</dd>`;
+    if (decoratedItem.reading) {
+      html += `<dd lang="ja" class="reading">${decoratedItem.reading}</dd>`;
+    }
+    if (decoratedItem.radicals) {
+      html += `<dd class="composing-radicals">${decoratedItem.radicals}</dd>`;
+    }
+    html += `</dl>`;
+    html += `</div>`;
+    return html;
+  }
+
+  /*
+   * Displays a given card
+   */
+  function showCard (item, i) {
+    const html = makeCard(item, i);
+    $el.find(`.${CONTENT_CLASS}`).html(html);
+  }
+
+  /*
+   * Resets everything so we can start over with a new data set
+   */
+  function reset () {
+    $el.find(`.${CONTENT_CLASS}`).hide();
+    pos = 0;
+    $el.find(`.${CONTENT_CLASS}`).off();
+    $(document).off('keydown').off('keyup');
+    $el.find(`.${OVERLAY_CLASS}`).fadeOut();
+    count = 0;
+  }
+
+  /*
+   * Moves forward one card
+   */
+  function forward (set) {
+    pos += 1;
+
+    if (set.length > pos) {
+      showCard(set[pos], pos);
+    } else {
+      reset();
+
+      // Review flagged cards if there are any which currently will go on forever now...
+      if (followUpReviewSet.length) {
+
+        count = followUpReviewSet.length;
+
+        // what the hell we'll just hack the ever living fuck out of it right now
+        const newSet = _.clone(followUpReviewSet);
+        followUpReviewSet = [];
+        review(newSet);
+      }
+    }
+  }
+
+  /*
+   * Moves backward one card
+   */
+  function backward (set) {
+    pos -= 1;
+    if (pos >= 0) {
+      showCard(set[pos], pos);
+    } else {
+      reset();
+    }
+  }
+
+  /*
+   * Shows an answer on a card
+   */
+  function showAnswer () {
+    $el.find(`.${CARD_CLASS} dt`).addClass(TIP_CLASS);
+    $el.addClass('show-tip');
+  }
+
+  /*
+   * Hides an answer on a card
+   */
+  function hideAnswer () {
+    $el.find(`.${CARD_CLASS} dt`).removeClass(TIP_CLASS);
+    $el.removeClass('show-tip'); // TODO: constant and fix to be consistent for both reading and meaning
+  }
+
+  /**
+   * Flags a card for review
+   */
+  function flag (item) {
+    // get position, mark interval
+    followUpReviewSet.push(item);
+    $el.find(`.${CARD_CLASS}`).addClass(FLAG_CLASS);
+  }
+
+  /*
+   * Starts reviewing the given set of cards and wires up the relevant key/mouse events
+   */
+  function review (set) {
+
+    $el.find(`.${OVERLAY_CLASS}`).fadeIn();
+
+    showCard(set[pos], pos);
+
+    $el.find(`.${CONTENT_CLASS}`).show().on('click', `.${CARD_CLASS}`, function () {
+      forward(set);
+    });
+
+    $(document).keydown(function (e) {
+      if (e.code === 'KeyI' || e.code === 'ArrowUp') {
+        showAnswer();
+        return false;
+      }
+      if (e.code === 'ArrowRight') {
+        forward(set);
+      }
+      if (e.code === 'ArrowLeft') {
+        backward(set);
+      }
+      if (e.code === 'ArrowDown') {
+        flag(set[pos]);
+        return false;
+      }
+      if (e.code === 'Escape') {
+        reset(set);
+      }
+    }).keyup(function (e) {
+      if (e.code === 'KeyI' || e.code === 'ArrowUp') {
+        hideAnswer();
+      }
+    });
+
+  }
+
+  return {
+    start: start,
+  };
+})();

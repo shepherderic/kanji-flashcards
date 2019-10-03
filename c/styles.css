@@ -1,0 +1,176 @@
+body {
+  font-family: 'helvetica neue';
+}
+
+.btn {
+  background: #334;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.selection-level-container {
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 5px 20px 20px 20px;
+  width: 100px;
+}
+
+  .selection-level-container h2 {
+    font-size: 14px;
+  }
+
+  #flashcard-level-all {
+    margin: 20px 0;
+  }
+
+  .flashcard-show-readings { /* rename, this is for the selector but implies it's the flashcard */
+    margin: 20px 0;
+  }
+
+#radical-overlay,
+#kanji-overlay,
+#vocabulary-overlay,
+#duo-vocabulary-overlay {
+  background: #112;
+  display: none;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#radicals-selector input,
+#kanji-selector input,
+#vocabulary-selector input,
+#duo-vocabulary-selector input {
+  display: inline;
+  border: 1px solid #444;
+}
+
+#radical-card-container,
+#kanji-card-container,
+#vocabulary-card-container,
+#duo-vocabulary-card-container {
+  background: #f0f0f0;
+  display: none;
+  height: 350px;
+  left: 50%;
+  margin-left: -175px;
+  position: absolute;
+  top: 50px;
+  width: 350px;
+  z-index: 10;
+}
+
+.flashcard {
+  background: #335;
+  color: #fff;
+  height: 300px;
+  margin: 25px;
+  width: 300px;
+}
+
+.flagged {
+  background: #575;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: normal;
+  left: 28px;
+  opacity: 0.4;
+  position: absolute;
+  top: 3px;
+}
+
+.flashcard dl {
+  font-size: 24px;
+  text-align: center;
+}
+
+  #duo-vocabulary-card-container .flashcard dl,
+  #vocabulary-card-container .flashcard dl {
+    padding-top: 50px;
+  }
+
+.flashcard dt {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  visibility: hidden;
+}
+
+  #duo-vocabulary-card-container dt {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+.flashcard dt.temp-show {
+  visibility: visible;
+}
+
+.flashcard dd {
+  font-size: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+  #vocabulary-card-container .flashcard dd {
+    font-size: 65px;
+  }
+
+  #duo-vocabulary-card-container .flashcard dd {
+    font-size: 65px;
+  }
+
+.flashcard dd img {
+  margin-top: 50px;
+}
+
+.flashcard .reading {
+  bottom: 28px;
+  font-size: 24px;
+  left: 28px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.flashcard .composing-radicals {
+  bottom: 0;
+  font-weight: bold;
+  margin-bottom: -32px;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+
+.show-tip .reading,
+.always-show-readings .flashcard .reading,
+.show-tip .composing-radicals,
+.always-show-readings .flashcard .composing-radicals {
+  visibility: visible;
+}
+
+  #vocabulary-card-container .flashcard .reading {
+    font-size: 24px; /* override the symbol style since it's stronger */
+  }
+
+  #duo-vocabulary-card-container .flashcard .reading {
+    font-size: 24px; /* override the symbol style since it's stronger */
+  }
+
+  #vocabulary-card-container .flashcard .composing-radicals {
+    font-size: 12px; /* override the symbol style since it's stronger */
+  }
+
+  #duo-vocabulary-card-container .flashcard .composing-radicals {
+    font-size: 12px; /* override the symbol style since it's stronger */
+  }
