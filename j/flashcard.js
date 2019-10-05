@@ -36,12 +36,14 @@ var flashcard = (function () {
   const OVERLAY_CLASS = 'overlay';
   const TIP_CLASS = 'temp-show';
   const FLAG_CLASS = 'flagged';
+  const SHOW_TIP_CLASS = 'show-tip';
 
   // State FTW
   let $el;
   let pos = 0;
   let count = 0;
   let followUpReviewSet = [];
+  let hammerInstance;
 
   function start (id, data) {
     $el = $(`#${id}`);
@@ -99,6 +101,7 @@ var flashcard = (function () {
     pos = 0;
     $el.find(`.${CONTENT_CLASS}`).off();
     $(document).off('keydown').off('keyup');
+    hammerInstance.off('doubletap tap swipe');
     $el.find(`.${OVERLAY_CLASS}`).fadeOut();
     count = 0;
   }
@@ -144,7 +147,7 @@ var flashcard = (function () {
    */
   function showAnswer () {
     $el.find(`.${CARD_CLASS} dt`).addClass(TIP_CLASS);
-    $el.addClass('show-tip');
+    $el.addClass(SHOW_TIP_CLASS);
   }
 
   /*
@@ -152,7 +155,7 @@ var flashcard = (function () {
    */
   function hideAnswer () {
     $el.find(`.${CARD_CLASS} dt`).removeClass(TIP_CLASS);
-    $el.removeClass('show-tip'); // TODO: constant and fix to be consistent for both reading and meaning
+    $el.removeClass(SHOW_TIP_CLASS);
   }
 
   /**
@@ -173,10 +176,37 @@ var flashcard = (function () {
 
     showCard(set[pos], pos);
 
-    $el.find(`.${CONTENT_CLASS}`).show().on('click', `.${CARD_CLASS}`, function () {
-      forward(set);
+    $el.find(`.${CONTENT_CLASS}`).show();
+
+    // Set up touch
+    hammerInstance = new Hammer($el.get(0));
+    hammerInstance.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+    hammerInstance.on('doubletap', function () {
+      flag(set[pos]);
+      const answerShown = $el.hasClass(SHOW_TIP_CLASS);
+      if (!answerShown) {
+        showAnswer();
+      }
     });
 
+    hammerInstance.on('tap', function () {
+      const answerShown = $el.hasClass(SHOW_TIP_CLASS);
+      answerShown ? hideAnswer() : showAnswer();
+    });
+
+    hammerInstance.on('swipe', function (data) {
+      if (data.isFinal) {
+        hideAnswer();
+        if (data.deltaX > 0) {
+          forward(set);
+        } else if (data.deltaX < 0) {
+          backward(set);
+        }
+      }
+    });
+
+    // Set up key
     $(document).keydown(function (e) {
       if (e.code === 'KeyI' || e.code === 'ArrowUp') {
         showAnswer();
