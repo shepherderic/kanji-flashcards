@@ -68,12 +68,33 @@ body {
   z-index: 10;
 }
 
+@media only screen and (max-width: 768px) {
+  #radical-card-container,
+  #kanji-card-container,
+  #vocabulary-card-container,
+  #duo-vocabulary-card-container {
+    height: 100%;
+    left: 0;
+    margin-left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
 .flashcard {
   background: #335;
   color: #fff;
   height: 300px;
   margin: 25px;
   width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .flashcard {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .flagged {
@@ -97,6 +118,13 @@ body {
   #duo-vocabulary-card-container .flashcard dl,
   #vocabulary-card-container .flashcard dl {
     padding-top: 50px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #duo-vocabulary-card-container .flashcard dl,
+    #vocabulary-card-container .flashcard dl {
+      margin-top: 0;
+    }
   }
 
 .flashcard dt {
@@ -150,6 +178,12 @@ body {
   position: absolute;
   right: 0;
   visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .flashcard .composing-radicals {
+    margin-bottom: 0;
+  }
 }
 
 .show-tip .reading,
