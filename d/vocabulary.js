@@ -25,8 +25,8 @@ var DUO_KANJI = [
   { level: 15, name: 'Family',         words: ['孫', '娘', '息子', '親戚', '姉妹', '兄弟', '安い', '甘い', '一万', '千', '誰', '晩', 'お母さん', 'お父さん', '子供', '母', '父', '妹', '弟', '姉', '兄', '家族', '両親'] },
   { level: 16, name: 'Restaurant',     words: ['食堂', '嫌い', '安い', '甘い', '高い', '百', '好き', '千', '円', '一万', '冷たい', '熱い', '晩ご飯', '朝ご飯', '昼ご飯'] },
   { level: 17, name: 'Activity 1',     words: ['明日', '昨日', '買う', '事', '仕事', '来る', '間', '金', '週末', '火', '水', '来', '木', '月', '時間', '土', '友達', '今日', '誰か', '飛ぶ', '曜日', '日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日', '忙しい', '勉強する', '平日', '働く', '速い', '遅い', '習う'] },
-  { level: 18, name: 'Position',       words: ['本棚', '古い', '冷蔵庫', '鏡', '布団', '片隅', '棚', '隣', '〜冊', '間', '長い', '低い', '本', '後ろ', '左', '小さい', '大きい', '外', '右', '前', '中', '下', '上', '新しい'] },
 
+  { level: 18, name: 'Position',       words: ['本棚', '古い', '冷蔵庫', '鏡', '布団', '片すみ', '棚', '隣', '〜冊', '間', '長い', '低い', '本', '後ろ', '左', '小さい', '大きい', '外', '右', '前', '中', '下', '上', '新しい'] },
   { level: 19, name: 'Hobby 1',        words: ['読む', '見る', '聞く', '書く', '一人', '映画館', '映画', '使う', '旅行する', '音楽', '手紙', '絵', '描く', '写真', '歌', '歌う'] },
   { level: 20, name: 'Transit 1',      words: ['電車', '車', '歩く', '自転車', '地下鉄', '飛行機', '空港', '遠い', '近い'] },
   { level: 21, name: 'Clothes 1',      words: ['青い', '赤い', '白い', '黒い', '黄色', '紫色', '緑色', '着る', '被る', '履く', '夏', '冬', '秋', '春', '帽子', '高い', '短い', '洗う', '服'] },
@@ -52,9 +52,9 @@ var VOCABULARY = [
   {"symbol":"風呂","name":"Bathtub","reading":"ふろ","level":"61","radicals":"wind,bathtub"},
   {"symbol":"寝室","name":"Bedroom","reading":"しんしつ","level":"61","radicals":"lie down(roof,icicle,wolverine,forehead,stool),room(roof,ground,private,dirt)"},
   {"symbol":"親戚","name":"Relative","reading":"しんせき","level":"61","radicals":""},
-  {"symbol":"片隅","name":"Corner","reading":"かたすみ","level":"61","radicals":""}
+  {"symbol":"片すみ","name":"Corner","reading":"","level":"61","radicals":""},
 
-  // LEVELS 1-10
+  // WANIKANI LEVELS 1-10
 
   {"symbol":"大人","name":"Adult","reading":"おとな","level":"1"},
   {"symbol":"一人","name":"Alone","reading":"ひとり","level":"1"},
@@ -1089,7 +1089,7 @@ var VOCABULARY = [
   {"symbol":"思わず","name":"Unintentionally","reading":"おもわず","level":"10"},
   {"symbol":"作業","name":"Work","reading":"さぎょう","level":"10"},
 
-  // LEVELS 11-20
+  // WANIKANI LEVELS 11-20
 
   {"symbol":"上級","name":"Advanced L...","reading":"じょうきゅう","level":"11"},
   {"symbol":"味方","name":"Ally","reading":"みかた","level":"11"},
@@ -2302,7 +2302,7 @@ var VOCABULARY = [
   {"symbol":"妻子","name":"Wife And Kids","reading":"さいし","level":"20"},
   {"symbol":"不思議","name":"Wonder","reading":"ふしぎ","level":"20"},
 
-  // LEVELS 21-30
+  // WANIKANI LEVELS 21-30
 
   {"symbol":"実際","name":"Actually","reading":"じっさい","level":"21"},
   {"symbol":"宇宙人","name":"Alien","reading":"うちゅうじん","level":"21"},
@@ -3420,7 +3420,7 @@ var VOCABULARY = [
   {"symbol":"漏水","name":"Water Leakage","reading":"ろうすい","level":"30"},
   {"symbol":"精一杯","name":"With All O...","reading":"せいいっぱい","level":"30"},
 
-  // LEVELS 31-40
+  // WANIKANI LEVELS 31-40
 
   {"symbol":"驚嘆","name":"Admiration","reading":"きょうたん","level":"31"},
   {"symbol":"航空券","name":"Airplane T...","reading":"こうくうけん","level":"31"},
@@ -4512,7 +4512,7 @@ var VOCABULARY = [
   {"symbol":"一生懸命","name":"With All O...","reading":"いっしょうけんめい","level":"40"},
   {"symbol":"奥様","name":"Your Wife","reading":"おくさま","level":"40"},
 
-  // LEVELS 41-50
+  // WANIKANI LEVELS 41-50
 
   {"symbol":"投棄","name":"Abandonment","reading":"とうき","level":"41"},
   {"symbol":"航空母艦","name":"Aircraft C...","reading":"こうくうぼかん","level":"41"},
@@ -5541,7 +5541,7 @@ var VOCABULARY = [
   {"symbol":"邪","name":"Wicked","reading":"よこしま","level":"50"},
   {"symbol":"淀川","name":"Yodogawa","reading":"よどがわ","level":"50"},
 
-  // LEVELS 51-60
+  // WANIKANI LEVELS 51-60
 
   {"symbol":"投棄","name":"Abandonment","reading":"とうき","level":"41"},
   {"symbol":"航空母艦","name":"Aircraft C...","reading":"こうくうぼかん","level":"41"},
