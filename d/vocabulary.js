@@ -30,7 +30,7 @@ var DUO_KANJI = [
   { level: 20, name: 'Transit 1',      words: ['速い', '遅い', '図', '駅', '使う', '地', '乗る', '電車', '車', '歩く', '自転車', '地下鉄', '飛行機', '空港', '遠い', '近い'] },
   { level: 21, name: 'Clothes 1',      words: ['緩い', '脱ぐ', '欲しい', '靴', '色', '茶色', '青い', '赤い', '白い', '黒い', '黄色', '紫色', '緑色', '着る', '被る', '履く', '夏', '冬', '秋', '春', '帽子', '高い', '短い', '洗う', '服'] },
 
-  { level: 22, name: 'Hobby 2',        words: ['電話', '来週', '来月', '先週', '先月', '会う', '今週', '今月', '再来週', '昨日', '明日', '弾く', '教える', '練習', '番号', '料理', '公園', '作る', '一緒'] },
+  { level: 22, name: 'Hobby 2',        words: ['大丈夫', '新聞', '再来月', '再来週', '居る', '電話', '来週', '来月', '先週', '先月', '会う', '今週', '今月', '再来週', '昨日', '明日', '弾く', '教える', '練習', '番号', '料理', '公園', '作る', '一緒'] },
   { level: 23, name: 'Weather 1',      words: ['雨', '気', '明るい', '天', '気', '暖かい', '涼しい', '風', '弱い', '強い', '天気', '吹く', '暑い', '寒い', '良い', '悪い', '晴れ', '曇り', '今朝', '夕べ', '雪', '降る', '夜'] },
   { level: 24, name: 'Food 2',         words: ['寿司', '箸', '全部', '飲み物', '卵', '多い', '果物', '砂糖', '塩', 'お酒', '紅茶', '牛乳', '皿', '醤油', '結構', '全く', '少ない', '美味しい', '腹', '弁当', '夕飯', '全然', '大変', '本当に', '本当', '半分'] },
 
@@ -2033,7 +2033,7 @@ var VOCABULARY = [
   {"symbol":"焼き鳥","name":"Roast Chicken","reading":"やきとり","level":"18"},
   {"symbol":"焼き肉","name":"Roast Meat","reading":"やきにく","level":"18"},
   {"symbol":"下書き","name":"Rough Draft","reading":"したがき","level":"18"},
-  {"symbol":"大丈夫","name":"Safe","reading":"だいじょうぶ","level":"18"},
+  {"symbol":"大丈夫","name":"Safe/OK","reading":"だいじょうぶ","level":"18"},
   {"symbol":"土曜日","name":"Saturday","reading":"どようび","level":"18"},
   {"symbol":"座席","name":"Seat","reading":"ざせき","level":"18"},
   {"symbol":"正座","name":"Seiza","reading":"せいざ","level":"18"},
@@ -2826,7 +2826,7 @@ var VOCABULARY = [
   {"symbol":"天候","name":"The Weather","reading":"てんこう","level":"25"},
   {"symbol":"時限","name":"Time Limit","reading":"じげん","level":"25"},
   {"symbol":"吸収する","name":"To Absorb","reading":"きゅうしゅうする","level":"25"},
-  {"symbol":"居る","name":"To Be Alive","reading":"いる","level":"25"},
+  {"symbol":"居る","name":"To Be Alive (or stay)","reading":"いる","level":"25"},
   {"symbol":"呼ばれる","name":"To Be Called","reading":"よばれる","level":"25"},
   {"symbol":"捕まる","name":"To Be Caught","reading":"つかまる","level":"25"},
   {"symbol":"慣れる","name":"To Become ...","reading":"なれる","level":"25"},
