@@ -32,6 +32,7 @@ var DUO_KANJI = [
   { level: 22, name: 'Hobby 2',        words: ['遊ぶ', '大丈夫', '新聞', '再来月', '再来週', '居る', '電話', '来週', '来月', '先週', '先月', '会う', '今週', '今月', '再来週', '昨日', '明日', '弾く', '教える', '練習', '番号', '料理', '公園', '作る', '一緒'] },
   { level: 23, name: 'Weather 1',      words: ['今夜', '暗い', '空', '雨', '気', '明るい', '天', '気', '暖かい', '涼しい', '風', '弱い', '強い', '天気', '吹く', '暑い', '寒い', '良い', '悪い', '晴れ', '曇り', '今朝', '夕べ', '雪', '降る', '夜'] },
   { level: 24, name: 'Food 2',         words: ['食べ物', '物', '変', '寿司', '箸', '全部', '飲み物', '卵', '多い', '果物', '砂糖', '塩', 'お酒', '紅茶', '牛乳', '皿', '醤油', '結構', '全く', '少ない', '美味しい', '腹', '弁当', '夕飯', '全然', '大変', '本当に', '本当', '半分'] },
+  { level: 25, name: 'Directions 1',   words: ['南', '東', '西', '北', '建物', '出る', '入る', '出口', '入り口', '口', '病院', '銀行', '道', '店', '向こう', '通る', '降りる', '通り', '狭い', '次', '広い', '進む', '曲がる', '角'] },
 
   { level: 61, name: 'Review',         words: ['吹く', '暑い', '寒い', '晴れ', '曇り', '雪', '降る', '夜', '悪い', '弱い', '強い', '涼しい', '暖かい', '昨日', '明日', '弾く', '教える', '練習', '番号', '料理', '作る', '買う', '泳ぐ', '一緒', '帽子', '短い', '洗う', '服', '着る', '被る', '履く', '遠い', '近い', '空港', '飛行機', '旅行する', '音楽', '手紙', '絵', '描く', '写真', '使う', '読む', '冷たい', '熱い', '勉強する', '働く', '速い', '遅い', '習う', '低い', '後ろ', '新しい', '茶碗', '大変'] },
   // Review is up to Level 22 now
@@ -41,7 +42,7 @@ var VOCABULARY = [
 
   // ADDED - LEVEL "61"
 
-  {"symbol":"出身","name":"Come From","reading":"しゅっしん","level":"61","radicals":"exit,body"},
+  {"symbol":"出身","name":"Place of Origin","reading":"しゅっしん","level":"61","radicals":"exit,body"},
   {"symbol":"今晩","name":"This Evening","reading":"こんばん","level":"61"},
   {"symbol":"両親","name":"Parents","reading":"りょうしん","level":"61","radicals":"both,parent(stand,tree,see)"},
   {"symbol":"空き","name":"Empties","reading":"すき","level":"61","radicals":"sky"},
@@ -368,7 +369,7 @@ var VOCABULARY = [
   {"symbol":"万人","name":"All People","reading":"ばんにん","level":"5"},
   {"symbol":"古来","name":"Ancient","reading":"こらい","level":"5"},
   {"symbol":"大作","name":"An Epic","reading":"たいさく","level":"5"},
-  {"symbol":"角","name":"Angle","reading":"かく","level":"5"},
+  {"symbol":"角","name":"Angle/Corner","reading":"かく","level":"5"},
   {"symbol":"考古学","name":"Archeology","reading":"こうこがく","level":"5"},
   {"symbol":"当たり","name":"A Success","reading":"あたり","level":"5"},
   {"symbol":"今すぐ","name":"At Once","reading":"いますぐ","level":"5"},
