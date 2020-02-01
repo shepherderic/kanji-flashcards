@@ -39,7 +39,9 @@ var DUO_KANJI = [
   { level: 29, name: 'People',         words: ['別れる', '独身', '彼氏', '祖母', '祖父', '死', '父親', '母親', '似る', '生まれる', '赤ちゃん', '死ぬ', '亡くなる', '大人', '若い', '離婚', '結婚', '有名', '少し', '男性', '男の子', '女の子', '大勢', '呼ぶ', '立派', '片', '女', '女の人', '男', '男の人'] },
   { level: 30, name: 'Activity 2',     words: ['一台', '携帯', '勤める', '消す', '待つ', '電気', '立つ', '早い', '座る', '閉める', '開ける', '浴びる', '帰る', '洗濯', '掃除'] },
   { level: 31, name: 'Nature 1',       words: ['生まれる', '雲', '馬', '牛', '曇る', '鹿', '咲く', '静か', '傘', '動物園', '動物', '〜匹', '鳴く', '声', '瓶', '花瓶', '山', '登る', '木', '海', '池', '川'] },
-
+  { level: 32, name: 'Classroom',      words: ['辞書', '意味', '葉', '言葉', '覚える', '字', '漢字', '教科書', '難しい', '易しい', '終わる', '授業', '宿題', '始める'] },
+// 必要 - Necessary - forgot the level it was in though
+// 片隅 - Corner - forgot the level also
   { level: 61, name: 'Review',         words: ['吹く', '暑い', '寒い', '晴れ', '曇り', '雪', '降る', '夜', '悪い', '弱い', '強い', '涼しい', '暖かい', '昨日', '明日', '弾く', '教える', '練習', '番号', '料理', '作る', '買う', '泳ぐ', '一緒', '帽子', '短い', '洗う', '服', '着る', '被る', '履く', '遠い', '近い', '空港', '飛行機', '旅行する', '音楽', '手紙', '絵', '描く', '写真', '使う', '読む', '冷たい', '熱い', '勉強する', '働く', '速い', '遅い', '習う', '低い', '後ろ', '新しい', '茶碗', '大変'] },
   // Review is up to Level 22 now
 ];
@@ -259,7 +261,7 @@ var VOCABULARY = [
   {"symbol":"太る","name":"To Get Fat","reading":"ふとる","level":"3"},
   {"symbol":"生む","name":"To Give Birth","reading":"うむ","level":"3"},
   {"symbol":"生きる","name":"To Live","reading":"いきる","level":"3"},
-  {"symbol":"引く","name":"To Pull","reading":"ひく","level":"3"},
+  {"symbol":"引く","name":"To Pull/Look Up/Consult","reading":"ひく","level":"3"},
   {"symbol":"分ける","name":"To Separate","reading":"わける","level":"3"},
   {"symbol":"止まる","name":"To Stop","reading":"とまる","level":"3"},
   {"symbol":"止める","name":"To Stop Something","reading":"とめる","level":"3"},
