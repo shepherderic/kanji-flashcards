@@ -25,7 +25,7 @@ var DUO_KANJI = [
   { level: 15, name: 'Family',         words: ['孫', '娘', '息子', '親戚', '姉妹', '兄弟', '安い', '甘い', '一万', '千', '誰', '晩', 'お母さん', 'お父さん', '子供', '母', '父', '妹', '弟', '姉', '兄', '家族', '両親'] },
   { level: 16, name: 'Restaurant',     words: ['食堂', '嫌い', '安い', '甘い', '高い', '百', '好き', '千', '円', '一万', '冷たい', '熱い', '晩ご飯', '朝ご飯', '昼ご飯'] },
   { level: 17, name: 'Activity 1',     words: ['明日', '昨日', '買う', '事', '仕事', '来る', '間', '金', '週末', '火', '水', '来', '木', '月', '時間', '土', '友達', '今日', '誰か', '飛ぶ', '曜日', '日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日', '忙しい', '勉強する', '平日', '働く', '習う'] },
-  { level: 18, name: 'Position',       words: ['本棚', '古い', '冷蔵庫', '鏡', '布団', '片すみ', '棚', '隣', '〜冊', '間', '長い', '低い', '本', '後ろ', '左', '小さい', '大きい', '外', '右', '前', '中', '下', '上', '新しい'] },
+  { level: 18, name: 'Position',       words: ['片隅', '本棚', '古い', '冷蔵庫', '鏡', '布団', '片すみ', '棚', '隣', '〜冊', '間', '長い', '低い', '本', '後ろ', '左', '小さい', '大きい', '外', '右', '前', '中', '下', '上', '新しい'] },
   { level: 19, name: 'Hobby 1',        words: ['時々', '撮る', '〜枚', '遊び', '泳ぐ', '走る', '散歩', '手', '紙', '読む', '見る', '聞く', '書く', '一人', '映画館', '映画', '旅行する', '音楽', '手紙', '絵', '描く', '写真', '歌', '歌う'] },
   { level: 20, name: 'Transit 1',      words: ['速い', '遅い', '図', '駅', '使う', '地', '乗る', '電車', '車', '歩く', '自転車', '地下鉄', '飛行機', '空港', '遠い', '近い'] },
   { level: 21, name: 'Clothes 1',      words: ['緩い', '脱ぐ', '欲しい', '靴', '色', '茶色', '青い', '赤い', '白い', '黒い', '黄色', '紫色', '緑色', '着る', '被る', '履く', '夏', '冬', '秋', '春', '帽子', '高い', '短い', '洗う', '服'] },
@@ -35,13 +35,13 @@ var DUO_KANJI = [
   { level: 25, name: 'Directions 1',   words: ['南西', '北西', '北東', '南東', '南', '東', '西', '北', '建物', '出る', '入る', '出口', '入り口', '口', '病院', '銀行', '道', '店', '向こう', '通る', '降りる', '通り', '狭い', '次', '広い', '進む', '曲がる', '角'] },
   { level: 26, name: 'Food 3',         words: ['好物'] }, // These were almost all in Food 2 before the new tree, not bother to move them now
   { level: 27, name: 'Dates',          words: ['出かける', '一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月', '四月', '年', '今年', '二十日', '十日', '九日', '八日', '七日', '六日', '五日', '四日', '三日', '二日', '一日', '誕生日', 'お誕生日おめでとう', '休み', '毎晩', '毎日', '毎月', '毎年', '去年', '毎朝'] },
-  { level: 28, name: 'Shopping 1',     words: ['買い物', '汚い', '売る', '売る', '本屋', '〜屋', '持つ', '同じ', '大切', '入れる', '出す', '大好き', '軽い', '丈夫', '色々', '重い', '他', '腕時計', '腕', '花', 'お金', '時計', '財布', '鞄', '荷物'] },
+  { level: 28, name: 'Shopping 1',     words: ['必要', '要る', '買い物', '汚い', '売る', '売る', '本屋', '〜屋', '持つ', '同じ', '大切', '入れる', '出す', '大好き', '軽い', '丈夫', '色々', '重い', '他', '腕時計', '腕', '花', 'お金', '時計', '財布', '鞄', '荷物'] },
   { level: 29, name: 'People',         words: ['別れる', '独身', '彼氏', '祖母', '祖父', '死', '父親', '母親', '似る', '生まれる', '赤ちゃん', '死ぬ', '亡くなる', '大人', '若い', '離婚', '結婚', '有名', '少し', '男性', '男の子', '女の子', '大勢', '呼ぶ', '立派', '片', '女', '女の人', '男', '男の人'] },
   { level: 30, name: 'Activity 2',     words: ['一台', '携帯', '勤める', '消す', '待つ', '電気', '立つ', '早い', '座る', '閉める', '開ける', '浴びる', '帰る', '洗濯', '掃除'] },
   { level: 31, name: 'Nature 1',       words: ['生まれる', '雲', '馬', '牛', '曇る', '鹿', '咲く', '静か', '傘', '動物園', '動物', '〜匹', '鳴く', '声', '瓶', '花瓶', '山', '登る', '木', '海', '池', '川'] },
   { level: 32, name: 'Classroom',      words: ['辞書', '意味', '葉', '言葉', '覚える', '字', '漢字', '教科書', '難しい', '易しい', '終わる', '授業', '宿題', '始める'] },
-// 必要 - Necessary - forgot the level it was in though
-// 片隅 - Corner - forgot the level also
+  { level: 33, name: 'Classroom 2',    words: ['鉛筆', '今度', '定規', '簡単', '〜度', '問題', '答え', '質問', '質', '見せる', '教室', '知る'] },
+
   { level: 61, name: 'Review',         words: ['吹く', '暑い', '寒い', '晴れ', '曇り', '雪', '降る', '夜', '悪い', '弱い', '強い', '涼しい', '暖かい', '昨日', '明日', '弾く', '教える', '練習', '番号', '料理', '作る', '買う', '泳ぐ', '一緒', '帽子', '短い', '洗う', '服', '着る', '被る', '履く', '遠い', '近い', '空港', '飛行機', '旅行する', '音楽', '手紙', '絵', '描く', '写真', '使う', '読む', '冷たい', '熱い', '勉強する', '働く', '速い', '遅い', '習う', '低い', '後ろ', '新しい', '茶碗', '大変'] },
   // Review is up to Level 22 now
 ];
@@ -60,7 +60,7 @@ var VOCABULARY = [
   {"symbol":"風呂","name":"Bathtub","reading":"ふろ","level":"61","radicals":"wind,bathtub"},
   {"symbol":"寝室","name":"Bedroom","reading":"しんしつ","level":"61","radicals":"lie down(roof,icicle,wolverine,forehead,stool),room(roof,ground,private,dirt)"},
   {"symbol":"親戚","name":"Relative","reading":"しんせき","level":"61","radicals":""},
-  {"symbol":"片隅","name":"Corner","reading":"かたすみ","level":"61","radicals":""},
+  {"symbol":"片隅","name":"Corner (Out of The Way)","reading":"かたすみ","level":"61","radicals":""},
   {"symbol":"鉄","name":"Iron/Metal","reading":"てつ","level":"61","radicals":""},
   {"symbol":"夕方","name":"Evening","reading":"ゆうがた","level":"61","radicals":""},
   {"symbol":"昼間","name":"Daytime","reading":"ひる","level":"61","radicals":""},
@@ -79,6 +79,7 @@ var VOCABULARY = [
   {"symbol":"洗濯","name":"Washing","reading":"せんたく","level":"61","radicals":"wash(tsunami,previous),wash(tsunami,wolverine,turkey)"},
   {"symbol":"花瓶","name":"Flower Vase","reading":"かびん","level":"61","radicals":"flower,bottle"},
   {"symbol":"瓶","name":"Bottle","reading":"びん","level":"61"},
+  {"symbol":"定規","name":"Ruler","reading":"じょうぎ","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -746,7 +747,7 @@ var VOCABULARY = [
   {"symbol":"思い出","name":"A Memory","reading":"おもいで","level":"8"},
   {"symbol":"〜間","name":"Amount Of Time","reading":"かん","level":"8"},
   {"symbol":"他所","name":"Another Place","reading":"たしょ","level":"8"},
-  {"symbol":"答え","name":"Answer","reading":"こたえ","level":"8"},
+  {"symbol":"答え","name":"Answer/Tell Me","reading":"こたえ","level":"8"},
   {"symbol":"助力","name":"Assistance","reading":"じょりょく","level":"8"},
   {"symbol":"作者","name":"Author","reading":"さくしゃ","level":"8"},
   {"symbol":"電池","name":"Battery","reading":"でんち","level":"8"},
@@ -893,7 +894,7 @@ var VOCABULARY = [
   {"symbol":"相談","name":"Consultation","reading":"そうだん","level":"9"},
   {"symbol":"対談","name":"Conversation","reading":"たいだん","level":"9"},
   {"symbol":"決定","name":"Decision","reading":"けってい","level":"9"},
-  {"symbol":"〜度","name":"Degrees","reading":"ど","level":"9"},
+  {"symbol":"〜度","name":"Degrees (or Once More)","reading":"ど","level":"9"},
   {"symbol":"〜部","name":"Department","reading":"ぶ","level":"9"},
   {"symbol":"出発","name":"Departure","reading":"しゅっぱつ","level":"9"},
   {"symbol":"不自由","name":"Discomfort","reading":"ふじゆう","level":"9"},
