@@ -42,8 +42,7 @@ var DUO_KANJI = [
   { level: 32, name: 'Classroom',      words: ['辞書', '意味', '葉', '言葉', '覚える', '字', '漢字', '教科書', '難しい', '易しい', '終わる', '授業', '宿題', '始める'] },
   { level: 33, name: 'Classroom 2',    words: ['鉛筆', '今度', '定規', '簡単', '〜度', '問題', '答え', '質問', '質', '見せる', '教室', '知る'] },
 
-  { level: 61, name: 'Review',         words: ['吹く', '暑い', '寒い', '晴れ', '曇り', '雪', '降る', '夜', '悪い', '弱い', '強い', '涼しい', '暖かい', '昨日', '明日', '弾く', '教える', '練習', '番号', '料理', '作る', '買う', '泳ぐ', '一緒', '帽子', '短い', '洗う', '服', '着る', '被る', '履く', '遠い', '近い', '空港', '飛行機', '旅行する', '音楽', '手紙', '絵', '描く', '写真', '使う', '読む', '冷たい', '熱い', '勉強する', '働く', '速い', '遅い', '習う', '低い', '後ろ', '新しい', '茶碗', '大変'] },
-  // Review is up to Level 22 now
+  { level: 61, name: 'Review',         words: ["醤油","浴びる","被る","絵","遊ぶ","居る","他","鳴く","鳴く","天","意味","全く","知る","大人","吹く","定規","宿題","掃除","違い","教室","海","質問","降りる","地","美味しい","狭い","勤める","瓶","始める","寝室","腹","年","良い","終わる","若い","男性","簡単","緩い","鉛筆","覚える","別れる","角","質","辞書","進む","答え","砂糖","今夜","似る","軽い","生まれる","必要","授業","座る","短い","帰る","撮る","携帯","静か","独身","咲く","難しい","鏡"] },
 ];
 
 var VOCABULARY = [
@@ -60,7 +59,7 @@ var VOCABULARY = [
   {"symbol":"風呂","name":"Bathtub","reading":"ふろ","level":"61","radicals":"wind,bathtub"},
   {"symbol":"寝室","name":"Bedroom","reading":"しんしつ","level":"61","radicals":"lie down(roof,icicle,wolverine,forehead,stool),room(roof,ground,private,dirt)"},
   {"symbol":"親戚","name":"Relative","reading":"しんせき","level":"61","radicals":""},
-  {"symbol":"片隅","name":"Corner (Out of The Way)","reading":"かたすみ","level":"61","radicals":""},
+  {"symbol":"片隅","name":"Corner (Out of The Way)","reading":"かたすみ","level":"61","radicals":"one sided,corner(building,splinter)"},
   {"symbol":"鉄","name":"Iron/Metal","reading":"てつ","level":"61","radicals":""},
   {"symbol":"夕方","name":"Evening","reading":"ゆうがた","level":"61","radicals":""},
   {"symbol":"昼間","name":"Daytime","reading":"ひる","level":"61","radicals":""},
@@ -2277,7 +2276,7 @@ var VOCABULARY = [
   {"symbol":"悪夢","name":"Nightmare","reading":"あくむ","level":"20"},
   {"symbol":"鼻の穴","name":"Nostril","reading":"はなのあな","level":"20"},
   {"symbol":"妨害","name":"Obstruction","reading":"ぼうがい","level":"20"},
-  {"symbol":"一個","name":"One Small ...","reading":"いっこ","level":"20"},
+  {"symbol":"一個","name":"One Small Thing","reading":"いっこ","level":"20"},
   {"symbol":"音訓","name":"On'yomi An...","reading":"おんくん","level":"20"},
   {"symbol":"在外","name":"Overseas","reading":"ざいがい","level":"20"},
   {"symbol":"人達","name":"People","reading":"ひとたち","level":"20"},
