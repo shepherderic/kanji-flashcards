@@ -41,7 +41,9 @@ var DUO_KANJI = [
   { level: 31, name: 'Nature 1',       words: ['生まれる', '雲', '馬', '牛', '曇る', '鹿', '咲く', '静か', '傘', '動物園', '動物', '〜匹', '鳴く', '声', '瓶', '花瓶', '山', '登る', '木', '海', '池', '川'] },
   { level: 32, name: 'Classroom',      words: ['辞書', '意味', '葉', '言葉', '覚える', '字', '漢字', '教科書', '難しい', '易しい', '終わる', '授業', '宿題', '始める'] },
   { level: 33, name: 'Classroom 2',    words: ['鉛筆', '今度', '定規', '簡単', '〜度', '問題', '答え', '質問', '質', '見せる', '教室', '知る'] },
-  { level: 34, name: 'Feelings 1',     words: ['嫌', '困る', '分かる', '', '疲れる', '怖い', '疲れ', '愛', '旅行', '切符', '村', '戸', '面白い', '楽しい'] },
+  { level: 34, name: 'Feelings 1',     words: ['嫌', '困る', '分かる', '疲れる', '怖い', '疲れ', '愛', '旅行', '切符', '村', '戸', '面白い', '楽しい'] },
+  { level: 35, name: 'Directions 2',   words: ['〜階', '運転手', '橋', '所', '危ない', '止まる', '上る', '切符', '階段', '廊下', '御手洗', '図書館', '自動車', '町', '村', '門'] },
+  { level: 36, name: 'Objects',        words: [] },
 
   { level: 61, name: 'Review',         words: ["醤油","浴びる","被る","絵","遊ぶ","居る","他","鳴く","鳴く","天","意味","全く","知る","大人","吹く","定規","宿題","掃除","違い","教室","海","質問","降りる","地","美味しい","狭い","勤める","瓶","始める","寝室","腹","年","良い","終わる","若い","男性","簡単","緩い","鉛筆","覚える","別れる","角","質","辞書","進む","答え","砂糖","今夜","似る","軽い","生まれる","必要","授業","座る","短い","帰る","撮る","携帯","静か","独身","咲く","難しい","鏡"] },
 ];
@@ -80,6 +82,7 @@ var VOCABULARY = [
   {"symbol":"花瓶","name":"Flower Vase","reading":"かびん","level":"61","radicals":"flower,bottle"},
   {"symbol":"瓶","name":"Bottle","reading":"びん","level":"61"},
   {"symbol":"定規","name":"Ruler","reading":"じょうぎ","level":"61","radicals":"determine(roof,correct),standard(husband,see)"},
+  {"symbol":"玄関","name":"Entranceway","reading":"げんかん","level":"61","radicals":"mysterious,related(gate,horns,heaven)"},
 
   // WANIKANI LEVELS 1-10
 
@@ -4608,7 +4611,7 @@ var VOCABULARY = [
   {"symbol":"渋々","name":"Reluctantly","reading":"しぶしぶ","level":"41"},
   {"symbol":"放棄","name":"Resignation","reading":"ほうき","level":"41"},
   {"symbol":"甲斐性","name":"Resourcefu...","reading":"かいしょう","level":"41"},
-  {"symbol":"御手洗","name":"Restroom","reading":"おてあらい","level":"41"},
+  {"symbol":"お手洗い"/*"御手洗"*/,"name":"Restroom","reading":"おてあらい","level":"41"},
   {"symbol":"拳銃","name":"Revolver","reading":"けんじゅう","level":"41"},
   {"symbol":"廃墟","name":"Ruins","reading":"はいきょ","level":"41"},
   {"symbol":"瀬戸","name":"Seto","reading":"せと","level":"41"},
