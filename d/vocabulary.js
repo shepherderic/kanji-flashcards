@@ -52,7 +52,7 @@ var VOCABULARY = [
 
   // ADDED - LEVEL "61"
 
-  {"symbol":"出身","name":"Place of Origin","reading":"しゅっしん","level":"61","radicals":"exit,body"},
+  {"symbol":"出身","name":"Place of Origin","reading":"しゅっしん","level":"61"},
   {"symbol":"今晩","name":"This Evening","reading":"こんばん","level":"61"},
   {"symbol":"両親","name":"Parents","reading":"りょうしん","level":"61","radicals":"both,parent(stand,tree,see)"},
   {"symbol":"空き","name":"Empties","reading":"すき","level":"61","radicals":"sky"},

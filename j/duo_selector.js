@@ -13,7 +13,7 @@ var duoSelector = (function () {
   let $el;
 
   // Return a promise with the data
-  function init (id, levelData, symbolData) {
+  function init (id, levelData, symbolData, kanjiData) {
     $el = $(`#${id}`);
 
     const deferred = $.Deferred();
@@ -22,14 +22,14 @@ var duoSelector = (function () {
 
     // Wire up form submit event to kick things off
     $el.find(`.${LEVEL_SUBMIT_CLASS}`).click(function () {
-      handleSubmit(deferred, levelData, symbolData);
+      handleSubmit(deferred, levelData, symbolData, kanjiData);
     });
 
     return deferred.promise();
   }
 
   // Handle the submit button click
-  function handleSubmit (deferred, levelData, symbolData) {
+  function handleSubmit (deferred, levelData, symbolData, kanjiData) {
 
     const levels = (_.map($(`.${LEVEL_ALL_CLASS}:checked`), function (item) {
       return parseInt(item.value.split('duo-level-')[1], 10);
@@ -51,6 +51,14 @@ var duoSelector = (function () {
       })
     );
 
+    // make a new dictionary of kanji:[name,radicals] for easy lookup
+    const kanjiRadicals = _.reduce(kanjiData, function (result, d) {
+      if (d.radicals) {
+        result[d.symbol] = [d.name,d.radicals];
+      }
+      return result;
+    }, {});
+
     // get the word data
     const dataSet = _.shuffle(
       _.uniqBy(
@@ -60,7 +68,20 @@ var duoSelector = (function () {
       )
     );
 
-    deferred.resolve(dataSet);
+    // look up the radicals - eventually combine with above block to minimize cycles
+    const newDataSet = _.each(dataSet, function (item) {
+      item.radicals = [];
+      _.map(item.symbol.split(''), function (char) {
+        if (kanjiRadicals[char]) {
+          const name = kanjiRadicals[char][0];
+          const val = kanjiRadicals[char][1];
+          item.radicals[name] = val;
+        }
+      });
+      return item;
+    });
+
+    deferred.resolve(newDataSet);
   }
 
   function createSelectionForm (levelData) {

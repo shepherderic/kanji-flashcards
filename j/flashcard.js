@@ -78,7 +78,11 @@ var flashcard = (function () {
       html += `<dd lang="ja" class="reading">${decoratedItem.reading}</dd>`;
     }
     if (decoratedItem.radicals) {
-      html += `<dd class="composing-radicals">${decoratedItem.radicals}</dd>`;
+      html += `<dd class="composing-radicals">`;
+      _.each(_.keys(decoratedItem.radicals), function (key) {
+        html += `${key}:${decoratedItem.radicals[key]}<br />`;
+      });
+      html += `</dd>`;
     }
     html += `</dl>`;
     html += `</div>`;
