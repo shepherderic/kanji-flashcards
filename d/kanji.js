@@ -7,24 +7,52 @@ var KANJI_LEVELS = [
   { name: 'reality', levels: [51,52,53,54,55,56,57,58,59,60] },
 ];
 
+/**
+行 学校 午後 午前 会 会社 起 寝 零
+子猫 子犬 子 寝室 台所 部屋 風呂 庭 家 窓 猫 犬 鳥 椅子 机 羽
+願 住 申 大阪 東京 京都 留学 歳 高校 高校生 生 年生 小学生 小学校 大学生 大学 外国人 外 中学生 中学校 千円 違
+卵 個
+孫 娘 息子 親戚 姉妹 兄弟 安 甘 万 千 誰 晩 母 父 子供 母 父 妹 弟 姉 兄 家族 両親
+堂 嫌 安 甘 高 百 好 千 円 万 冷 熱 晩 朝 昼
+明日 昨日 買 事 仕事 来 間 金 週末 火 来 木 月 間 土 友達 日 誰 飛 曜日 日曜日 月曜日 火曜日 曜日 木曜日 金曜日 土曜日 忙 勉強 平日 働 習
+片隅 本棚 古 冷蔵庫 鏡 布団 片 棚 隣 冊 間 長 低 本 後 左 小 大 外 右 前 中 下 上 新
+々 撮 枚 遊 泳 走 散歩 手 紙 読む 見 聞 書 人 映画館 映画 旅行 音楽 手紙 絵 描 写真 歌 歌
+速 遅 図 駅 使 地 乗 電車 車 歩 自転車 地下鉄 飛行機 空港 遠 近
+緩 脱 欲 靴 色 色 青 赤 白 黒 黄色 紫色 緑色 着 被 履 夏 冬 秋 春 帽子 高 短 洗 服
+遊ぶ 大丈夫 新聞 再来月 再来週 居 電話 来週 来月 先週 先月 会 週 月 再来週 昨日 明日 弾 教 練習 番号 料理 公園 作 緒
+夜 暗 空 雨 気 明 天 気 暖 涼 風 弱 強 天気 吹 暑 寒 良 悪 晴 曇 朝 夕 雪 降 夜
+腹 物 物 変 寿司 箸 全部 物 卵 多 果物 砂糖 塩 酒 紅 牛乳 皿 醤油 結構 全 少 美味 腹 弁当 夕 全然 大変 本当 本当
+南西 北西 北東 南東 南 東 西 北 建物 出 入 出口 入口 口 病院 銀行 道 店 向 通 降 通 狭 次 広 進 曲 角
+好物
+出 月 月 月 月 月 月 月 月 月 月 月 月 月 年 年 日 日 日 日 日 日 日 日 日 日 日 誕生日 誕生日 休 毎晩 毎日 毎月 毎年 去年 毎朝
+必要 要 買物 汚 売 売 本屋 屋 持 同 大切 入 出 大好 軽 丈夫 色々 重 他 腕計 腕 花 金 計 財布 鞄 荷物
+別 独身 彼氏 祖母 祖父 死 父親 母親 似 生 赤 死 亡 大人 若 離婚 結婚 有名 少 男性 男子 女子 大勢 呼 立派 片 女 女人 男 男人
+台 携帯 勤 消 待 電気 立 早 座 閉 開け 浴 帰 洗濯 掃除
+生 雲 馬 牛 曇 鹿 咲 静 傘 動物園 動物 匹 鳴 声 瓶 花瓶 山 登 木 海 池 川
+辞書 意味 葉 言葉 覚 字 漢字 教科書 難 易 終 授業 宿題 始
+鉛筆 度 定規 簡単 度 問題 答 質問 質 見 教室 知
+嫌 困 疲 怖 疲 愛 旅行 切符 村 戸 面白 楽
+階 運転手 橋 所 危な 止まる 上 切符 階段 廊下 御手洗 図書館 自動車 町 村 門
+*/
+
 var KANJI = [
   {"name":"Above","symbol":"上","level":"1","reading":"じょう","radicals":""},
   {"name":"Below","symbol":"下","level":"1","reading":"か","radicals":""},
   {"name":"Big","symbol":"大","level":"1","reading":"たい","radicals":""},
   {"name":"Construction","symbol":"工","level":"1","reading":"こう","radicals":""},
-  {"name":"Eight","symbol":"八","level":"1","reading":"はち","radicals":""},
+  {"name":"Eight","symbol":"八","level":"1","reading":"はち","radicals":"fins"},
   {"name":"Enter","symbol":"入","level":"1","reading":"にゅう","radicals":""},
   {"name":"Mountain","symbol":"山","level":"1","reading":"さん","radicals":""},
   {"name":"Mouth","symbol":"口","level":"1","reading":"こう","radicals":""},
-  {"name":"Nine","symbol":"九","level":"1","reading":"く","radicals":""},
-  {"name":"One","symbol":"一","level":"1","reading":"いち","radicals":""},
+  {"name":"Nine","symbol":"九","level":"1","reading":"く","radicals":"nine"},
+  {"name":"One","symbol":"一","level":"1","reading":"いち","radicals":"ground"},
   {"name":"Person","symbol":"人","level":"1","reading":"にん","radicals":"person"},
   {"name":"Power","symbol":"力","level":"1","reading":"りょく","radicals":""},
   {"name":"River","symbol":"川","level":"1","reading":"かわ","radicals":""},
-  {"name":"Seven","symbol":"七","level":"1","reading":"しち","radicals":""},
-  {"name":"Ten","symbol":"十","level":"1","reading":"じゅう","radicals":""},
-  {"name":"Three","symbol":"三","level":"1","reading":"さん","radicals":""},
-  {"name":"Two","symbol":"二","level":"1","reading":"に","radicals":""},
+  {"name":"Seven","symbol":"七","level":"1","reading":"しち","radicals":"seven"},
+  {"name":"Ten","symbol":"十","level":"1","reading":"じゅう","radicals":"cross"},
+  {"name":"Three","symbol":"三","level":"1","reading":"さん","radicals":"three"},
+  {"name":"Two","symbol":"二","level":"1","reading":"に","radicals":"two"},
   {"name":"Woman","symbol":"女","level":"1","reading":"じょ","radicals":"woman"},
   {"name":"Again","symbol":"又","level":"2","reading":"また","radicals":""},
   {"name":"Ball","symbol":"玉","level":"2","reading":"たま","radicals":""},
@@ -39,8 +67,8 @@ var KANJI = [
   {"name":"Eye","symbol":"目","level":"2","reading":"め","radicals":""},
   {"name":"Finish","symbol":"了","level":"2","reading":"りょう","radicals":""},
   {"name":"Fire","symbol":"火","level":"2","reading":"か","radicals":""},
-  {"name":"Five","symbol":"五","level":"2","reading":"ご","radicals":""},
-  {"name":"Four","symbol":"四","level":"2","reading":"し","radicals":""},
+  {"name":"Five","symbol":"五","level":"2","reading":"ご","radicals":"five"},
+  {"name":"Four","symbol":"四","level":"2","reading":"し","radicals":"mouth,legs"},
   {"name":"Genius","symbol":"才","level":"2","reading":"さい","radicals":""},
   {"name":"Hand","symbol":"手","level":"2","reading":"て","radicals":""},
   {"name":"Heaven","symbol":"天","level":"2","reading":"てん","radicals":""},
@@ -51,7 +79,7 @@ var KANJI = [
   {"name":"Repeater","symbol":"々","level":"2","reading":"のま","radicals":""},
   {"name":"Rice Paddy","symbol":"田","level":"2","reading":"た","radicals":"rice paddy"},
   {"name":"Right","symbol":"右","level":"2","reading":"ゆう","radicals":""},
-  {"name":"Six","symbol":"六","level":"2","reading":"ろく","radicals":""},
+  {"name":"Six","symbol":"六","level":"2","reading":"ろく","radicals":"lid,fins"},
   {"name":"Small","symbol":"小","level":"2","reading":"しょう","radicals":""},
   {"name":"Stand","symbol":"立","level":"2","reading":"りつ","radicals":""},
   {"name":"Street","symbol":"丁","level":"2","reading":"ちょう","radicals":""},
@@ -59,7 +87,7 @@ var KANJI = [
   {"name":"Sword","symbol":"刀","level":"2","reading":"とう","radicals":""},
   {"name":"Thousand","symbol":"千","level":"2","reading":"せん","radicals":""},
   {"name":"Tree","symbol":"木","level":"2","reading":"もく","radicals":""},
-  {"name":"Water","symbol":"水","level":"2","reading":"すい","radicals":""},
+  {"name":"Water","symbol":"水","level":"2","reading":"すい","radicals":"water"},
   {"name":"White","symbol":"白","level":"2","reading":"はく","radicals":""},
   {"name":"Writing","symbol":"文","level":"2","reading":"ぶん","radicals":""},
   {"name":"Yen","symbol":"円","level":"2","reading":"えん","radicals":""},
@@ -74,7 +102,7 @@ var KANJI = [
   {"name":"Few","symbol":"少","level":"3","reading":"しょう","radicals":""},
   {"name":"Friend","symbol":"友","level":"3","reading":"ゆう","radicals":""},
   {"name":"Fur","symbol":"毛","level":"3","reading":"もう","radicals":""},
-  {"name":"Half","symbol":"半","level":"3","reading":"はん","radicals":""},
+  {"name":"Half","symbol":"半","level":"3","reading":"はん","radicals":"half"},
   {"name":"Heart","symbol":"心","level":"3","reading":"しん","radicals":""},
   {"name":"Inside","symbol":"内","level":"3","reading":"ない","radicals":""},
   {"name":"Life","symbol":"生","level":"3","reading":"せい","radicals":"life"},
@@ -82,11 +110,11 @@ var KANJI = [
   {"name":"Mother","symbol":"母","level":"3","reading":"はは","radicals":""},
   {"name":"Noon","symbol":"午","level":"3","reading":"ご","radicals":""},
   {"name":"North","symbol":"北","level":"3","reading":"ほく","radicals":""},
-  {"name":"Now","symbol":"今","level":"3","reading":"こん","radicals":""},
+  {"name":"Now","symbol":"今","level":"3","reading":"こん","radicals":"now"},
   {"name":"Old","symbol":"古","level":"3","reading":"こ","radicals":""},
   {"name":"Origin","symbol":"元","level":"3","reading":"げん","radicals":"origin"},
   {"name":"Outside","symbol":"外","level":"3","reading":"がい","radicals":""},
-  {"name":"Part","symbol":"分","level":"3","reading":"ぶん","radicals":""},
+  {"name":"Part","symbol":"分","level":"3","reading":"ぶん","radicals":"part"},
   {"name":"Public","symbol":"公","level":"3","reading":"こう","radicals":""},
   {"name":"Pull","symbol":"引","level":"3","reading":"ひ","radicals":""},
   {"name":"Stop","symbol":"止","level":"3","reading":"し","radicals":""},
@@ -151,7 +179,7 @@ var KANJI = [
   {"name":"Home Village","symbol":"里","level":"5","reading":"さと","radicals":""},
   {"name":"Make","symbol":"作","level":"5","reading":"さく","radicals":""},
   {"name":"Many","symbol":"多","level":"5","reading":"た","radicals":""},
-  {"name":"Meat","symbol":"肉","level":"5","reading":"にく","radicals":""},
+  {"name":"Meat","symbol":"肉","level":"5","reading":"にく","radicals":"meat"},
   {"name":"Meet","symbol":"会","level":"5","reading":"かい","radicals":""},
   {"name":"Mix","symbol":"交","level":"5","reading":"こう","radicals":""},
   {"name":"Near","symbol":"近","level":"5","reading":"きん","radicals":""},
@@ -190,7 +218,7 @@ var KANJI = [
   {"name":"Drawing","symbol":"画","level":"6","reading":"が","radicals":""},
   {"name":"Earth","symbol":"地","level":"6","reading":"ち","radicals":""},
   {"name":"East","symbol":"東","level":"6","reading":"とう","radicals":""},
-  {"name":"Eat","symbol":"食","level":"6","reading":"しょく","radicals":""},
+  {"name":"Eat","symbol":"食","level":"6","reading":"しょく","radicals":"eat"},
   {"name":"Fix","symbol":"直","level":"6","reading":"ちょく","radicals":""},
   {"name":"Front","symbol":"前","level":"6","reading":"ぜん","radicals":"horns,ground,moon,knife"},
   {"name":"Have","symbol":"有","level":"6","reading":"ゆう","radicals":""},
@@ -212,7 +240,7 @@ var KANJI = [
   {"name":"South","symbol":"南","level":"6","reading":"なん","radicals":""},
   {"name":"Star","symbol":"星","level":"6","reading":"せい","radicals":""},
   {"name":"State","symbol":"州","level":"6","reading":"しゅう","radicals":""},
-  {"name":"Tea","symbol":"茶","level":"6","reading":"ちゃ","radicals":""},
+  {"name":"Tea","symbol":"茶","level":"6","reading":"ちゃ","radicals":"flowers,hat,angel"},
   {"name":"Think","symbol":"思","level":"6","reading":"し","radicals":""},
   {"name":"Walk","symbol":"歩","level":"6","reading":"ほ","radicals":""},
   {"name":"Yonder","symbol":"向","level":"6","reading":"こう","radicals":""},
@@ -227,7 +255,7 @@ var KANJI = [
   {"name":"End","symbol":"末","level":"7","reading":"まつ","radicals":""},
   {"name":"Family Name","symbol":"氏","level":"7","reading":"し","radicals":""},
   {"name":"Fault","symbol":"失","level":"7","reading":"しつ","radicals":""},
-  {"name":"Fish","symbol":"魚","level":"7","reading":"ぎょ","radicals":""},
+  {"name":"Fish","symbol":"魚","level":"7","reading":"ぎょ","radicals":"fish"},
   {"name":"From","symbol":"以","level":"7","reading":"い","radicals":""},
   {"name":"Group","symbol":"組","level":"7","reading":"そ","radicals":""},
   {"name":"House","symbol":"家","level":"7","reading":"か","radicals":""},
@@ -244,7 +272,7 @@ var KANJI = [
   {"name":"Summer","symbol":"夏","level":"7","reading":"なつ","radicals":""},
   {"name":"Tall","symbol":"高","level":"7","reading":"こう","radicals":""},
   {"name":"Teach","symbol":"教","level":"7","reading":"きょう","radicals":""},
-  {"name":"Time","symbol":"時","level":"7","reading":"じ","radicals":""},
+  {"name":"Time","symbol":"時","level":"7","reading":"じ","radicals":"sun,temple"},
   {"name":"Weak","symbol":"弱","level":"7","reading":"じゃく","radicals":""},
   {"name":"Week","symbol":"週","level":"7","reading":"しゅう","radicals":""},
   {"name":"Wind","symbol":"風","level":"7","reading":"ふう","radicals":""},
@@ -329,7 +357,7 @@ var KANJI = [
   {"name":"Chirp","symbol":"鳴","level":"10","reading":"な","radicals":""},
   {"name":"Collect","symbol":"集","level":"10","reading":"しゅう","radicals":""},
   {"name":"Distribute","symbol":"配","level":"10","reading":"はい","radicals":""},
-  {"name":"Drink","symbol":"飲","level":"10","reading":"の","radicals":""},
+  {"name":"Drink","symbol":"飲","level":"10","reading":"の","radicals":"eat,lack"},
   {"name":"End","symbol":"終","level":"10","reading":"しゅう","radicals":""},
   {"name":"Face","symbol":"顔","level":"10","reading":"かお","radicals":""},
   {"name":"Fall","symbol":"落","level":"10","reading":"らく","radicals":""},
@@ -407,7 +435,7 @@ var KANJI = [
   {"symbol":"勉","name":"Exertion","reading":"べん","level":"12","radicals":""},
   {"symbol":"消","name":"Extinguish","reading":"しょう","level":"12","radicals":""},
   {"symbol":"祭","name":"Festival","reading":"さい","level":"12","radicals":""},
-  {"symbol":"野","name":"Field","reading":"や","level":"12","radicals":""},
+  {"symbol":"野","name":"Field","reading":"や","level":"12","radicals":"village,beforehand"},
   {"symbol":"階","name":"Floor","reading":"かい","level":"12","radicals":""},
   {"symbol":"庭","name":"Garden","reading":"てい","level":"12","radicals":""},
   {"symbol":"港","name":"Harbor","reading":"こう","level":"12","radicals":""},
@@ -521,7 +549,7 @@ var KANJI = [
   {"symbol":"英","name":"England","reading":"えい","level":"15","radicals":"flowers,center"},
   {"symbol":"丈","name":"Height","reading":"じょう","level":"15","radicals":""},
   {"symbol":"夫","name":"Husband","reading":"ふう","level":"15","radicals":""},
-  {"symbol":"飯","name":"Meal","reading":"はん","level":"15","radicals":""},
+  {"symbol":"飯","name":"Meal","reading":"はん","level":"15","radicals":"eat,anti"},
   {"symbol":"計","name":"Measure","reading":"けい","level":"15","radicals":""},
   {"symbol":"法","name":"Method","reading":"ほう","level":"15","radicals":""},
   {"symbol":"晩","name":"Night","reading":"ばん","level":"15","radicals":""},
@@ -1066,7 +1094,7 @@ var KANJI = [
   {"symbol":"偵","name":"Spy","reading":"てい","level":"31","radicals":""},
   {"symbol":"驚","name":"Surprised","reading":"きょう","level":"31","radicals":""},
   {"symbol":"掃","name":"Sweep","reading":"そう","level":"31","radicals":""},
-  {"symbol":"菜","name":"Vegetable","reading":"さい","level":"31","radicals":""},
+  {"symbol":"菜","name":"Vegetable","reading":"さい","level":"31","radicals":"flowers,cleat,tree"},
   {"symbol":"脈","name":"Vein","reading":"みゃく","level":"31","radicals":""},
   {"symbol":"徳","name":"Virtue","reading":"とく","level":"31","radicals":""},
   {"symbol":"倉","name":"Warehouse","reading":"そう","level":"31","radicals":""},
