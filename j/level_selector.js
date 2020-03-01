@@ -35,8 +35,7 @@ var levelSelector = (function () {
       return levels.includes(item.level);
     });
 
-    console.log($(`.${LEVEL_RADICAL_CLASS}`));
-
+    // For now, just create a new data set either filtered or not
     if ($(`.${LEVEL_RADICAL_CLASS}`).prop('checked')) {
       newDataSet = _.filter(dataSet, function (item) {
         return item.radicals && item.radicals.length > 0;
