@@ -38,16 +38,12 @@ var levelSelector = (function () {
     console.log($(`.${LEVEL_RADICAL_CLASS}`));
 
     if ($(`.${LEVEL_RADICAL_CLASS}`).prop('checked')) {
-      console.log('asdf');
       newDataSet = _.filter(dataSet, function (item) {
         return item.radicals && item.radicals.length > 0;
       });
     } else {
-      console.log('here');
       newDataSet = dataSet;
     }
-
-    console.log(newDataSet);
 
     deferred.resolve(_.shuffle(newDataSet));
   }
