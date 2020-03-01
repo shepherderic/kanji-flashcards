@@ -79,9 +79,15 @@ var flashcard = (function () {
     }
     if (decoratedItem.radicals) {
       html += `<dd class="composing-radicals">`;
-      _.each(_.keys(decoratedItem.radicals), function (key) {
-        html += `${key}:${decoratedItem.radicals[key]}<br />`;
-      });
+      // Now this breaks vocab since it has radicals only as an array
+      // We will eventually need multiple templates but fuck it for now
+      if (typeof decoratedItem.radicals === 'object') {
+        _.each(_.keys(decoratedItem.radicals), function (key) {
+          html += `${key}:${decoratedItem.radicals[key]}<br />`;
+        });
+      } else { // string
+        html += decoratedItem.radicals;
+      }
       html += `</dd>`;
     }
     html += `</dl>`;

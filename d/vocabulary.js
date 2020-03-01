@@ -43,7 +43,7 @@ var DUO_KANJI = [
   { level: 33, name: 'Classroom 2',    words: ['鉛筆', '今度', '定規', '簡単', '〜度', '問題', '答え', '質問', '質', '見せる', '教室', '知る'] },
   { level: 34, name: 'Feelings 1',     words: ['嫌', '困る', '分かる', '疲れる', '怖い', '疲れ', '愛', '旅行', '切符', '村', '戸', '面白い', '楽しい'] },
   { level: 35, name: 'Directions 2',   words: ['〜階', '運転手', '橋', '所', '危ない', '止まる', '上る', '切符', '階段', '廊下', '御手洗', '図書館', '自動車', '町', '村', '門'] },
-  { level: 36, name: 'Objects',        words: [] },
+  { level: 36, name: 'Objects',        words: ['忘れる', '箱', '切る', '置く', '石鹸', '鍵', '吸う', '丸', '丸い', '押し', '細い', '薄い', '厚い', '太い'] },
 
   { level: 61, name: 'Review',         words: ["醤油","浴びる","被る","絵","遊ぶ","居る","他","鳴く","鳴く","天","意味","全く","知る","大人","吹く","定規","宿題","掃除","違い","教室","海","質問","降りる","地","美味しい","狭い","勤める","瓶","始める","寝室","腹","年","良い","終わる","若い","男性","簡単","緩い","鉛筆","覚える","別れる","角","質","辞書","進む","答え","砂糖","今夜","似る","軽い","生まれる","必要","授業","座る","短い","帰る","撮る","携帯","静か","独身","咲く","難しい","鏡"] },
 ];
@@ -83,6 +83,7 @@ var VOCABULARY = [
   {"symbol":"瓶","name":"Bottle","reading":"びん","level":"61"},
   {"symbol":"定規","name":"Ruler","reading":"じょうぎ","level":"61","radicals":"determine(roof,correct),standard(husband,see)"},
   {"symbol":"玄関","name":"Entranceway","reading":"げんかん","level":"61","radicals":"mysterious,related(gate,horns,heaven)"},
+  {"symbol":"石鹸","name":"Soap","reading":"せっけん","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -216,7 +217,7 @@ var VOCABULARY = [
   {"symbol":"牛","name":"Cow","reading":"うし","level":"3"},
   {"symbol":"戸口","name":"Doorway","reading":"とぐち","level":"3"},
   {"symbol":"外れ","name":"Extremity","reading":"はずれ","level":"3"},
-  {"symbol":"太い","name":"Fat","reading":"ふとい","level":"3"},
+  {"symbol":"太い","name":"Fat (thick for pens etc)","reading":"ふとい","level":"3"},
   {"symbol":"お父さん","name":"Father","reading":"おとうさん","level":"3"},
   {"symbol":"父","name":"Father","reading":"ちち","level":"3"},
   {"symbol":"五台","name":"Five Machines","reading":"ごだい","level":"3"},
@@ -3232,7 +3233,7 @@ var VOCABULARY = [
   {"symbol":"研修","name":"Training","reading":"けんしゅう","level":"28"},
   {"symbol":"処置","name":"Treatment","reading":"しょち","level":"28"},
   {"symbol":"傘","name":"Umbrella","reading":"かさ","level":"28"},
-  {"symbol":"傘立て","name":"Umbrella S...","reading":"かさたて","level":"28"},
+  {"symbol":"傘立て","name":"Umbrella Stand","reading":"かさたて","level":"28"},
   {"symbol":"庫","name":"Warehouse","reading":"くら","level":"28"},
   {"symbol":"我々","name":"We","reading":"われわれ","level":"28"},
   {"symbol":"針金","name":"Wire","reading":"はりがね","level":"28"},

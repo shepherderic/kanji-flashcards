@@ -3,6 +3,7 @@ var levelSelector = (function () {
   // Constants
   const LEVEL_CLASS = 'level-selector';
   const LEVEL_ALL_CLASS = 'level-all';
+  const LEVEL_RADICAL_CLASS = 'level-radicals';
   const LEVEL_ITEM_CLASS = 'level-item';
   const LEVEL_SUBMIT_CLASS = 'level-submit';
 
@@ -34,11 +35,27 @@ var levelSelector = (function () {
       return levels.includes(item.level);
     });
 
-    deferred.resolve(_.shuffle(dataSet));
+    console.log($(`.${LEVEL_RADICAL_CLASS}`));
+
+    if ($(`.${LEVEL_RADICAL_CLASS}`).prop('checked')) {
+      console.log('asdf');
+      newDataSet = _.filter(dataSet, function (item) {
+        return item.radicals && item.radicals.length > 0;
+      });
+    } else {
+      console.log('here');
+      newDataSet = dataSet;
+    }
+
+    console.log(newDataSet);
+
+    deferred.resolve(_.shuffle(newDataSet));
   }
 
   function createSelectionForm (levelData) {
     let html = '';
+
+    html += `<input type="checkbox" class="${LEVEL_RADICAL_CLASS}" value="has-radicals">Has Radicals</input>`;
 
     // Iterate through levels
     _.each(levelData, function (level) {

@@ -173,6 +173,7 @@ body {
 
 .flashcard .composing-radicals {
   bottom: 0;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: -32px;
   position: absolute;
