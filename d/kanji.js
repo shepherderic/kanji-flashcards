@@ -7,6 +7,9 @@ var KANJI_LEVELS = [
   { name: 'reality', levels: [51,52,53,54,55,56,57,58,59,60] },
 ];
 
+// 外 指 輪 指輪 帯 着物 浴衣 長袖 半袖 袖 短 手袋 組 革 靴下 足 制服 灰色 紫色 緑色
+// 碗 方 玄 関 足
+
 var KANJI = [
   {"name":"Relatives","symbol":"戚","level":"61","reading":"せき","radicals":"slide,toe,small,drunkard"},
   {"name":"Bag","symbol":"鞄","level":"61","reading":"かばん","radicals":"leather,prison,snake"},
