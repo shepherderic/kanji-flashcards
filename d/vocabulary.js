@@ -45,7 +45,8 @@ var DUO_KANJI = [
   { level: 35, name: 'Directions 2',   words: ['〜階', '運転手', '橋', '所', '危ない', '止まる', '上る', '切符', '階段', '廊下', '御手洗', '図書館', '自動車', '町', '村', '門'] },
   { level: 36, name: 'Objects',        words: ['下さい', '忘れる', '箱', '切る', '置く', '石鹸', '鍵', '吸う', '丸', '丸い', '押し', '細い', '薄い', '厚い', '太い'] },
   { level: 37, name: 'Shopping 2',     words: ['上着', '袋', '飴', '菓子', '払う', '牛肉', '鶏肉', '豚', '豚肉', '背広', '締める', '一番', '洋服'] },
-  { level: 38, name: 'Clothes 2',      words: ['外れる', '指', '輪', '指輪', '帯', '着物', '浴衣', '長袖', '半袖', '袖', '短い', '手袋', '組', '革', '靴下', '二足', '制服', '灰色', '紫色', '緑色'] },
+  { level: 38, name: 'Clothes 2',      words: ['二着', '外れる', '指', '輪', '指輪', '帯', '着物', '浴衣', '長袖', '半袖', '袖', '短い', '手袋', '組', '革', '靴下', '二足', '制服', '灰色', '紫色', '緑色'] },
+  { level: 39, name: 'Hobby 3',        words: ['蹴る', '投げる', '多分', '頼み', '思う', '話', '下手', '上手', '野球'] },
 
   { level: 61, name: 'Review',         words: ["醤油","浴びる","被る","絵","遊ぶ","居る","他","鳴く","鳴く","天","意味","全く","知る","大人","吹く","定規","宿題","掃除","違い","教室","海","質問","降りる","地","美味しい","狭い","勤める","瓶","始める","寝室","腹","年","良い","終わる","若い","男性","簡単","緩い","鉛筆","覚える","別れる","角","質","辞書","進む","答え","砂糖","今夜","似る","軽い","生まれる","必要","授業","座る","短い","帰る","撮る","携帯","静か","独身","咲く","難しい","鏡"] },
 ];
@@ -91,6 +92,7 @@ var VOCABULARY = [
   {"symbol":"菓子","name":"Sweets","reading":"かし","level":"61"},
   {"symbol":"二足","name":"Two Pairs (socks)","reading":"にそく","level":"61"},
   {"symbol":"二着","name":"Two Clothing Items","reading":"にちゃく","level":"61"},
+  {"symbol":"蹴る","name":"To Kick","reading":"ける","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -454,7 +456,7 @@ var VOCABULARY = [
   {"symbol":"文学","name":"Literature","reading":"ぶんがく","level":"5"},
   {"symbol":"男の人","name":"Man","reading":"おとこのひと","level":"5"},
   {"symbol":"多い","name":"Many/A Lot Of","reading":"おおい","level":"5","radicals":"evening"},
-  {"symbol":"多分","name":"Maybe","reading":"たぶん","level":"5"},
+  {"symbol":"多分","name":"Maybe/Probably?","reading":"たぶん","level":"5"},
   {"symbol":"肉","name":"Meat","reading":"にく","level":"5"},
   {"symbol":"会","name":"Meeting","reading":"かい","level":"5"},
   {"symbol":"お金","name":"Money","reading":"おかね","level":"5"},
