@@ -274,7 +274,7 @@ var RADICALS = [
   {"name":"Tofu","level":"12","symbolImage":"https://cdn.wanikani.com/subjects/images/8778-tofu-large.png"},
   {"name":"Together","symbol":"共","level":"12"},
   {"name":"Yoga","symbol":"廴","level":"12"},
-  {"name":"Younger Br...","symbol":"弟","level":"12"},
+  {"name":"Younger Brother","symbol":"弟","level":"12"},
 
   {"name":"Body","symbol":"身","level":"13"},
   {"name":"Bookshelf","symbol":"冊","level":"13"},
@@ -331,7 +331,7 @@ var RADICALS = [
   {"name":"Mask","symbol":"曽","level":"18"},
   {"name":"Noon","symbol":"午","level":"18"},
   {"name":"Previous","symbol":"先","level":"18"},
-  {"name":"Treasure C...","symbol":"凶","level":"18"},
+  {"name":"Treasure Chest","symbol":"凶","level":"18"},
 
   {"name":"Become","symbol":"成","level":"19"},
   {"name":"Black Hole","symbol":"复","level":"19"},
