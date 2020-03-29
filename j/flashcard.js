@@ -208,9 +208,9 @@ var flashcard = (function () {
     hammerInstance.on('swipe', function (data) {
       if (data.isFinal) {
         hideAnswer();
-        if (data.deltaX > 0) {
+        if (data.deltaX < 0) {
           forward(set);
-        } else if (data.deltaX < 0) {
+        } else if (data.deltaX > 0) {
           backward(set);
         }
       }
