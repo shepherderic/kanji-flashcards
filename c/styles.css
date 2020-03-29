@@ -135,8 +135,7 @@ body {
   }
 
   @media only screen and (max-device-width: 768px) {
-    #duo-vocabulary-card-container .flashcard dl,
-    #vocabulary-card-container .flashcard dl {
+    .flashcard dl {
       margin-top: 0;
     }
   }
@@ -156,7 +155,9 @@ body {
   }
 
   @media only screen and (max-device-width: 768px) {
-    #duo-vocabulary-card-container dt {
+    #duo-vocabulary-card-container dt, /* override clean up later */
+    .flashcard dt {
+      font-weight: bold;
       font-size: 40px;
     }
   }
@@ -179,9 +180,16 @@ body {
     font-size: 65px;
   }
 
+  /* TODO this is messy */
   @media only screen and (max-device-width: 768px) {
-    #duo-vocabulary-card-container .flashcard dd {
-      font-size: 200px
+    #duo-vocabulary-card-container .flashcard dd,
+    #vocabulary-card-container .flashcard dd {
+      font-size: 200px;
+      margin-top: 25%;
+    }
+    #kanji-card-container .flashcard dd,
+    #radical-card-container .flashcard dd {
+      padding-top: 25%
     }
   }
 
@@ -234,7 +242,12 @@ body {
   }
 
   @media only screen and (max-device-width: 768px) {
-    #duo-vocabulary-card-container .flashcard .reading {
+    #duo-vocabulary-card-container .flashcard .reading,
+    #vocabulary-card-container .flashcard .reading {
+      font-size: 60px;
+    }
+
+    .flashcard .reading {
       font-size: 60px;
     }
 
