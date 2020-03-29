@@ -48,7 +48,6 @@ var flashcard = (function () {
 
   function start (id, data) {
     $el = $(`#${id}`);
-    $el.addClass(FLASHCARD_ACTIVATED_CLASS);
 
     const reviewSet = _.shuffle(data);
     count = reviewSet.length;
@@ -186,6 +185,7 @@ var flashcard = (function () {
   function review (set) {
 
     $el.find(`.${OVERLAY_CLASS}`).fadeIn();
+    $el.addClass(FLASHCARD_ACTIVATED_CLASS);
 
     showCard(set[pos], pos);
 
