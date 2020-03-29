@@ -37,6 +37,7 @@ var flashcard = (function () {
   const TIP_CLASS = 'temp-show';
   const FLAG_CLASS = 'flagged';
   const SHOW_TIP_CLASS = 'show-tip';
+  const FLASHCARD_ACTIVATED_CLASS = 'flashcard-activated';
 
   // State FTW
   let $el;
@@ -47,6 +48,7 @@ var flashcard = (function () {
 
   function start (id, data) {
     $el = $(`#${id}`);
+    $el.addClass(FLASHCARD_ACTIVATED_CLASS);
 
     const reviewSet = _.shuffle(data);
     count = reviewSet.length;
@@ -113,6 +115,7 @@ var flashcard = (function () {
     $(document).off('keydown').off('keyup');
     hammerInstance.off('doubletap tap swipe');
     $el.find(`.${OVERLAY_CLASS}`).fadeOut();
+    $el.removeClass(FLASHCARD_ACTIVATED_CLASS);
     count = 0;
   }
 

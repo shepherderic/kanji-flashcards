@@ -47,6 +47,10 @@ var levelSelector = (function () {
     deferred.resolve(_.shuffle(newDataSet));
   }
 
+  function normalizeText (item) {
+    return item.toLowerCase().replace(' ', '');
+  }
+
   function createSelectionForm (levelData) {
     let html = '';
 
@@ -63,6 +67,13 @@ var levelSelector = (function () {
         html += `<input type="checkbox" class="${LEVEL_ITEM_CLASS}" value="${i}">${i}</input>`;
       });
       html += `</div>`;
+
+      //html += `<label class="${LABEL_CLASS}" for="for-${normalizeText(level.name)}">`;
+      //html += `<span id="flashcard-level-${level.name}">`;
+      // Make checkboxes including select all
+
+      //html += `</span>`;
+      //html += `</label>`
 
     });
 
