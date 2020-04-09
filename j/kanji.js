@@ -12,7 +12,9 @@ var kanji = (function () {
   function init (id) {
 
     levelSelector.init(id, levelData, symbolData).then(function (data) {
-      flashcard.start(id, data);
+      flashcard.start(id, data).then(function () {
+        init(id); // recurse to start over
+      });
     });
 
   }

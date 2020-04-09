@@ -14,7 +14,9 @@ var duoVocabulary = (function () {
    */
   function init (id) {
     duoSelector.init(id, levelData, symbolData, kanjiData).then(function (data) {
-      flashcard.start(id, data);
+      flashcard.start(id, data).then(function () {
+        init(id); // recurse to start over
+      });
     });
   }
 

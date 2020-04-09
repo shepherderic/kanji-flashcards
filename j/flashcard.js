@@ -45,6 +45,7 @@ var flashcard = (function () {
   let count = 0;
   let followUpReviewSet = [];
   let hammerInstance;
+  let deferred = $.Deferred();
 
   function start (id, data) {
     $el = $(`#${id}`);
@@ -52,6 +53,8 @@ var flashcard = (function () {
     const reviewSet = _.shuffle(data);
     count = reviewSet.length;
     count > 0 && review(reviewSet);
+
+    return deferred.promise(); // so the caller can re-initialize
   }
 
   /*
@@ -138,6 +141,9 @@ var flashcard = (function () {
         const newSet = _.clone(followUpReviewSet);
         followUpReviewSet = [];
         review(newSet);
+      } else {
+        // back to square 1
+        deferred.resolve();
       }
     }
   }
@@ -151,6 +157,7 @@ var flashcard = (function () {
       showCard(set[pos], pos);
     } else {
       reset();
+      deferred.resolve();
     }
   }
 
@@ -237,6 +244,7 @@ var flashcard = (function () {
       }
       if (e.code === 'Escape') {
         reset(set);
+        deferred.resolve();
       }
     }).keyup(function (e) {
       if (e.code === 'KeyI' || e.code === 'ArrowUp') {
