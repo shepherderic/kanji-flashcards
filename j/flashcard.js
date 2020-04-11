@@ -1,7 +1,6 @@
 // TODO: only allow adding to review set once
 // TODO: extract the templates for each to minimize if blocks
 
-
 /* SCRAPING CODE
 
 var arr = [];

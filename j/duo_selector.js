@@ -1,4 +1,3 @@
-// TODO: MAKE IT RESUBMITTABLE, currently the promise implemention is preventing that
 
 var duoSelector = (function () {
 
