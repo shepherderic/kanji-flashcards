@@ -59,7 +59,7 @@ var DUO_KANJI = [
   { level: 44, name: 'Hobby 3',        words: ['蹴る', '投げる', '多分', '頼み', '思う', '話', '下手', '上手', '野球'] },
   { level: 45, name: 'Classroom 3',    words: ['渡す', '貸す', '借りる', '返す', '雑誌', '並べる', '文章', '作文', '取る'] },
   { level: 46, name: 'Health 1',       words: ['運動', '眼', '眼鏡', '磨き', '歯を磨く', '歯', '髪', '背中', '耳', '目', '病気', '鼻', '顔', '背', '薬', '医者', '体', '頭', '痛い', '風邪', '足'] },
-  { level: 47, name: 'Vacation 2',     words: [] },
+  { level: 47, name: 'Vacation 2',     words: ['旅', '親切', '海外', 'この辺', '辺', '一周', 'お土産', '痩せ', '便利', '夏休み', '韓国', '後で', '段々', '気分', '旅館', '外国', '台湾'] },
   { level: 48, name: 'Post Office',    words: [] },
   { level: 49, name: 'Games',          words: [] },
   // CASTLE 4
@@ -102,6 +102,7 @@ var VOCABULARY = [
   {"symbol":"二足","name":"Two Pairs (socks)","reading":"にそく","level":"61"},
   {"symbol":"二着","name":"Two Clothing Items","reading":"にちゃく","level":"61"},
   {"symbol":"蹴る","name":"To Kick","reading":"ける","level":"61"},
+  {"symbol":"痩せ","name":"Thin (Body)","reading":"やせ","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -1586,7 +1587,7 @@ var VOCABULARY = [
   {"symbol":"近代的","name":"Modern","reading":"きんだいてき","level":"14"},
   {"symbol":"山登り","name":"Mountain C...","reading":"やまのぼり","level":"14"},
   {"symbol":"動き","name":"Movement","reading":"うごき","level":"14"},
-  {"symbol":"一周","name":"One Time A...","reading":"いっしゅう","level":"14"},
+  {"symbol":"一周","name":"One Time Around","reading":"いっしゅう","level":"14"},
   {"symbol":"残業","name":"Overtime","reading":"ざんぎょう","level":"14"},
   {"symbol":"周囲","name":"Perimeter","reading":"しゅうい","level":"14"},
   {"symbol":"性格","name":"Personality","reading":"せいかく","level":"14"},
