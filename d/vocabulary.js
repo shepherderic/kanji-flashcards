@@ -7,6 +7,8 @@ var VOCABULARY_LEVELS = [
   { name: 'reality',  levels: [51,52,53,54,55,56,57,58,59,60] },
 ];
 
+// 違う on some level
+
 var DUO_KANJI = [
   { level: 1,  name: 'Hiragana 1',     words: [] },
   { level: 2,  name: 'Hiragana 2',     words: [] },
@@ -60,7 +62,7 @@ var DUO_KANJI = [
   { level: 45, name: 'Classroom 3',    words: ['渡す', '貸す', '借りる', '返す', '雑誌', '並べる', '文章', '作文', '取る'] },
   { level: 46, name: 'Health 1',       words: ['運動', '眼', '眼鏡', '磨き', '歯を磨く', '歯', '髪', '背中', '耳', '目', '病気', '鼻', '顔', '背', '薬', '医者', '体', '頭', '痛い', '風邪', '足'] },
   { level: 47, name: 'Vacation 2',     words: ['旅', '親切', '海外', 'この辺', '辺', '一周', 'お土産', '痩せ', '便利', '夏休み', '韓国', '後で', '段々', '気分', '旅館', '外国', '台湾'] },
-  { level: 48, name: 'Post Office',    words: [] },
+  { level: 48, name: 'Post Office',    words: ['書き留める', '書留', '航空便', '船便', '届く', '配達', '宅', '通知', '届け物', '住所', '届ける', '変更', '中身', '包み', '小包', '封筒', '葉書', '郵便', '送る', '主人', '切手', '貼る', '郵便局'] },
   { level: 49, name: 'Games',          words: [] },
   // CASTLE 4
 
@@ -103,6 +105,14 @@ var VOCABULARY = [
   {"symbol":"二着","name":"Two Clothing Items","reading":"にちゃく","level":"61"},
   {"symbol":"蹴る","name":"To Kick","reading":"ける","level":"61"},
   {"symbol":"痩せ","name":"Thin (Body)","reading":"やせ","level":"61"},
+  {"symbol":"中身","name":"Contents,Interior,Substance","reading":"なかみ","level":"61"},
+  {"symbol":"通知","name":"Notification/Notice/Report","reading":"つうち","level":"61"},
+  {"symbol":"届け物","name":"Article to be Delivered","reading":"とどけもの","level":"61"},
+  {"symbol":"配達","name":"Delivery","reading":"はいたつ","level":"61"},
+  {"symbol":"航空便","name":"Airmail","reading":"こうくうびん","level":"61"},
+  {"symbol":"船便","name":"Surface Mail","reading":"ふなびん","level":"61"},
+  {"symbol":"書留","name":"Registered Mail","reading":"かきとめ","level":"61"},
+  {"symbol":"書き留める","name":"Write Down","reading":"かきとめる","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -2771,8 +2781,8 @@ var VOCABULARY = [
   {"symbol":"対象","name":"Target","reading":"たいしょう","level":"24"},
   {"symbol":"時差","name":"Time Diffe...","reading":"じさ","level":"24"},
   {"symbol":"援助する","name":"To Assist","reading":"えんじょする","level":"24"},
-  {"symbol":"届く","name":"To Be Deli...","reading":"とどく","level":"24"},
-  {"symbol":"違う","name":"To Be Diff...","reading":"ちがう","level":"24"},
+  {"symbol":"届く","name":"To Be Delivered/Reach","reading":"とどく","level":"24"},
+  {"symbol":"違う","name":"To Be Different","reading":"ちがう","level":"24"},
   {"symbol":"載る","name":"To Be Publ...","reading":"のる","level":"24"},
   {"symbol":"燃やす","name":"To Burn So...","reading":"もやす","level":"24"},
   {"symbol":"担ぐ","name":"To Carry","reading":"かつぐ","level":"24"},
@@ -3011,7 +3021,7 @@ var VOCABULARY = [
   {"symbol":"燃える","name":"To Get Burned","reading":"もえる","level":"26"},
   {"symbol":"差し上げる","name":"To Give","reading":"さしあげる","level":"26"},
   {"symbol":"障る","name":"To Irritate","reading":"さわる","level":"26"},
-  {"symbol":"造る","name":"To Manufac...","reading":"つくる","level":"26"},
+  {"symbol":"造る","name":"To Manufac...","reading":"つ","level":"26"},
   {"symbol":"狭める","name":"To Narrow","reading":"せばめる","level":"26"},
   {"symbol":"従う","name":"To Obey","reading":"したがう","level":"26"},
   {"symbol":"占める","name":"To Occupy","reading":"しめる","level":"26"},
