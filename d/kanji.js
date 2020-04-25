@@ -707,7 +707,7 @@ var KANJI = [
   {"symbol":"尾","name":"Tail","reading":"び","level":"20","radicals":""},
   {"symbol":"論","name":"Theory","reading":"ろん","level":"20","radicals":""},
   {"symbol":"厚","name":"Thick","reading":"あつ","level":"20","radicals":"cliff,sun,child"},
-  {"symbol":"妻","name":"Wife","reading":"さい","level":"20","radicals":""},
+  {"symbol":"妻","name":"Wife","reading":"さい","level":"20","radicals":"ground,brush,woman"},
 
   // LEVELS 21-30
 
@@ -1291,7 +1291,7 @@ var KANJI = [
   {"symbol":"刊","name":"Edition","reading":"かん","level":"38","radicals":""},
   {"symbol":"逃","name":"Escape","reading":"とう","level":"38","radicals":""},
   {"symbol":"扱","name":"Handle","reading":"あつか","level":"38","radicals":""},
-  {"symbol":"奥","name":"Interior","reading":"おく","level":"38","radicals":""},
+  {"symbol":"奥","name":"Interior","reading":"おく","level":"38","radicals":"drop,head,rice,big"},
   {"symbol":"併","name":"Join","reading":"へい","level":"38","radicals":""},
   {"symbol":"膝","name":"Knee","reading":"ひざ","level":"38","radicals":""},
   {"symbol":"傾","name":"Lean","reading":"けい","level":"38","radicals":""},
