@@ -63,7 +63,7 @@ var DUO_KANJI = [
   { level: 46, name: 'Health 1',       words: ['運動', '眼', '眼鏡', '磨き', '歯を磨く', '歯', '髪', '背中', '耳', '目', '病気', '鼻', '顔', '背', '薬', '医者', '体', '頭', '痛い', '風邪', '足'] },
   { level: 47, name: 'Vacation 2',     words: ['旅', '親切', '海外', 'この辺', '辺', '一周', 'お土産', '痩せ', '便利', '夏休み', '韓国', '後で', '段々', '気分', '旅館', '外国', '台湾'] },
   { level: 48, name: 'Post Office',    words: ['書き留める', '書留', '航空便', '船便', '届く', '配達', '宅', '通知', '届け物', '住所', '届ける', '変更', '中身', '包み', '小包', '封筒', '葉書', '郵便', '送る', '主人', '切手', '貼る', '郵便局'] },
-  { level: 49, name: 'Games',          words: [] },
+  { level: 49, name: 'Games',          words: ['得意', '苦手', '最初', '試合', '勝つ', '負ける', '倒す', '初心者', '伝説'] },
   // CASTLE 4
 
   { level: 61, name: 'Review',         words: ["袋","被る","寿司","地","練習","後ろ","思う","夕方","通り","鉛筆","辞書","輪","座る","玄関","一緒","背広","咲く","住む","醤油","切符","紙","帰る","帯","良い","遊ぶ","曲がる","母","降りる","上着","年","死","緩い","締める","空港","薄い","腹","読む","新聞","吹く","豚","塩","砂糖","砂糖","美味しい","撮る","図書館","片隅","勤める","鏡","指","乗る","青い","歩く","授業","意味","部屋","大切","払う","頼み","教える","怖い","全部","欲しい","強い","寝る","始める","携帯","狭い","浴衣","身","忘れる",
@@ -113,6 +113,7 @@ var VOCABULARY = [
   {"symbol":"船便","name":"Surface Mail","reading":"ふなびん","level":"61"},
   {"symbol":"書留","name":"Registered Mail","reading":"かきとめ","level":"61"},
   {"symbol":"書き留める","name":"Write Down","reading":"かきとめる","level":"61"},
+  {"symbol":"初心者","name":"Beginner","reading":"しょしんしゃ","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -1190,7 +1191,7 @@ var VOCABULARY = [
   {"symbol":"気持ちいい","name":"Good Feeling","reading":"きもちいい","level":"11"},
   {"symbol":"努力","name":"Great Effort","reading":"どりょく","level":"11"},
   {"symbol":"苦労","name":"Hardship","reading":"くろう","level":"11"},
-  {"symbol":"苦手","name":"Hard To De...","reading":"にがて","level":"11"},
+  {"symbol":"苦手","name":"Hard To Deal With","reading":"にがて","level":"11"},
   {"symbol":"高級","name":"High Class","reading":"こうきゅう","level":"11"},
   {"symbol":"平仮名","name":"Hiragana","reading":"ひらがな","level":"11"},
   {"symbol":"使い方","name":"How To Use","reading":"つかいかた","level":"11"},
@@ -1576,7 +1577,7 @@ var VOCABULARY = [
   {"symbol":"美術","name":"Fine Art","reading":"びじゅつ","level":"14"},
   {"symbol":"例えば","name":"For Example","reading":"たとえば","level":"14"},
   {"symbol":"基本","name":"Foundation","reading":"きほん","level":"14"},
-  {"symbol":"試合","name":"Game","reading":"しあい","level":"14"},
+  {"symbol":"試合","name":"Game/Match","reading":"しあい","level":"14"},
   {"symbol":"芸者","name":"Geisha","reading":"げいしゃ","level":"14"},
   {"symbol":"性","name":"Gender","reading":"せい","level":"14"},
   {"symbol":"良好","name":"Good","reading":"りょうこう","level":"14"},
@@ -2349,7 +2350,7 @@ var VOCABULARY = [
   {"symbol":"防ぐ","name":"To Defend","reading":"ふせぐ","level":"20"},
   {"symbol":"飛ぶ","name":"To Fly","reading":"とぶ","level":"20"},
   {"symbol":"産む","name":"To Give Birth","reading":"うむ","level":"20"},
-  {"symbol":"倒す","name":"To Knock Over","reading":"たおす","level":"20"},
+  {"symbol":"倒す","name":"To Knock Over/Defeat","reading":"たおす","level":"20"},
   {"symbol":"妨げる","name":"To Obstruct","reading":"さまたげる","level":"20"},
   {"symbol":"経つ","name":"To Pass","reading":"たつ","level":"20"},
   {"symbol":"被る","name":"To Put On A Hat","reading":"かぶる","level":"20"},
@@ -2563,7 +2564,7 @@ var VOCABULARY = [
   {"symbol":"脱走する","name":"To Escape","reading":"だっそうする","level":"22"},
   {"symbol":"過ぎる","name":"To Exceed","reading":"すぎる","level":"22"},
   {"symbol":"存在する","name":"To Exist","reading":"そんざいする","level":"22"},
-  {"symbol":"倒れる","name":"To Get Kno...","reading":"たおれる","level":"22"},
+  {"symbol":"倒れる","name":"To Get Knocked Down","reading":"たおれる","level":"22"},
   {"symbol":"諦める","name":"To Give Up","reading":"あきらめる","level":"22"},
   {"symbol":"お手洗い","name":"Toilet","reading":"おてあらい","level":"22"},
   {"symbol":"示す","name":"To Indicate","reading":"しめす","level":"22"},
