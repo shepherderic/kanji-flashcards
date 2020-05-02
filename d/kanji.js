@@ -359,7 +359,7 @@ var KANJI = [
   {"name":"Revolve","symbol":"転","level":"10","reading":"てん","radicals":"car,cloud"},
   {"name":"Road","symbol":"路","level":"10","reading":"ろ","radicals":""},
   {"name":"Sick","symbol":"病","level":"10","reading":"びょう","radicals":"sick,dynamite"},
-  {"name":"Side","symbol":"横","level":"10","reading":"よこ","radicals":""},
+  {"name":"Side","symbol":"横","level":"10","reading":"よこ","radicals":"tree,yellow"},
   {"name":"Song","symbol":"歌","level":"10","reading":"か","radicals":"lip ring,lack"},
   {"name":"Wake Up","symbol":"起","level":"10","reading":"お","radicals":"run,oneself"},
 
