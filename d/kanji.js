@@ -688,7 +688,7 @@ var KANJI = [
   {"symbol":"困","name":"Distressed","reading":"こん","level":"20","radicals":"mouth,tree"},
   {"symbol":"夢","name":"Dream","reading":"む","level":"20","radicals":""},
   {"symbol":"震","name":"Earthquake","reading":"しん","level":"20","radicals":""},
-  {"symbol":"在","name":"Exist","reading":"ざい","level":"20","radicals":""},
+  {"symbol":"在","name":"Exist","reading":"ざい","level":"20","radicals":"narwhal,stick,dirt"},
   {"symbol":"飛","name":"Fly","reading":"ひ","level":"20","radicals":"fly"},
   {"symbol":"産","name":"Give Birth","reading":"さん","level":"20","radicals":"stand,cliff,life"},
   {"symbol":"罪","name":"Guilt","reading":"ざい","level":"20","radicals":""},
