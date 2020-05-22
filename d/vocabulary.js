@@ -7,6 +7,8 @@ var VOCABULARY_LEVELS = [
   { name: 'reality',  levels: [51,52,53,54,55,56,57,58,59,60] },
 ];
 
+// 賑やか 皆さん
+
 var DUO_KANJI = [
   { level: 1,  name: 'Hiragana 1',     words: [] },
   { level: 2,  name: 'Hiragana 2',     words: [] },
@@ -18,7 +20,6 @@ var DUO_KANJI = [
   { level: 8,  name: 'Katakana 2',     words: [] },
   // CASTLE 1
   { level: 9,  name: 'Introduction 2', words: ['茂る', '私', '話す', '僕', '気', '元気', '先', '生', '何', '英', '語', '名', '前', '名前', '日本語', '英語', '彼', '彼女', '彼ら'] },
-
   { level: 10, name: 'Katakana 3',     words: [] },
   { level: 11, name: 'Food 1',         words: ['食べる', '今', '時', '水', '魚', '肉', '野菜', 'ご飯', 'お茶', '飲む'] },
   { level: 12, name: 'Time',           words: ['今', '分', '時', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '半'] },
@@ -48,17 +49,17 @@ var DUO_KANJI = [
   { level: 34, name: 'Activity 2',     words: ['一台', '携帯', '勤める', '消す', '待つ', '電気', '立つ', '早い', '座る', '閉める', '開ける', '浴びる', '帰る', '洗濯する', '掃除'] },
   { level: 35, name: 'Nature 1',       words: ['差す', '生まれる', '雲', '馬', '牛', '曇る', '鹿', '咲く', '静か', '傘', '動物園', '動物', '〜匹', '鳴く', '声', '瓶', '花瓶', '山', '登る', '木', '海', '池', '川'] },
   { level: 36, name: 'Classroom 1',    words: ['辞書', '意味', '葉', '言葉', '覚える', '字', '漢字', '教科書', '難しい', '易しい', '終わる', '授業', '宿題', '始める'] },
-  { level: 37, name: 'Konbini',        words: [] },
+  { level: 37, name: 'Konbini',        words: ['召す', '召し上がる', '店内'] },
   { level: 38, name: 'Classroom 2',    words: ['玄関', '鉛筆', '今度', '定規', '簡単', '〜度', '問題', '答え', '質問', '質', '見せる', '教室', '知る'] },
-  { level: 39, name: 'Feelings 1',     words: ['嫌', '困る', '分かる', '疲れる', '怖い', '疲れ', '愛', '旅行', '切符', '村', '戸', '面白い', '楽しい'] },
-  { level: 40, name: 'Directions 2',   words: ['〜階', '運転手', '橋', '所', '危ない', '止まる', '上る', '切符', '階段', '廊下', '御手洗', '図書館', '自動車', '町', '村', '門'] },
+  { level: 39, name: 'Feelings 1',     words: ['嬉しい', '暇', '悲しい', '気持ち', '気分', '親切', '嫌', '困る', '分かる', '疲れる', '怖い', '疲れ', '愛', '旅行', '切符', '村', '戸', '面白い', '楽しい'] },
+  { level: 40, name: 'Directions 2',   words: ['交番', '〜階', '運転手', '橋', '所', '危ない', '止まる', '上る', '切符', '階段', '廊下', '御手洗', '図書館', '自動車', '町', '村', '門'] },
   { level: 41, name: 'Objects',        words: ['下さい', '忘れる', '箱', '切る', '置く', '石鹸', '鍵', '吸う', '丸', '丸い', '押し', '細い', '薄い', '厚い', '太い'] },
   { level: 42, name: 'Shopping 2',     words: ['上着', '袋', '飴', 'お菓子', '払う', '牛肉', '鶏肉', '豚', '豚肉', '背広', '締める', '一番', '洋服'] },
   { level: 43, name: 'Clothes 2',      words: ['二着', '外れる', '指', '輪', '指輪', '帯', '着物', '浴衣', '長袖', '半袖', '袖', '短い', '手袋', '組', '革', '靴下', '二足', '制服', '灰色', '紫色', '緑色'] },
-  { level: 44, name: 'Hobby 3',        words: ['蹴る', '投げる', '多分', '頼み', '思う', '話', '下手', '上手', '野球'] },
+  { level: 44, name: 'Hobby 3',        words: ['漫画', '蹴る', '投げる', '多分', '頼み', '思う', '話', '下手', '上手', '野球'] },
   { level: 45, name: 'Classroom 3',    words: ['渡す', '貸す', '借りる', '返す', '雑誌', '並べる', '文章', '作文', '取る'] },
   { level: 46, name: 'Health 1',       words: ['運動', '眼', '眼鏡', '磨き', '歯を磨く', '歯', '髪', '背中', '耳', '目', '病気', '鼻', '顔', '背', '薬', '医者', '体', '頭', '痛い', '風邪', '足'] },
-  { level: 47, name: 'Vacation 2',     words: ['旅', '親切', '海外', 'この辺', '辺', '一周', '痩せ', '便利', '夏休み', '後で', '段々', '気分', '旅館', '外国'] },
+  { level: 47, name: 'Vacation 2',     words: ['旅', '海外', 'この辺', '辺', '一周', '痩せ', '便利', '夏休み', '後で', '段々', '旅館', '外国'] },
   { level: 48, name: 'Post Office',    words: ['書き留める', '書留', '航空便', '船便', '届く', '配達', '宅', '通知', '届け物', '住所', '届ける', '変更', '中身', '包み', '小包', '封筒', '葉書', '郵便', '送る', '主人', '切手', '貼る', '郵便局'] },
   { level: 49, name: 'Games',          words: ['得意', '苦手', '最初', '試合', '勝つ', '負ける', '倒す', '初心者', '伝説'] },
   // CASTLE 4
@@ -100,7 +101,7 @@ var VOCABULARY = [
   {"symbol":"上着","name":"Jacket","reading":"うわぎ","level":"61"},
   {"symbol":"二足","name":"Two Pairs (socks)","reading":"にそく","level":"61"},
   {"symbol":"二着","name":"Two Clothing Items","reading":"にちゃく","level":"61"},
-  {"symbol":"蹴る","name":"To Kick","reading":"ける","level":"61"},
+  {"symbol":"蹴る","name":"To Kick (or Refuse Flatly)","reading":"ける","level":"61"},
   {"symbol":"痩せ","name":"Thin (Body)","reading":"やせ","level":"61"},
   {"symbol":"中身","name":"Contents,Interior,Substance","reading":"なかみ","level":"61"},
   {"symbol":"通知","name":"Notification/Notice/Report","reading":"つうち","level":"61"},
@@ -112,6 +113,9 @@ var VOCABULARY = [
   {"symbol":"書き留める","name":"Write Down","reading":"かきとめる","level":"61"},
   {"symbol":"初心者","name":"Beginner","reading":"しょしんしゃ","level":"61"},
   {"symbol":"在宅","name":"Being At Home","reading":"ざいたく","level":"61"},
+  {"symbol":"気持ち","name":"Feeling,Mood","reading":"きもち","level":"61"},
+  {"symbol":"店内","name":"Store Interior","reading":"てんない","level":"61"},
+  {"symbol":"賑やか","name":"Lively, Bustling","reading":"にぎやか","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -5669,7 +5673,7 @@ var VOCABULARY = [
   {"symbol":"覆う","name":"To Cover","reading":"おおう","level":"51"},
   {"symbol":"頂く","name":"To Humbly ...","reading":"いただく","level":"51"},
   {"symbol":"挟む","name":"To Put Bet...","reading":"はさむ","level":"51"},
-  {"symbol":"召す","name":"To Respect...","reading":"めす","level":"51"},
+  {"symbol":"召す","name":"To Respectfully Call","reading":"めす","level":"51"},
   {"symbol":"喚く","name":"To Shout","reading":"わめく","level":"51"},
   {"symbol":"浸す","name":"To Soak","reading":"ひたす","level":"51"},
   {"symbol":"耕す","name":"To Till","reading":"たがやす","level":"51"},
@@ -5876,7 +5880,7 @@ var VOCABULARY = [
   {"symbol":"肯く","name":"To Nod","reading":"うなずく","level":"53"},
   {"symbol":"虐げる","name":"To Oppress","reading":"しいたげる","level":"53"},
   {"symbol":"寛ぐ","name":"To Relax","reading":"くつろぐ","level":"53"},
-  {"symbol":"召し上がる","name":"To Respect...","reading":"めしあがる","level":"53"},
+  {"symbol":"召し上がる","name":"To Respectfully Eat","reading":"めしあがる","level":"53"},
   {"symbol":"暴虐","name":"Tyranny","reading":"ぼうぎゃく","level":"53"},
   {"symbol":"不浄","name":"Uncleanliness","reading":"ふじょう","level":"53"},
   {"symbol":"随分","name":"Very","reading":"ずいぶん","level":"53"},
