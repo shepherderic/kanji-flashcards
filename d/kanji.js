@@ -7,6 +7,8 @@ var KANJI_LEVELS = [
   { name: 'reality', levels: [51,52,53,54,55,56,57,58,59,60] },
 ];
 
+//
+
 var KANJI = [
   {"name":"Relatives","symbol":"戚","level":"61","reading":"せき","radicals":"slide,toe,small,drunkard"},
   {"name":"Bag","symbol":"鞄","level":"61","reading":"かばん","radicals":"leather,prison,snake"},
@@ -441,7 +443,7 @@ var KANJI = [
   {"symbol":"族","name":"Tribe","reading":"ぞく","level":"12","radicals":"direction,gun,arrow"},
   {"symbol":"旅","name":"Trip","reading":"りょ","level":"12","radicals":"direction,gun,tofu"},
   {"symbol":"待","name":"Wait","reading":"たい","level":"12","radicals":"loiter,temple"},
-  {"symbol":"温","name":"Warm","reading":"おん","level":"12","radicals":""},
+  {"symbol":"温","name":"Warm","reading":"おん","level":"12","radicals":"tsunami,sun,plate"},
   {"symbol":"着","name":"Wear","reading":"ちゃく","level":"12","radicals":"horns,king,slide,eye"},
   {"symbol":"皆","name":"All","reading":"みな","level":"13","radicals":"compare,white"},
   {"symbol":"謝","name":"Apologize","reading":"しゃ","level":"13","radicals":""},
@@ -818,7 +820,7 @@ var KANJI = [
   {"symbol":"祝","name":"Celebrate","reading":"しゅく","level":"24","radicals":""},
   {"symbol":"届","name":"Deliver","reading":"とど","level":"24","radicals":"flag,reason"},
   {"symbol":"違","name":"Different","reading":"ちが","level":"24","radicals":"scooter,korea"},
-  {"symbol":"差","name":"Distinction","reading":"さ","level":"24","radicals":""},
+  {"symbol":"差","name":"Distinction","reading":"さ","level":"24","radicals":"horns,king,slide,construction"},
   {"symbol":"象","name":"Elephant","reading":"しょう","level":"24","radicals":""},
   {"symbol":"展","name":"Expand","reading":"てん","level":"24","radicals":""},
   {"symbol":"層","name":"Layer","reading":"そう","level":"24","radicals":""},
@@ -1425,7 +1427,7 @@ var KANJI = [
   {"symbol":"床","name":"Floor","reading":"しょう","level":"42","radicals":""},
   {"symbol":"握","name":"Grip","reading":"あく","level":"42","radicals":""},
   {"symbol":"枢","name":"Hinge","reading":"すう","level":"42","radicals":""},
-  {"symbol":"揚","name":"Hoist","reading":"よう","level":"42","radicals":""},
+  {"symbol":"揚","name":"Hoist","reading":"よう","level":"42","radicals":"fingers,easy"},
   {"symbol":"潟","name":"Lagoon","reading":"かた","level":"42","radicals":""},
   {"symbol":"芝","name":"Lawn","reading":"しば","level":"42","radicals":""},
   {"symbol":"肝","name":"Liver","reading":"かん","level":"42","radicals":""},
@@ -1700,7 +1702,7 @@ var KANJI = [
   {"symbol":"駄","name":"Burdensome","reading":"だ","level":"50","radicals":""},
   {"symbol":"洞","name":"Cave","reading":"どう","level":"50","radicals":""},
   {"symbol":"伯","name":"Chief","reading":"はく","level":"50","radicals":""},
-  {"symbol":"唐","name":"China","reading":"とう","level":"50","radicals":""},
+  {"symbol":"唐","name":"China","reading":"とう","level":"50","radicals":"canopy,brush,mouth"},
   {"symbol":"彰","name":"Clear","reading":"しょう","level":"50","radicals":""},
   {"symbol":"諮","name":"Consult","reading":"し","level":"50","radicals":""},
   {"symbol":"廷","name":"Courts","reading":"てい","level":"50","radicals":""},
