@@ -169,7 +169,7 @@ var VOCABULARY = [
   {"symbol":"正しい","name":"Correct","reading":"ただしい","level":"2"},
   {"symbol":"犬","name":"Dog","reading":"いぬ","level":"2"},
   {"symbol":"八日","name":"Eight Days","reading":"ようか","level":"2"},
-  {"symbol":"夕べ","name":"Evening","reading":"ゆうべ","level":"2"},
+  {"symbol":"夕べ","name":"Evening/Last Night","reading":"ゆうべ","level":"2"},
   {"symbol":"出口","name":"Exit","reading":"でぐち","level":"2"},
   {"symbol":"目","name":"Eye","reading":"め","level":"2"},
   {"symbol":"目玉","name":"Eyeball","reading":"めだま","level":"2"},
