@@ -139,6 +139,14 @@ var flashcard = (function () {
         // what the hell we'll just hack the ever living fuck out of it right now
         const newSet = _.clone(followUpReviewSet);
         followUpReviewSet = [];
+
+        // log for review just in case it's wanted
+        console.log('Set to review:');
+        console.log(JSON.stringify(_.map(newSet, function (item) {
+          return item.symbol;
+        })));
+
+        // start again with new set
         review(newSet);
       } else {
         // back to square 1
