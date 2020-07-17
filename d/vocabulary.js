@@ -1014,7 +1014,7 @@ var VOCABULARY = [
   {"symbol":"道具","name":"Tool","reading":"どうぐ","level":"9"},
   {"symbol":"保つ","name":"To Preserve","reading":"たもつ","level":"9"},
   {"symbol":"受ける","name":"To Receive","reading":"うける","level":"9"},
-  {"symbol":"返す","name":"To Return","reading":"かえす","level":"9"},
+  {"symbol":"返す","name":"To Return a Thing","reading":"かえす","level":"9"},
   {"symbol":"乗る","name":"To Ride","reading":"のる","level":"9"},
   {"symbol":"売る","name":"To Sell","reading":"うる","level":"9"},
   {"symbol":"送る","name":"To Send","reading":"おくる","level":"9"},
