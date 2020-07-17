@@ -61,6 +61,7 @@ var DUO_KANJI = [
   { level: 48, name: 'Post Office',    words: ['書き留める', '書留', '航空便', '船便', '届く', '配達', '宅', '通知', '届け物', '住所', '届ける', '変更', '中身', '包み', '小包', '封筒', '葉書', '郵便', '送る', '主人', '切手', '貼る', '郵便局'] },
   { level: 49, name: 'Games',          words: ['得意', '苦手', '最初', '試合', '勝つ', '負ける', '倒す', '初心者', '伝説'] },
   // CASTLE 4
+  { level: 50, name: 'The City',       words: ['広場', '数', '住民', '集まる', '銀座', '広島', '腹が減った', '減る', '増える', '人口', '都市', '近所', '首都', '場所', '市', '山手', '面', '帰り', '混む', '渋谷', '金属', '原宿', '卓球', '陸上', '種目', '秋葉原', '点', '交差点', '会場', '新宿', '池袋', '線'] },
 
   //{ level: 61, name: 'Review',         words: ["召す","古い","差す","意味","頼み","言葉","終わる","夫","掃除","鉄","大切","横","通り","得意","外れる","緩い","渡す","書留","出す","怖い","新聞","変更","冷たい","通る","建物","咲く","湾","椅子","店内","中身","必要","最初","指","箱","住所","暗い","定規","腕","独身","姉","交番","嬉しい","今夜","別れる","出る","妻","取る","送る","牛乳","親切","被る","悲しい","切手","宿題","奥さん"] },
   { level: 61, name: 'Review', words: ["疲れ","宿題","磨き","辞書","最初","作る","指","中身","痩せ","親切","嬉しい","伝説","緩い","腹","渡す","通る","返す","被る","小包","呼ぶ","撮る","交番","別れる","通知","怖い","多分","動物","自転車","頭","便利","住所","体","写真","外れる","咲く","顔","携帯","差す","必要","店内","配達","奥さん","雑誌","送る","取る","軽い","大切","娘"] },
@@ -116,6 +117,19 @@ var VOCABULARY = [
   {"symbol":"賑やか","name":"Lively, Bustling","reading":"にぎやか","level":"61"},
   {"symbol":"唐揚げ","name":"Fried Food (Chicken)","reading":"からあげ","level":"61"},
   {"symbol":"持ち帰り","name":"Takeout (Food)","reading":"もちかえり","level":"61"},
+
+  // Duo Level 50
+  {"symbol":"原宿","name":"Harajuku","reading":"はらじゅく","level":"61"},
+  {"symbol":"陸上","name":"On Land/Track And Field","reading":"りくじょう","level":"61"},
+  {"symbol":"種目","name":"Event","reading":"しゅもく","level":"61"},
+  {"symbol":"秋葉原","name":"Akihabara","reading":"あきはばら","level":"61"},
+  {"symbol":"会場","name":"Meeting Place","reading":"かいじょう","level":"61"},
+  {"symbol":"池袋","name":"Ikebukuro","reading":"いけぶくろ","level":"61"},
+  {"symbol":"帰り","name":"The Way Home","reading":"かえり","level":"61"},
+  {"symbol":"面","name":"Facing","reading":"めん","level":"61"},
+  {"symbol":"山手","name":"Yamanote","reading":"やまのて","level":"61"},
+  {"symbol":"首都","name":"Capital City","reading":"しゅと","level":"61"},
+  {"symbol":"広場","name":"Public Square","reading":"ひろば","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -853,7 +867,7 @@ var VOCABULARY = [
   {"symbol":"私自身","name":"Personally","reading":"わたしじしん","level":"8"},
   {"symbol":"投手","name":"Pitcher","reading":"とうしゅ","level":"8"},
   {"symbol":"所","name":"Place","reading":"ところ","level":"8"},
-  {"symbol":"場所","name":"Place","reading":"ばしょ","level":"8"},
+  {"symbol":"場所","name":"Place/Location","reading":"ばしょ","level":"8"},
   {"symbol":"点数","name":"Points","reading":"てんすう","level":"8"},
   {"symbol":"交番","name":"Police Box","reading":"こうばん","level":"8"},
   {"symbol":"池","name":"Pond","reading":"いけ","level":"8"},
@@ -1396,7 +1410,7 @@ var VOCABULARY = [
   {"symbol":"着く","name":"To Arrive","reading":"つく","level":"12"},
   {"symbol":"始まる","name":"To Begin","reading":"はじまる","level":"12"},
   {"symbol":"登る","name":"To Climb","reading":"のぼる","level":"12"},
-  {"symbol":"集まる","name":"To Come To...","reading":"あつまる","level":"12"},
+  {"symbol":"集まる","name":"To Come Together","reading":"あつまる","level":"12"},
   {"symbol":"要求する","name":"To Demand","reading":"ようきゅうする","level":"12"},
   {"symbol":"落とす","name":"To Drop So...","reading":"おとす","level":"12"},
   {"symbol":"消す","name":"To Extinguish","reading":"けす","level":"12"},
@@ -2225,7 +2239,7 @@ var VOCABULARY = [
   {"symbol":"得る","name":"To Acquire","reading":"える","level":"19"},
   {"symbol":"暴れる","name":"To Act Vio...","reading":"あばれる","level":"19"},
   {"symbol":"加える","name":"To Add","reading":"くわえる","level":"19"},
-  {"symbol":"減る","name":"To Be Decr...","reading":"へる","level":"19"},
+  {"symbol":"減る","name":"To Be Decreased","reading":"へる","level":"19"},
   {"symbol":"絡む","name":"To Be Enta...","reading":"からむ","level":"19"},
   {"symbol":"乱れる","name":"To Be In D...","reading":"みだれる","level":"19"},
   {"symbol":"改まる","name":"To Be Renewed","reading":"あらたまる","level":"19"},
@@ -2859,7 +2873,7 @@ var VOCABULARY = [
   {"symbol":"限定","name":"Limit","reading":"げんてい","level":"25"},
   {"symbol":"限度","name":"Limit","reading":"げんど","level":"25"},
   {"symbol":"肥料","name":"Manure","reading":"ひりょう","level":"25"},
-  {"symbol":"金属","name":"Metal","reading":"きんぞく","level":"25"},
+  {"symbol":"金属","name":"Metal/Kinzoku","reading":"きんぞく","level":"25"},
   {"symbol":"掛け算","name":"Multiplica...","reading":"かけざん","level":"25"},
   {"symbol":"長崎県","name":"Nagasaki P...","reading":"ながさきけん","level":"25"},
   {"symbol":"肥満","name":"Obesity","reading":"ひまん","level":"25"},
