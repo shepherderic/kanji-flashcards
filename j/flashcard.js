@@ -209,7 +209,7 @@ var flashcard = (function () {
     hammerInstance = new Hammer($el.get(0));
     hammerInstance.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
-    hammerInstance.on('doubletap', function () {
+    hammerInstance.on('press', function () {
       flag(set[pos]);
       const answerShown = $el.hasClass(SHOW_TIP_CLASS);
       if (!answerShown) {
