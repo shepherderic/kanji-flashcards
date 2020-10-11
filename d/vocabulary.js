@@ -5319,7 +5319,7 @@ var VOCABULARY = [
   {"symbol":"黒い霧","name":"Thick Fog","reading":"くろいきり","level":"47"},
   {"symbol":"疲れ","name":"Tiredness","reading":"つかれ","level":"47"},
   {"symbol":"粘る","name":"To Be Sticky","reading":"ねばる","level":"47"},
-  {"symbol":"歯を磨く","name":"To Brush O...","reading":"はをみがく","level":"47"},
+  {"symbol":"歯を磨く","name":"To Brush One's Teeth","reading":"はをみがく","level":"47"},
   {"symbol":"澄ます","name":"To Clear","reading":"すます","level":"47"},
   {"symbol":"炊く","name":"To Cook","reading":"たく","level":"47"},
   {"symbol":"欺く","name":"To Deceive","reading":"あざむく","level":"47"},
