@@ -67,6 +67,7 @@ var DUO_KANJI = [
   { level: 53, name: 'Favors',         words: ['君', '優しい', '歯医者', '有料', '発音', '無料', '探す', '手伝う', '郵便屋', '直す', '珍しい'] },
   { level: 54, name: 'Nature 2',       words: ['生物', '釣る', '揺れる', '波', '富士山', '乾く', '深い', '浅い', '石', '景色', '草', '濡れる', '折れる', '枝', '森', '林', '島', '空気', '浜辺', '浜', '田舎', '湖', '光る', '光', '太陽', '星'] },
   { level: 55, name: 'Restaurant 2',   words: ['外食', '別々', '現金', '支払い', '噛む', '決まる', '勧め', '湯', '勧める', '予約', '選ぶ', '食事', '〜様', '客', '苦い', '残す', '量', '氷', '味', '味噌', '味噌汁', '汁', '濃い', '和食', '注文'] },
+  { level: 56, name: 'Ecology',        words: ['再生紙', '野生動物', '開発', '再生', '可能', '天然', '豊か', '石油', '限る', '殺す', '資源', '見付ける', '所有', '土地', '巨大', '飼う', '人間', '自然', '環境', '汚染', '地球', '生きる', '植える', '植物', '虫'] },
 
   //{ level: 61, name: 'Review',         words: ["召す","古い","差す","意味","頼み","言葉","終わる","夫","掃除","鉄","大切","横","通り","得意","外れる","緩い","渡す","書留","出す","怖い","新聞","変更","冷たい","通る","建物","咲く","湾","椅子","店内","中身","必要","最初","指","箱","住所","暗い","定規","腕","独身","姉","交番","嬉しい","今夜","別れる","出る","妻","取る","送る","牛乳","親切","被る","悲しい","切手","宿題","奥さん"] },
   { level: 61, name: 'Review', words: ["疲れ","宿題","磨き","辞書","最初","作る","指","中身","痩せ","親切","嬉しい","伝説","緩い","腹","渡す","通る","返す","被る","小包","呼ぶ","撮る","交番","別れる","通知","怖い","多分","動物","自転車","頭","便利","住所","体","写真","外れる","咲く","顔","携帯","差す","必要","店内","配達","奥さん","雑誌","送る","取る","軽い","大切","娘"] },
@@ -139,7 +140,7 @@ var VOCABULARY = [
   {"symbol":"空手","name":"Karate","reading":"からて","level":"61"},
   {"symbol":"銅","name":"Bronze","reading":"どう","level":"61"},
 
-  // Duo Level 52/53/54/55
+  // Duo Level 52/53/54/55/56
   {"symbol":"十分","name":"Enough of Something","reading":"じゅうぶん","level":"61"},
   {"symbol":"郵便屋","name":"Postman","reading":"ゆうびんや","level":"61"},
   {"symbol":"有料","name":"Has A Fee","reading":"ゆうりょう","level":"61"},
@@ -149,6 +150,12 @@ var VOCABULARY = [
   {"symbol":"噛む","name":"Chew/Bite","reading":"かむ","level":"61"},
   {"symbol":"現金","name":"Cash","reading":"げんきん","level":"61"},
   {"symbol":"外食","name":"Eating Out","reading":"がいしょく","level":"61"},
+  {"symbol":"所有","name":"One's Possessions/Ownership","reading":"しょゆう","level":"61"},
+  {"symbol":"資源","name":"Resources","reading":"しげん","level":"61"},
+  {"symbol":"天然","name":"Nature/Spontaneity","reading":"てんねん","level":"61"},
+  {"symbol":"再生","name":"Regeneration","reading":"さいせい","level":"61"},
+  {"symbol":"野生動物","name":"Wild Animal","reading":"やせいどうぶつ","level":"61"},
+  {"symbol":"再生紙","name":"Recycled Paper","reading":"いせいし","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -488,7 +495,7 @@ var VOCABULARY = [
   {"symbol":"毎月","name":"Every Month","reading":"まいつき","level":"5"},
   {"symbol":"毎回","name":"Every Time","reading":"まいかい","level":"5"},
   {"symbol":"毎年","name":"Every Year","reading":"まいとし","level":"5"},
-  {"symbol":"羽","name":"Feathers (bird counter)","reading":"はね","level":"5"},
+  {"symbol":"羽","name":"Feathers (bird and rabbit counter)","reading":"はね","level":"5"},
   {"symbol":"林","name":"Forest","reading":"はやし","level":"5"},
   {"symbol":"〜形","name":"Form","reading":"けい","level":"5"},
   {"symbol":"〜年来","name":"For Some Years","reading":"ねんらい","level":"5"},
@@ -1095,7 +1102,7 @@ var VOCABULARY = [
   {"symbol":"フランス語","name":"French Language","reading":"ふらんすご","level":"10"},
   {"symbol":"青葉","name":"Fresh Leaves","reading":"あおば","level":"10"},
   {"symbol":"大学院","name":"Graduate School","reading":"だいがくいん","level":"10"},
-  {"symbol":"頭","name":"Head","reading":"あたま","level":"10"},
+  {"symbol":"頭","name":"Head (and large animal counter)","reading":"あたま","level":"10"},
   {"symbol":"求人","name":"Help Wanted","reading":"きゅうじん","level":"10"},
   {"symbol":"病院","name":"Hospital","reading":"びょういん","level":"10"},
   {"symbol":"入院","name":"Hospitalization","reading":"にゅういん","level":"10"},
