@@ -22,6 +22,13 @@ $('.character-item').each(function (i, item) {
 
 */
 
+var debug = function (message) {
+  try {
+    let debugEl = document.getElementById('debugger').getElementsByTagName('p')[0];
+    debugEl.innerHTML = message;
+  } catch {}
+}
+
 var flashcard = (function () {
 
   // Constants
@@ -47,6 +54,7 @@ var flashcard = (function () {
   let deferred = $.Deferred();
 
   function start (id, data) {
+
     $el = $(`#${id}`);
 
     const reviewSet = _.shuffle(data);
@@ -114,7 +122,7 @@ var flashcard = (function () {
     pos = 0;
     $el.find(`.${CONTENT_CLASS}`).off();
     $(document).off('keydown').off('keyup');
-    hammerInstance.off('doubletap tap swipe');
+    hammerInstance.off('doubletap tap swipe press');
     $el.find(`.${OVERLAY_CLASS}`).fadeOut();
     $el.removeClass(FLASHCARD_ACTIVATED_CLASS);
     count = 0;
