@@ -59,6 +59,11 @@ var flashcard = (function () {
 
     const reviewSet = _.shuffle(data);
     count = reviewSet.length;
+
+    // Initial state storage
+    UTIL.setState(reviewSet, 0);
+
+    // Start
     count > 0 && review(reviewSet);
 
     return deferred.promise(); // so the caller can re-initialize
@@ -134,6 +139,8 @@ var flashcard = (function () {
   function forward (set) {
     pos += 1;
 
+    UTIL.setState(set, pos);
+
     if (set.length > pos) {
       showCard(set[pos], pos);
     } else {
@@ -168,6 +175,9 @@ var flashcard = (function () {
    */
   function backward (set) {
     pos -= 1;
+
+    UTIL.setState(set, pos);
+
     if (pos >= 0) {
       showCard(set[pos], pos);
     } else {
