@@ -13,8 +13,9 @@ var duoVocabulary = (function () {
    * Initializes the Flashcards functionality
    */
   function init (id) {
-    duoSelector.init(id, levelData, symbolData, kanjiData).then(function (data) {
-      flashcard.start(id, data).then(function () {
+    duoSelector.init(id, levelData, symbolData, kanjiData).then(function (data, pos, reviewSet) {
+      flashcard.start(id, data, pos, reviewSet).then(function () {
+        UTIL.clearState();
         init(id); // recurse to start over
       });
     });

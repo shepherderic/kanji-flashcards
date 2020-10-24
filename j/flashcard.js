@@ -53,18 +53,23 @@ var flashcard = (function () {
   let hammerInstance;
   let deferred = $.Deferred();
 
-  function start (id, data) {
+  function start (id, data, startPosition, storedSetToReview) {
+    startPosition = startPosition || 0;
+    if (storedSetToReview) {
+      followUpReviewSet = storedSetToReview;
+    }
+    pos = startPosition; // ugly for now
 
     $el = $(`#${id}`);
 
-    const reviewSet = _.shuffle(data);
+    const reviewSet = startPosition === 0 ? _.shuffle(data) : data;
     count = reviewSet.length;
 
     // Initial state storage
-    UTIL.setState(reviewSet, 0);
+    UTIL.setState(reviewSet, startPosition, followUpReviewSet);
 
     // Start
-    count > 0 && review(reviewSet);
+    count > 0 && review(reviewSet, startPosition);
 
     return deferred.promise(); // so the caller can re-initialize
   }
@@ -139,7 +144,7 @@ var flashcard = (function () {
   function forward (set) {
     pos += 1;
 
-    UTIL.setState(set, pos);
+    UTIL.setState(set, pos, followUpReviewSet);
 
     if (set.length > pos) {
       showCard(set[pos], pos);
@@ -162,7 +167,7 @@ var flashcard = (function () {
         })));
 
         // start again with new set
-        review(newSet);
+        review(newSet, 0);
       } else {
         // back to square 1
         deferred.resolve();
@@ -176,7 +181,7 @@ var flashcard = (function () {
   function backward (set) {
     pos -= 1;
 
-    UTIL.setState(set, pos);
+    UTIL.setState(set, pos, followUpReviewSet);
 
     if (pos >= 0) {
       showCard(set[pos], pos);
@@ -214,12 +219,12 @@ var flashcard = (function () {
   /*
    * Starts reviewing the given set of cards and wires up the relevant key/mouse events
    */
-  function review (set) {
+  function review (set, startPosition) {
 
     $el.find(`.${OVERLAY_CLASS}`).fadeIn();
     $el.addClass(FLASHCARD_ACTIVATED_CLASS);
 
-    showCard(set[pos], pos);
+    showCard(set[pos], startPosition || pos);
 
     $el.find(`.${CONTENT_CLASS}`).show();
 

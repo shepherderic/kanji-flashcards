@@ -15,14 +15,20 @@ var UTIL = (function () {
     return obj;
   }
 
-  const setState = function (set, pos) {
+  const setState = function (set, pos, review) {
     const key = document.location.pathname;
-    const obj = JSON.stringify({set: set, pos: pos});
+    const obj = JSON.stringify({set: set, pos: pos, review: review});
     window.localStorage.setItem(key, obj);
+  }
+
+  const clearState = function () {
+    const key = document.location.pathname;
+    window.localStorage.removeItem(key);
   }
 
   return {
     getState: getState,
-    setState: setState
+    setState: setState,
+    clearState: clearState
   };
 })();

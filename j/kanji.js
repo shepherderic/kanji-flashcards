@@ -11,8 +11,9 @@ var kanji = (function () {
    */
   function init (id) {
 
-    levelSelector.init(id, levelData, symbolData).then(function (data) {
-      flashcard.start(id, data).then(function () {
+    levelSelector.init(id, levelData, symbolData).then(function (data, pos, reviewSet) {
+      flashcard.start(id, data, pos, reviewSet).then(function () {
+        UTIL.clearState();
         init(id); // recurse to start over
       });
     });
