@@ -36,11 +36,12 @@ var UTIL = (function () {
   const checkIfState = function (deferred) {
     if (!_.isEmpty(getState())) {
       // we have stuff to maybe review, give user the option
-      //$('body').prepend('<div id="state-switcher"></div>');
-      $('body').prepend(`<button id="state-continue">Continue</button>`);
-      $('body').prepend(`<button id="state-reset">Reset</button>`);
+      $('body').prepend('<div id="state-switcher"></div>');
+      $('#state-switcher').append(`<p>There is a flashcard set in progress, choose whether to continue or reset:</p>`);
+      $('#state-switcher').append(`<button id="state-reset">Reset</button>`);
+      $('#state-switcher').append(`<button id="state-continue">Continue</button>`);
     } else {
-      $('#state-continue,#state-reset').remove();
+      $('#state-switcher').remove();
     }
 
     $('#state-continue').on('click', function () {
