@@ -14,7 +14,7 @@ var levelSelector = (function () {
     $el = $(`#${id}`);
 
     const deferred = $.Deferred();
-    checkIfState(deferred); // Deferreds all over the place gross
+    UTIL.checkIfState(deferred); // Deferreds all over the place gross
 
     createSelectionForm(levelData);
 
@@ -24,25 +24,6 @@ var levelSelector = (function () {
     });
 
     return deferred.promise();
-  }
-
-  function checkIfState (deferred) {
-    if (!_.isEmpty(UTIL.getState())) {
-      // we have stuff to maybe review, give user the option
-      $('body').prepend(`<button id="state-continue">Continue</button>`);
-      $('body').prepend(`<button id="state-reset">Reset</button>`);
-    } else {
-      $('#state-continue,#state-reset').remove();
-    }
-
-    $('#state-continue').on('click', function () {
-      const state = UTIL.getState();
-      deferred.resolve(state.set, state.pos, state.review);
-    });
-
-    $('#state-reset').on('click', function () {
-      UTIL.clearState();
-    });
   }
 
   // Handle the submit button click

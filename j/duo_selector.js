@@ -16,6 +16,7 @@ var duoSelector = (function () {
     $el = $(`#${id}`);
 
     const deferred = $.Deferred();
+    UTIL.checkIfState(deferred); // Deferreds all over the place gross
 
     createSelectionForm(levelData);
 

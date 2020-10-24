@@ -26,9 +26,29 @@ var UTIL = (function () {
     window.localStorage.removeItem(key);
   }
 
+  const checkIfState = function (deferred) {
+    if (!_.isEmpty(getState())) {
+      // we have stuff to maybe review, give user the option
+      $('body').prepend(`<button id="state-continue">Continue</button>`);
+      $('body').prepend(`<button id="state-reset">Reset</button>`);
+    } else {
+      $('#state-continue,#state-reset').remove();
+    }
+
+    $('#state-continue').on('click', function () {
+      const state = getState();
+      deferred.resolve(state.set, state.pos, state.review);
+    });
+
+    $('#state-reset').on('click', function () {
+      clearState();
+    });
+  }
+
   return {
     getState: getState,
     setState: setState,
-    clearState: clearState
+    clearState: clearState,
+    checkIfState: checkIfState
   };
 })();
