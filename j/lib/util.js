@@ -50,6 +50,7 @@ var UTIL = (function () {
     });
 
     $('#state-reset').on('click', function () {
+      $('#state-switcher').remove();
       clearState();
     });
   }
