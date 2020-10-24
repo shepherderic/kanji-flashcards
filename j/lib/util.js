@@ -1,6 +1,13 @@
 
 var UTIL = (function () {
 
+  const debug = function (message) {
+    try {
+      let debugEl = document.getElementById('debugger').getElementsByTagName('p')[0];
+      debugEl.innerHTML = message;
+    } catch {}
+  }
+
   const getState = function () {
     const key = document.location.pathname;
     const item = window.localStorage.getItem(key);
@@ -29,6 +36,7 @@ var UTIL = (function () {
   const checkIfState = function (deferred) {
     if (!_.isEmpty(getState())) {
       // we have stuff to maybe review, give user the option
+      //$('body').prepend('<div id="state-switcher"></div>');
       $('body').prepend(`<button id="state-continue">Continue</button>`);
       $('body').prepend(`<button id="state-reset">Reset</button>`);
     } else {
@@ -49,6 +57,7 @@ var UTIL = (function () {
     getState: getState,
     setState: setState,
     clearState: clearState,
-    checkIfState: checkIfState
+    checkIfState: checkIfState,
+    debug: debug
   };
 })();

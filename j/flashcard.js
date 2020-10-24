@@ -22,13 +22,6 @@ $('.character-item').each(function (i, item) {
 
 */
 
-var debug = function (message) {
-  try {
-    let debugEl = document.getElementById('debugger').getElementsByTagName('p')[0];
-    debugEl.innerHTML = message;
-  } catch {}
-}
-
 var flashcard = (function () {
 
   // Constants
