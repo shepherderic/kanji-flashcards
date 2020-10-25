@@ -1,20 +1,31 @@
+/**
+acid green b8b42d
+avocado 697a21
+cosmic latte fffce8
+black coffee 3e363f
+cg red dd403a
+*/
+
 body {
+  background: #3e363f;
+  color: #fffce8;
   font-family: 'helvetica neue';
 }
 
 .btn {
-  background: #334;
-  color: #fff;
+  background: #b8b42d;
+  border-radius: 5px;
+  color: #fffce8;
   margin-top: 20px;
   padding: 10px;
   width: 200px;
 }
 
 #state-switcher {
-  background: #baa;
+  background: #3e363f;
+  color: #fffce8;
   height: 100%;
   left: 0;
-  opacity: .95;
   padding: 10%;
   position: absolute;
   text-align: center;
@@ -22,18 +33,35 @@ body {
   width: 80%;
 }
 
+  #state-switcher p {
+    font-weight: bold;
+  }
+
+  @media only screen and (max-device-width: 768px) {
+    #state-switcher {
+      font-size: 36px;
+    }
+  }
+
   #state-continue,
   #state-reset {
-    background: #000;
     border: 0;
-    color: #fff;
+    border-radius: 5px;
+    color: #fffce8;
     cursor: pointer;
     margin-right: 10px;
     padding: 15px 40px;
   }
 
+  @media only screen and (max-device-width: 768px) {
+    #state-continue,
+    #state-reset {
+      font-size: 36px;
+    }
+  }
+
     #state-continue {
-      background-color: #696;
+      background-color: #b8b42d;
     }
 
     #state-continue:hover {
@@ -41,7 +69,7 @@ body {
     }
 
     #state-reset {
-      background-color: #f66;
+      background-color: #dd403a;
     }
 
     #state-reset:hover {
@@ -81,7 +109,7 @@ body {
   }
 
 .overlay {
-  background: #112;
+  background: #3e363f;
   display: none;
   height: 100%;
   left: 0;
@@ -106,7 +134,6 @@ body {
 }
 
 .flashcard-content {
-  background: #f0f0f0;
   display: none;
   height: 350px;
   left: 50%;
@@ -128,11 +155,19 @@ body {
 }
 
 .flashcard {
-  background: #335;
-  color: #fff;
-  height: 300px;
-  margin: 25px;
-  width: 300px;
+  background: #697a21;
+  border: 1px solid #fffce8;
+  border-radius: 10px;
+  color: #fffce8;
+  height: 348px;
+  margin: 1px;
+  width: 348px;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .flashcard {
+    border-radius: 0;
+  }
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -144,7 +179,7 @@ body {
 }
 
 .flagged {
-  background: #575;
+  background: #dd403a;
 }
 
 .number {
@@ -164,6 +199,7 @@ body {
 
 .flashcard dl {
   font-size: 24px;
+  margin-top: 1px;
   text-align: center;
 }
 
@@ -206,7 +242,7 @@ body {
 
 .flashcard dd {
   font-size: 200px;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
 }
 
