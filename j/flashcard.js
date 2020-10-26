@@ -1,5 +1,6 @@
 // TODO: only allow adding to review set once
 // TODO: extract the templates for each to minimize if blocks
+// TODO: rephrase - "review" is now overloaded as the main cards and the flagged set
 
 /* SCRAPING CODE
 

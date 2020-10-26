@@ -89,12 +89,16 @@ var duoSelector = (function () {
 
     // Select all
     html += `<div id="flashcard-level-all">`;
-    html += `<input type="checkbox" class="${LEVEL_ALL_LEVELS_CLASS}" value="duo-level-all">All Levels</input>`;
+    html += `<label>All Levels`;
+    html += `<input type="checkbox" class="${LEVEL_ALL_LEVELS_CLASS}" value="duo-level-all" />`;
+    html += `</label>`;
     html += `</div>`;
 
     // Show readings dynamically or always?
     html += `<div id="flashcard-show-readings">`;
-    html += `<input type="checkbox" class="${SHOW_READINGS_CLASS}" value="duo-show-readings">Show Readings</input>`;
+    html += `<label>Show Readings`;
+    html += `<input type="checkbox" class="${SHOW_READINGS_CLASS}" value="duo-show-readings" />`;
+    html += `</label>`;
     html += `</div>`;
 
     // Iterate through levels
@@ -105,7 +109,9 @@ var duoSelector = (function () {
         html += `<h2>${level.name}</h2>`;
         html += `<div id="flashcard-level-${level.name}">`;
         // Make checkboxes including select all
-        html += `<input type="checkbox" class="${LEVEL_ALL_CLASS}" value="duo-level-${level.level}">All</input>`;
+        html += `<label>All`;
+        html += `<input type="checkbox" class="${LEVEL_ALL_CLASS}" value="duo-level-${level.level}" />`;
+        html += `</label>`
         html += `</div>`;
         html += `</div>`;
       }
@@ -116,14 +122,19 @@ var duoSelector = (function () {
     $el.find(`.${LEVEL_CLASS}`).html(html);
 
     $el.find(`.${LEVEL_ALL_LEVELS_CLASS}`).click(function () {
-      const boxes = $(this).parents().find(`.${LEVEL_ALL_CLASS}`);
-      boxes.prop('checked', !boxes.prop('checked'));
+      const inputs = $(this).parents().find(`.${LEVEL_ALL_CLASS}`);
+      const boxes = $(this).parents().find('.selection-level-container');
+      boxes.toggleClass('selected');
+      inputs.prop('checked', !inputs.prop('checked'));
     });
 
     $el.find(`.${LEVEL_CLASS}`).click(function (ev) {
       const target = ev.target;
-      const box = $(target).find(`.${LEVEL_ALL_CLASS}`);
-      box.prop('checked', !box.prop('checked'));
+      const $parent = $(target).closest('.selection-level-container');
+      const input = $parent.find(`.${LEVEL_ALL_CLASS}`);
+
+      $parent.toggleClass('selected');
+      input.prop('checked', !input.prop('checked'));
     })
   }
 

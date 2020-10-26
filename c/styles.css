@@ -4,6 +4,8 @@ avocado 697a21
 cosmic latte fffce8
 black coffee 3e363f
 cg red dd403a
+
+teal 437C90
 */
 
 body {
@@ -16,6 +18,7 @@ body {
   background: #b8b42d;
   border-radius: 5px;
   color: #fffce8;
+  cursor: pointer;
   margin-top: 20px;
   padding: 10px;
   width: 200px;
@@ -81,11 +84,28 @@ body {
 }
 
 .selection-level-container {
-  border: 1px solid #ddd;
+  background: #fffce8;
+  border: 1px solid #3e363f;
+  color: #3e363f;
   display: inline-block;
   padding: 5px 20px 20px 20px;
   width: 100px;
 }
+
+  .selection-level-container label {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .selection-level-container:hover {
+    background: #b8b42d;
+    color: #fffce8;
+    cursor: pointer;
+  }
+
+  .selection-level-container.selected {
+    background: #b8b42d;
+  }
 
 @media only screen and (max-device-width: 768px) {
   .selection-level-container {
@@ -101,7 +121,10 @@ body {
   }
 
   #flashcard-level-all {
+    background: #437C90;
+    color: #fffce8;
     margin: 20px 0;
+    text-align: center;
   }
 
   .flashcard-show-readings { /* rename, this is for the selector but implies it's the flashcard */
@@ -166,6 +189,7 @@ body {
 
 @media only screen and (max-device-width: 768px) {
   .flashcard {
+    border-width: 0;
     border-radius: 0;
   }
 }
@@ -292,6 +316,7 @@ body {
 @media only screen and (max-device-width: 768px) {
   .flashcard .composing-radicals {
     bottom: 28px;
+    font-size: 36px;
     margin-bottom: 0;
     right: 28px;
     text-align: right;

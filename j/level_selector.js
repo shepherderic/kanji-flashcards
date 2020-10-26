@@ -63,9 +63,14 @@ var levelSelector = (function () {
       html += `<h2>${level.name}</h2>`;
       html += `<div id="flashcard-level-${level.name}">`
       // Make checkboxes including select all
-      html += `<input type="checkbox" class="${LEVEL_ALL_CLASS}" value="all-${level.name}">All</input>`;
+      html += `<label>All`;
+      html += `<input type="checkbox" class="${LEVEL_ALL_CLASS}" value="all-${level.name}" /`;
+      html += `</label>`;
+
       _.each(level.levels, function (i) {
-        html += `<input type="checkbox" class="${LEVEL_ITEM_CLASS}" value="${i}">${i}</input>`;
+        html += `<label>${i}`;
+        html += `<input type="checkbox" class="${LEVEL_ITEM_CLASS}" value="${i}" />`;
+        html += `</label>`;
       });
       html += `</div>`;
 
