@@ -70,7 +70,7 @@ var duoSelector = (function () {
 
     // look up the radicals - eventually combine with above block to minimize cycles
     const newDataSet = _.each(dataSet, function (item) {
-      item.radicals = [];
+      item.radicals = {};
       _.map(item.symbol.split(''), function (char) {
         if (kanjiRadicals[char]) {
           const name = kanjiRadicals[char][0];
@@ -78,6 +78,7 @@ var duoSelector = (function () {
           item.radicals[name] = val;
         }
       });
+
       return item;
     });
 
