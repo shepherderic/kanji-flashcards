@@ -8,7 +8,7 @@ var KANJI_LEVELS = [
   { name: 'duoextra', levels: [61]},
 ];
 
-//
+// 形
 
 /**
 ["原","操","奥","減","揚","筒","茂","腕","戚","掃","郵","思","渋","更","初","冷","章","唐","港","集","碗","線","御","種","頭","陸","渡","糖","首","増","単","民","脱","嬉","咲","混","油","婚","授","理","除","点","属","緩","賑","最","柔","仕","卓","選","衣","涼","借","船","京","誌","規","数"]
@@ -177,7 +177,7 @@ var KANJI = [
   {"name":"Same","symbol":"同","level":"5","reading":"どう","radicals":"mustache,ground"},
   {"name":"Say","symbol":"言","level":"5","reading":"げん","radicals":"say"},
   {"name":"Self","symbol":"自","level":"5","reading":"じ","radicals":"self"},
-  {"name":"Shape","symbol":"形","level":"5","reading":"けい","radicals":""},
+  {"name":"Shape","symbol":"形","level":"5","reading":"けい","radicals":"lantern,hair"},
   {"name":"Skin","symbol":"皮","level":"5","reading":"ひ","radicals":""},
   {"name":"Sky","symbol":"空","level":"5","reading":"くう","radicals":"roof,legs,construction"},
   {"name":"Sound","symbol":"音","level":"5","reading":"おん","radicals":"stand,sun"},
@@ -461,7 +461,7 @@ var KANJI = [
   {"symbol":"暗","name":"Dark","reading":"あん","level":"13","radicals":"sun,stand"},
   {"symbol":"疑","name":"Doubt","reading":"ぎ","level":"13","radicals":""},
   {"symbol":"料","name":"Fee","reading":"りょう","level":"13","radicals":"rice,ladle"},
-  {"symbol":"感","name":"Feeling","reading":"かん","level":"13","radicals":""},
+  {"symbol":"感","name":"Feeling","reading":"かん","level":"13","radicals":"slide,drunkard,creeper,heart"},
   {"symbol":"情","name":"Feeling","reading":"じょう","level":"13","radicals":""},
   {"symbol":"様","name":"Formal Name Title","reading":"さま","level":"13","radicals":"tree,sheep,water"},
   {"symbol":"養","name":"Foster","reading":"よう","level":"13","radicals":""},
@@ -512,7 +512,7 @@ var KANJI = [
   {"symbol":"残","name":"Remainder","reading":"ざん","level":"14","radicals":"yazuka,bar"},
   {"symbol":"季","name":"Seasons","reading":"き","level":"14","radicals":""},
   {"symbol":"技","name":"Skill","reading":"ぎ","level":"14","radicals":""},
-  {"symbol":"格","name":"Status","reading":"かく","level":"14","radicals":""},
+  {"symbol":"格","name":"Status","reading":"かく","level":"14","radicals":"tree,kiss"},
   {"symbol":"頑","name":"Stubborn","reading":"がん","level":"14","radicals":""},
   {"symbol":"囲","name":"Surround","reading":"い","level":"14","radicals":""},
   {"symbol":"的","name":"Target","reading":"てき","level":"14","radicals":""},
@@ -729,7 +729,7 @@ var KANJI = [
   {"symbol":"批","name":"Criticism","reading":"ひ","level":"21","radicals":""},
   {"symbol":"断","name":"Cut Off","reading":"だん","level":"21","radicals":""},
   {"symbol":"任","name":"Duty","reading":"にん","level":"21","radicals":""},
-  {"symbol":"素","name":"Element","reading":"そ","level":"21","radicals":""},
+  {"symbol":"素","name":"Element","reading":"そ","level":"21","radicals":"life,thread"},
   {"symbol":"敵","name":"Enemy","reading":"てき","level":"21","radicals":""},
   {"symbol":"羨","name":"Envy","reading":"せん","level":"21","radicals":""},
   {"symbol":"設","name":"Establish","reading":"せつ","level":"21","radicals":""},
@@ -987,7 +987,7 @@ var KANJI = [
   {"symbol":"寄","name":"Approach","reading":"き","level":"29","radicals":""},
   {"symbol":"宴","name":"Banquet","reading":"えん","level":"29","radicals":""},
   {"symbol":"板","name":"Board","reading":"はん","level":"29","radicals":""},
-  {"symbol":"壊","name":"Break","reading":"かい","level":"29","radicals":""},
+  {"symbol":"壊","name":"Break","reading":"かい","level":"29","radicals":"dirt,cross,net,clothes"},
   {"symbol":"督","name":"Coach","reading":"とく","level":"29","radicals":""},
   {"symbol":"僚","name":"Colleague","reading":"りょう","level":"29","radicals":""},
   {"symbol":"杯","name":"Cup Of Liquid","reading":"はい","level":"29","radicals":""},
@@ -1068,7 +1068,7 @@ var KANJI = [
   {"symbol":"鑑","name":"Model","reading":"かん","level":"31","radicals":""},
   {"symbol":"泥","name":"Mud","reading":"でい","level":"31","radicals":""},
   {"symbol":"巣","name":"Nest","reading":"す","level":"31","radicals":""},
-  {"symbol":"普","name":"Normal","reading":"ふ","level":"31","radicals":""},
+  {"symbol":"普","name":"Normal","reading":"ふ","level":"31","radicals":"line up,sun"},
   {"symbol":"棒","name":"Pole","reading":"ぼう","level":"31","radicals":""},
   {"symbol":"粉","name":"Powder","reading":"ふん","level":"31","radicals":""},
   {"symbol":"既","name":"Previously","reading":"き","level":"31","radicals":""},
@@ -1112,7 +1112,7 @@ var KANJI = [
   {"symbol":"桜","name":"Sakura","reading":"さくら","level":"32","radicals":""},
   {"symbol":"密","name":"Secrecy","reading":"みつ","level":"32","radicals":""},
   {"symbol":"秘","name":"Secret","reading":"ひ","level":"32","radicals":""},
-  {"symbol":"厳","name":"Strict","reading":"げん","level":"32","radicals":""},
+  {"symbol":"厳","name":"Strict","reading":"げん","level":"32","radicals":"grass,cliff,elf,winter"},
   {"symbol":"捨","name":"Throw Away","reading":"す","level":"32","radicals":""},
   {"symbol":"訳","name":"Translation","reading":"やく","level":"32","radicals":""},
   {"symbol":"欲","name":"Want","reading":"よく","level":"32","radicals":"valley,lack"},

@@ -68,6 +68,7 @@ var DUO_KANJI = [
   { level: 54, name: 'Nature 2',       words: ['生物', '釣る', '揺れる', '波', '富士山', '乾く', '深い', '浅い', '石', '景色', '草', '濡れる', '折れる', '枝', '森', '林', '島', '空気', '浜辺', '浜', '田舎', '湖', '光る', '光', '太陽', '星'] },
   { level: 55, name: 'Restaurant 2',   words: ['外食', '別々', '現金', '支払い', '噛む', '決まる', '勧め', '湯', '勧める', '予約', '選ぶ', '食事', '〜様', '客', '苦い', '残す', '量', '氷', '味', '味噌', '味噌汁', '汁', '濃い', '和食', '注文'] },
   { level: 56, name: 'Ecology',        words: ['再生紙', '野生動物', '開発', '再生', '可能', '天然', '豊か', '石油', '限る', '殺す', '資源', '見付ける', '所有', '土地', '巨大', '飼う', '人間', '自然', '環境', '汚染', '地球', '生きる', '植える', '植物', '虫'] },
+  { level: 57, name: 'Condition',      words: ['最も', '最近', '最悪', '最高', '最新', '最後', '感じ', '痛み', '感じる', '悲しみ', '厳しい', '美しい', '普通', '格好', '壊れる', '素晴らしい', '様子', '形'] },
 
   //{ level: 61, name: 'Review',         words: ["召す","古い","差す","意味","頼み","言葉","終わる","夫","掃除","鉄","大切","横","通り","得意","外れる","緩い","渡す","書留","出す","怖い","新聞","変更","冷たい","通る","建物","咲く","湾","椅子","店内","中身","必要","最初","指","箱","住所","暗い","定規","腕","独身","姉","交番","嬉しい","今夜","別れる","出る","妻","取る","送る","牛乳","親切","被る","悲しい","切手","宿題","奥さん"] },
   { level: 61, name: 'Review', words: ["疲れ","宿題","磨き","辞書","最初","作る","指","中身","痩せ","親切","嬉しい","伝説","緩い","腹","渡す","通る","返す","被る","小包","呼ぶ","撮る","交番","別れる","通知","怖い","多分","動物","自転車","頭","便利","住所","体","写真","外れる","咲く","顔","携帯","差す","必要","店内","配達","奥さん","雑誌","送る","取る","軽い","大切","娘"] },
@@ -156,6 +157,10 @@ var VOCABULARY = [
   {"symbol":"再生","name":"Regeneration","reading":"さいせい","level":"61"},
   {"symbol":"野生動物","name":"Wild Animal","reading":"やせいどうぶつ","level":"61"},
   {"symbol":"再生紙","name":"Recycled Paper","reading":"いせいし","level":"61"},
+
+  // Duo Level 57/58/59/60
+  {"symbol":"様子","name":"State/Situation","reading":"ようす","level":"61"},
+  {"symbol":"最新","name":"Latest","reading":"さいしん","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -892,7 +897,7 @@ var VOCABULARY = [
   {"symbol":"未決","name":"Pending","reading":"みけつ","level":"8"},
   {"symbol":"私自身","name":"Personally","reading":"わたしじしん","level":"8"},
   {"symbol":"投手","name":"Pitcher","reading":"とうしゅ","level":"8"},
-  {"symbol":"所","name":"Place","reading":"ところ","level":"8"},
+  {"symbol":"所","name":"Place/Part of Story","reading":"ところ","level":"8"},
   {"symbol":"場所","name":"Place/Location","reading":"ばしょ","level":"8"},
   {"symbol":"点数","name":"Points","reading":"てんすう","level":"8"},
   {"symbol":"交番","name":"Police Box","reading":"こうばん","level":"8"},
@@ -1656,7 +1661,7 @@ var VOCABULARY = [
   {"symbol":"回転ずし","name":"Rotating S...","reading":"かいてんずし","level":"14"},
   {"symbol":"文化祭","name":"School Fes...","reading":"ぶんかさい","level":"14"},
   {"symbol":"性病","name":"Sexually Transmitted Disease","reading":"せいびょう","level":"14"},
-  {"symbol":"格好","name":"Shape","reading":"かっこう","level":"14"},
+  {"symbol":"格好","name":"Shape/Look","reading":"かっこう","level":"14"},
   {"symbol":"芸能界","name":"Showbusiness","reading":"げいのうかい","level":"14"},
   {"symbol":"合図","name":"Sign","reading":"あいず","level":"14"},
   {"symbol":"骨格","name":"Skeleton","reading":"こっかく","level":"14"},
