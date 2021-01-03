@@ -39,33 +39,35 @@ var flashcard = (function () {
   const SHOW_TIP_CLASS = 'show-tip';
   const FLASHCARD_ACTIVATED_CLASS = 'flashcard-activated';
 
-  // State FTW
-  let $el;
-  let pos = 0;
-  let count = 0;
-  let followUpReviewSet = [];
-  let hammerInstance;
-  let deferred = $.Deferred();
+  // We shall have some global state
+  const GLOBALS = {
+    $el: null,
+    pos: 0,
+    count: 0,
+    followUpReviewSet: [],
+    hammerInstance: null,
+    deferred: $.Deferred(),
+  };
 
   function start (id, data, startPosition, storedSetToReview) {
     startPosition = startPosition || 0;
     if (storedSetToReview) {
-      followUpReviewSet = storedSetToReview;
+      GLOBALS.followUpReviewSet = storedSetToReview;
     }
-    pos = startPosition; // ugly for now
+    GLOBALS.pos = startPosition; // ugly for now
 
-    $el = $(`#${id}`);
+    GLOBALS.$el = $(`#${id}`);
 
     const reviewSet = startPosition === 0 ? _.shuffle(data) : data;
-    count = reviewSet.length;
+    GLOBALS.count = reviewSet.length;
 
     // Initial state storage
-    UTIL.setState(reviewSet, startPosition, followUpReviewSet);
+    UTIL.setState(reviewSet, startPosition, GLOBALS.followUpReviewSet);
 
     // Start
-    count > 0 && review(reviewSet, startPosition);
+    GLOBALS.count > 0 && review(reviewSet, startPosition);
 
-    return deferred.promise(); // so the caller can re-initialize
+    return GLOBALS.deferred.promise(); // so the caller can re-initialize
   }
 
   /*
@@ -85,7 +87,7 @@ var flashcard = (function () {
     const decoratedItem = decorateImage(item);
 
     let html = `<div class="${CARD_CLASS}">`;
-    html += `<h3 class="${NUMBER_CLASS}">${decoratedItem.level}–${number + 1}/${count}</h3>`;
+    html += `<h3 class="${NUMBER_CLASS}">${decoratedItem.level}–${number + 1}/${GLOBALS.count}</h3>`;
     html += `<dl>`;
     html += `<dt>${decoratedItem.name}</dt>`;
     html += `<dd lang="ja">${decoratedItem.symbol}</dd>`;
@@ -115,44 +117,44 @@ var flashcard = (function () {
    */
   function showCard (item, i) {
     const html = makeCard(item, i);
-    $el.find(`.${CONTENT_CLASS}`).html(html);
+    GLOBALS.$el.find(`.${CONTENT_CLASS}`).html(html);
   }
 
   /*
    * Resets everything so we can start over with a new data set
    */
   function reset () {
-    $el.find(`.${CONTENT_CLASS}`).hide();
-    pos = 0;
-    $el.find(`.${CONTENT_CLASS}`).off();
+    GLOBALS.$el.find(`.${CONTENT_CLASS}`).hide();
+    GLOBALS.pos = 0;
+    GLOBALS.$el.find(`.${CONTENT_CLASS}`).off();
     $(document).off('keydown').off('keyup');
-    hammerInstance.off('doubletap tap swipe press');
-    $el.find(`.${OVERLAY_CLASS}`).fadeOut();
-    $el.removeClass(FLASHCARD_ACTIVATED_CLASS);
-    count = 0;
+    GLOBALS.hammerInstance.off('doubletap tap swipe press');
+    GLOBALS.$el.find(`.${OVERLAY_CLASS}`).fadeOut();
+    GLOBALS.$el.removeClass(FLASHCARD_ACTIVATED_CLASS);
+    GLOBALS.count = 0;
   }
 
   /*
    * Moves forward one card
    */
   function forward (set) {
-    pos += 1;
+    GLOBALS.pos += 1;
 
-    UTIL.setState(set, pos, followUpReviewSet);
+    UTIL.setState(set, GLOBALS.pos, GLOBALS.followUpReviewSet);
 
-    if (set.length > pos) {
-      showCard(set[pos], pos);
+    if (set.length > GLOBALS.pos) {
+      showCard(set[GLOBALS.pos], GLOBALS.pos);
     } else {
       reset();
 
       // Review flagged cards if there are any which currently will go on forever now...
-      if (followUpReviewSet.length) {
+      if (GLOBALS.followUpReviewSet.length) {
 
-        count = followUpReviewSet.length;
+        GLOBALS.count = GLOBALS.followUpReviewSet.length;
 
         // what the hell we'll just hack the ever living fuck out of it right now
-        const newSet = _.clone(followUpReviewSet);
-        followUpReviewSet = [];
+        const newSet = _.clone(GLOBALS.followUpReviewSet);
+        GLOBALS.followUpReviewSet = [];
 
         // log for review just in case it's wanted
         console.log('Set to review:');
@@ -164,7 +166,7 @@ var flashcard = (function () {
         review(newSet, 0);
       } else {
         // back to square 1
-        deferred.resolve();
+        GLOBALS.deferred.resolve();
       }
     }
   }
@@ -173,15 +175,15 @@ var flashcard = (function () {
    * Moves backward one card
    */
   function backward (set) {
-    pos -= 1;
+    GLOBALS.pos -= 1;
 
-    UTIL.setState(set, pos, followUpReviewSet);
+    UTIL.setState(set, GLOBALS.pos, GLOBALS.followUpReviewSet);
 
-    if (pos >= 0) {
-      showCard(set[pos], pos);
+    if (GLOBALS.pos >= 0) {
+      showCard(set[GLOBALS.pos], GLOBALS.pos);
     } else {
       reset();
-      deferred.resolve();
+      GLOBALS.deferred.resolve();
     }
   }
 
@@ -189,16 +191,16 @@ var flashcard = (function () {
    * Shows an answer on a card
    */
   function showAnswer () {
-    $el.find(`.${CARD_CLASS} dt`).addClass(TIP_CLASS);
-    $el.addClass(SHOW_TIP_CLASS);
+    GLOBALS.$el.find(`.${CARD_CLASS} dt`).addClass(TIP_CLASS);
+    GLOBALS.$el.addClass(SHOW_TIP_CLASS);
   }
 
   /*
    * Hides an answer on a card
    */
   function hideAnswer () {
-    $el.find(`.${CARD_CLASS} dt`).removeClass(TIP_CLASS);
-    $el.removeClass(SHOW_TIP_CLASS);
+    GLOBALS.$el.find(`.${CARD_CLASS} dt`).removeClass(TIP_CLASS);
+    GLOBALS.$el.removeClass(SHOW_TIP_CLASS);
   }
 
   /**
@@ -206,8 +208,8 @@ var flashcard = (function () {
    */
   function flag (item) {
     // get position, mark interval
-    followUpReviewSet.push(item);
-    $el.find(`.${CARD_CLASS}`).addClass(FLAG_CLASS);
+    GLOBALS.followUpReviewSet.push(item);
+    GLOBALS.$el.find(`.${CARD_CLASS}`).addClass(FLAG_CLASS);
   }
 
   /*
@@ -215,31 +217,31 @@ var flashcard = (function () {
    */
   function review (set, startPosition) {
 
-    $el.find(`.${OVERLAY_CLASS}`).fadeIn();
-    $el.addClass(FLASHCARD_ACTIVATED_CLASS);
+    GLOBALS.$el.find(`.${OVERLAY_CLASS}`).fadeIn();
+    GLOBALS.$el.addClass(FLASHCARD_ACTIVATED_CLASS);
 
-    showCard(set[pos], startPosition || pos);
+    showCard(set[GLOBALS.pos], startPosition || GLOBALS.pos);
 
-    $el.find(`.${CONTENT_CLASS}`).show();
+    GLOBALS.$el.find(`.${CONTENT_CLASS}`).show();
 
     // Set up touch
-    hammerInstance = new Hammer($el.get(0));
-    hammerInstance.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    GLOBALS.hammerInstance = new Hammer(GLOBALS.$el.get(0));
+    GLOBALS.hammerInstance.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
-    hammerInstance.on('press', function () {
-      flag(set[pos]);
-      const answerShown = $el.hasClass(SHOW_TIP_CLASS);
+    GLOBALS.hammerInstance.on('press', function () {
+      flag(set[GLOBALS.pos]);
+      const answerShown = GLOBALS.$el.hasClass(SHOW_TIP_CLASS);
       if (!answerShown) {
         showAnswer();
       }
     });
 
-    hammerInstance.on('tap', function () {
-      const answerShown = $el.hasClass(SHOW_TIP_CLASS);
+    GLOBALS.hammerInstance.on('tap', function () {
+      const answerShown = GLOBALS.$el.hasClass(SHOW_TIP_CLASS);
       answerShown ? hideAnswer() : showAnswer();
     });
 
-    hammerInstance.on('swipe', function (data) {
+    GLOBALS.hammerInstance.on('swipe', function (data) {
       if (data.isFinal) {
         hideAnswer();
         if (data.deltaX < 0) {
@@ -263,12 +265,12 @@ var flashcard = (function () {
         backward(set);
       }
       if (e.code === 'ArrowDown') {
-        flag(set[pos]);
+        flag(set[GLOBALS.pos]);
         return false;
       }
       if (e.code === 'Escape') {
         reset(set);
-        deferred.resolve();
+        GLOBALS.deferred.resolve();
       }
     }).keyup(function (e) {
       if (e.code === 'KeyI' || e.code === 'ArrowUp') {
