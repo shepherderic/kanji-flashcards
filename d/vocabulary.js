@@ -69,6 +69,7 @@ var DUO_KANJI = [
   { level: 55, name: 'Restaurant 2',   words: ['外食', '別々', '現金', '支払い', '噛む', '決まる', '勧め', '湯', '勧める', '予約', '選ぶ', '食事', '〜様', '客', '苦い', '残す', '量', '氷', '味', '味噌', '味噌汁', '汁', '濃い', '和食', '注文'] },
   { level: 56, name: 'Ecology',        words: ['再生紙', '野生動物', '開発', '再生', '可能', '天然', '豊か', '石油', '限る', '殺す', '資源', '見付ける', '所有', '土地', '巨大', '飼う', '人間', '自然', '環境', '汚染', '地球', '生きる', '植える', '植物', '虫'] },
   { level: 57, name: 'Condition',      words: ['最も', '最近', '最悪', '最高', '最新', '最後', '感じ', '痛み', '感じる', '悲しみ', '厳しい', '美しい', '普通', '格好', '壊れる', '素晴らしい', '様子', '形'] },
+  { level: 58, name: 'Possibility',    words: ['一生懸命', '決して', '取っ手', '当たる', '回す', '壊す', '周り', '回る', '必ず', '名古屋', '横浜', '値引き', '機会'] },
 
   //{ level: 61, name: 'Review',         words: ["召す","古い","差す","意味","頼み","言葉","終わる","夫","掃除","鉄","大切","横","通り","得意","外れる","緩い","渡す","書留","出す","怖い","新聞","変更","冷たい","通る","建物","咲く","湾","椅子","店内","中身","必要","最初","指","箱","住所","暗い","定規","腕","独身","姉","交番","嬉しい","今夜","別れる","出る","妻","取る","送る","牛乳","親切","被る","悲しい","切手","宿題","奥さん"] },
   { level: 61, name: 'Review', words: ["疲れ","宿題","磨き","辞書","最初","作る","指","中身","痩せ","親切","嬉しい","伝説","緩い","腹","渡す","通る","返す","被る","小包","呼ぶ","撮る","交番","別れる","通知","怖い","多分","動物","自転車","頭","便利","住所","体","写真","外れる","咲く","顔","携帯","差す","必要","店内","配達","奥さん","雑誌","送る","取る","軽い","大切","娘"] },
@@ -161,6 +162,9 @@ var VOCABULARY = [
   // Duo Level 57/58/59/60
   {"symbol":"様子","name":"State/Situation","reading":"ようす","level":"61"},
   {"symbol":"最新","name":"Latest","reading":"さいしん","level":"61"},
+  {"symbol":"値引き","name":"Discount","reading":"ねびき","level":"61"},
+  {"symbol":"取っ手","name":"Handle","reading":"とって","level":"61"},
+  {"symbol":"決して","name":"Never At All","reading":"けっして","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -3407,7 +3411,7 @@ var VOCABULARY = [
   {"symbol":"構える","name":"To Assume ...","reading":"かまえる","level":"29"},
   {"symbol":"痛む","name":"To Be Painful","reading":"いたむ","level":"29"},
   {"symbol":"詰まる","name":"To Be Stuffed","reading":"つまる","level":"29"},
-  {"symbol":"壊す","name":"To Break S...","reading":"こわす","level":"29"},
+  {"symbol":"壊す","name":"To Break Something","reading":"こわす","level":"29"},
   {"symbol":"診る","name":"To Examine...","reading":"みる","level":"29"},
   {"symbol":"乾く","name":"To Get Dry","reading":"かわく","level":"29"},
   {"symbol":"道に迷う","name":"To Get Lost","reading":"みちにまよう","level":"29"},
@@ -4617,7 +4621,7 @@ var VOCABULARY = [
   {"symbol":"警戒","name":"Vigilance","reading":"けいかい","level":"40"},
   {"symbol":"訓戒","name":"Warning","reading":"くんかい","level":"40"},
   {"symbol":"薄弱","name":"Weakness","reading":"はくじゃく","level":"40"},
-  {"symbol":"一生懸命","name":"With All O...","reading":"いっしょうけんめい","level":"40"},
+  {"symbol":"一生懸命","name":"With All One's Might","reading":"いっしょうけんめい","level":"40"},
   {"symbol":"奥様","name":"Your Wife","reading":"おくさま","level":"40"},
 
   // WANIKANI LEVELS 41-50

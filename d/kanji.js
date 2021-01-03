@@ -8,8 +8,6 @@ var KANJI_LEVELS = [
   { name: 'duoextra', levels: [61]},
 ];
 
-// 形
-
 /**
 ["原","操","奥","減","揚","筒","茂","腕","戚","掃","郵","思","渋","更","初","冷","章","唐","港","集","碗","線","御","種","頭","陸","渡","糖","首","増","単","民","脱","嬉","咲","混","油","婚","授","理","除","点","属","緩","賑","最","柔","仕","卓","選","衣","涼","借","船","京","誌","規","数"]
 */
@@ -103,7 +101,7 @@ var KANJI = [
   {"name":"Outside","symbol":"外","level":"3","reading":"がい","radicals":"evening,toe"},
   {"name":"Part/Minute","symbol":"分","level":"3","reading":"ぶん","radicals":"part"},
   {"name":"Public","symbol":"公","level":"3","reading":"こう","radicals":"fins,private"},
-  {"name":"Pull","symbol":"引","level":"3","reading":"ひ","radicals":""},
+  {"name":"Pull","symbol":"引","level":"3","reading":"ひ","radicals":"bow,stick"},
   {"name":"Stop","symbol":"止","level":"3","reading":"し","radicals":"stop"},
   {"name":"Task","symbol":"用","level":"3","reading":"よう","radicals":""},
   {"name":"Ten Thousand","symbol":"万","level":"3","reading":"まん","radicals":"leaf,sword"},
@@ -184,7 +182,7 @@ var KANJI = [
   {"name":"Study","symbol":"学","level":"5","reading":"がく","radicals":"viking,child"},
   {"name":"Sunlight","symbol":"光","level":"5","reading":"こう","radicals":"triceratops,pi"},
   {"name":"Think","symbol":"考","level":"5","reading":"こう","radicals":""},
-  {"name":"Times","symbol":"回","level":"5","reading":"かい","radicals":""},
+  {"name":"Times","symbol":"回","level":"5","reading":"かい","radicals":"mouth"},
   {"name":"Valley","symbol":"谷","level":"5","reading":"たに","radicals":"fins,hat,mouth"},
   {"name":"Voice","symbol":"声","level":"5","reading":"こえ","radicals":"samurai,flag,stick"},
   {"name":"West","symbol":"西","level":"5","reading":"せい","radicals":"west"},
@@ -381,7 +379,7 @@ var KANJI = [
   {"symbol":"争","name":"Conflict","reading":"そう","level":"11","radicals":""},
   {"symbol":"便","name":"Convenience","reading":"べん","level":"11","radicals":"leader,ground,rice paddy,treasure"},
   {"symbol":"老","name":"Elderly","reading":"ろう","level":"11","radicals":""},
-  {"symbol":"命","name":"Fate","reading":"めい","level":"11","radicals":""},
+  {"symbol":"命","name":"Fate","reading":"めい","level":"11","radicals":"orders,mouth"},
   {"symbol":"指","name":"Finger","reading":"し","level":"11","radicals":"fingers,spoon,sun"},
   {"symbol":"初","name":"First","reading":"しょ","level":"11","radicals":"spirit,sword"},
   {"symbol":"味","name":"Flavor","reading":"み","level":"11","radicals":"mouth,jet"},
@@ -782,7 +780,7 @@ var KANJI = [
   {"symbol":"脱","name":"Undress","reading":"だつ","level":"22","radicals":"moon,guard"},
   {"symbol":"統","name":"Unite","reading":"とう","level":"22","radicals":""},
   {"symbol":"価","name":"Value","reading":"か","level":"22","radicals":""},
-  {"symbol":"値","name":"Value","reading":"ち","level":"22","radicals":""},
+  {"symbol":"値","name":"Value","reading":"ち","level":"22","radicals":"leader,fix"},
   {"symbol":"副","name":"Vice","reading":"ふく","level":"22","radicals":""},
   {"symbol":"観","name":"View","reading":"かん","level":"22","radicals":""},
   {"symbol":"藤","name":"Wisteria","reading":"ふじ","level":"22","radicals":""},
@@ -1313,7 +1311,7 @@ var KANJI = [
   {"symbol":"還","name":"Send Back","reading":"かん","level":"38","radicals":""},
   {"symbol":"繰","name":"Spin","reading":"く","level":"38","radicals":""},
   {"symbol":"抑","name":"Suppress","reading":"よく","level":"38","radicals":""},
-  {"symbol":"懸","name":"Suspend","reading":"けん","level":"38","radicals":""},
+  {"symbol":"懸","name":"Suspend","reading":"けん","level":"38","radicals":"prefecture,lineage,heart"},
   {"symbol":"称","name":"Title","reading":"しょう","level":"38","radicals":""},
   {"symbol":"緒","name":"Together","reading":"しょ","level":"38","radicals":"thread,someone"},
   {"symbol":"盤","name":"Tray","reading":"ばん","level":"38","radicals":""},
