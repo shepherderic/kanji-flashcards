@@ -17,7 +17,7 @@ var DUO_KANJI = [
   { level: 7,  name: 'Introduction',   words: ['村', '中', '国', '日', '本', '田', '中国', '人', '日本', '言う', '出身', '身'] },
   { level: 8,  name: 'Katakana 2',     words: [] },
   // CASTLE 1
-  { level: 9,  name: 'Introduction 2', words: ['茂る', '私', '話す', '僕', '気', '元気', '先', '生', '何', '英', '語', '名', '前', '名前', '日本語', '英語', '彼', '彼女', '彼ら'] },
+  { level: 9,  name: 'Introduction 2', words: ['茂る', '私', '話す', '僕', '気', '元気', '先', '何', '英', '語', '名', '前', '名前', '日本語', '英語', '彼', '彼女', '彼ら'] },
   { level: 10, name: 'Katakana 3',     words: [] },
   { level: 11, name: 'Food 1',         words: ['食べる', '今', '時', '水', '魚', '肉', '野菜', 'ご飯', 'お茶', '飲む'] },
   { level: 12, name: 'Time',           words: ['今', '分', '時', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '半'] },
@@ -70,6 +70,7 @@ var DUO_KANJI = [
   { level: 56, name: 'Ecology',        words: ['再生紙', '野生動物', '開発', '再生', '可能', '天然', '豊か', '石油', '限る', '殺す', '資源', '見付ける', '所有', '土地', '巨大', '飼う', '人間', '自然', '環境', '汚染', '地球', '生きる', '植える', '植物', '虫'] },
   { level: 57, name: 'Condition',      words: ['最も', '最近', '最悪', '最高', '最新', '最後', '感じ', '痛み', '感じる', '悲しみ', '厳しい', '美しい', '普通', '格好', '壊れる', '素晴らしい', '様子', '形'] },
   { level: 58, name: 'Possibility',    words: ['一生懸命', '決して', '取っ手', '当たる', '回す', '壊す', '周り', '回る', '必ず', '名古屋', '横浜', '値引き', '機会'] },
+  { level: 59, name: 'Cooking 1',      words: ['天ぷら', '油', '焼く', '炒める', '注ぐ', '生', '片付ける', '流し', '腐る', '沸かす', '蓋', '鍋', '玉ねぎ', '細かい', '材料', '混ぜる', '刻む', '大豆', '豆乳', '豆腐', '新鮮', '豆', '合う', '八百屋', '料理人']},
 
   //{ level: 61, name: 'Review',         words: ["召す","古い","差す","意味","頼み","言葉","終わる","夫","掃除","鉄","大切","横","通り","得意","外れる","緩い","渡す","書留","出す","怖い","新聞","変更","冷たい","通る","建物","咲く","湾","椅子","店内","中身","必要","最初","指","箱","住所","暗い","定規","腕","独身","姉","交番","嬉しい","今夜","別れる","出る","妻","取る","送る","牛乳","親切","被る","悲しい","切手","宿題","奥さん"] },
   { level: 61, name: 'Review', words: ["疲れ","宿題","磨き","辞書","最初","作る","指","中身","痩せ","親切","嬉しい","伝説","緩い","腹","渡す","通る","返す","被る","小包","呼ぶ","撮る","交番","別れる","通知","怖い","多分","動物","自転車","頭","便利","住所","体","写真","外れる","咲く","顔","携帯","差す","必要","店内","配達","奥さん","雑誌","送る","取る","軽い","大切","娘"] },
@@ -165,6 +166,14 @@ var VOCABULARY = [
   {"symbol":"値引き","name":"Discount","reading":"ねびき","level":"61"},
   {"symbol":"取っ手","name":"Handle","reading":"とって","level":"61"},
   {"symbol":"決して","name":"Never At All","reading":"けっして","level":"61"},
+  {"symbol":"八百屋","name":"Produce Market","reading":"やおや","level":"61"},
+  {"symbol":"豆乳","name":"Soy Milk","reading":"とうにゅう","level":"61"},
+  {"symbol":"大豆","name":"Soybeans","reading":"だいず","level":"61"},
+  {"symbol":"蓋","name":"Lid/Cover/Cap","reading":"ふた","level":"61"},
+  {"symbol":"流し","name":"Sink","reading":"ながし","level":"61"},
+  {"symbol":"片付ける","name":"Tidy Up","reading":"かたづける","level":"61"},
+  {"symbol":"炒める","name":"To Fry","reading":"いためる","level":"61"},
+  {"symbol":"天ぷら","name":"Tempura","reading":"てんぷら","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -2209,7 +2218,7 @@ var VOCABULARY = [
   {"symbol":"対比","name":"Contrast","reading":"たいひ","level":"19"},
   {"symbol":"借財","name":"Debt","reading":"しゃくざい","level":"19"},
   {"symbol":"大きい順","name":"Decreasing...","reading":"おおきいじゅん","level":"19"},
-  {"symbol":"細かい","name":"Detailed","reading":"こまかい","level":"19"},
+  {"symbol":"細かい","name":"Detailed/Finely","reading":"こまかい","level":"19"},
   {"symbol":"劇団","name":"Drama Troupe","reading":"げきだん","level":"19"},
   {"symbol":"容易","name":"Ease","reading":"ようい","level":"19"},
   {"symbol":"易しい","name":"Easy","reading":"やさしい","level":"19"},
@@ -3953,7 +3962,7 @@ var VOCABULARY = [
   {"symbol":"傷む","name":"To Be Damaged","reading":"いたむ","level":"34"},
   {"symbol":"染まる","name":"To Be Dyed","reading":"そまる","level":"34"},
   {"symbol":"勤める","name":"To Be Employed","reading":"つとめる","level":"34"},
-  {"symbol":"刻む","name":"To Carve","reading":"きざむ","level":"34"},
+  {"symbol":"刻む","name":"To Carve/Chop","reading":"きざむ","level":"34"},
   {"symbol":"発揮する","name":"To Exhibit","reading":"はっきする","level":"34"},
   {"symbol":"降る","name":"To Fall","reading":"ふる","level":"34"},
   {"symbol":"書き込む","name":"To Fill Out","reading":"かきこむ","level":"34"},
