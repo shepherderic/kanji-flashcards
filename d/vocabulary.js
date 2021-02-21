@@ -72,6 +72,7 @@ var DUO_KANJI = [
   { level: 58, name: 'Possibility',    words: ['一生懸命', '決して', '取っ手', '当たる', '回す', '壊す', '周り', '回る', '必ず', '名古屋', '横浜', '値引き', '機会'] },
   { level: 59, name: 'Cooking 1',      words: ['天ぷら', '油', '焼く', '炒める', '注ぐ', '生', '片付ける', '流し', '腐る', '沸かす', '蓋', '鍋', '玉ねぎ', '細かい', '材料', '混ぜる', '刻む', '大豆', '豆乳', '豆腐', '新鮮', '豆', '合う', '八百屋', '料理人']},
   { level: 60, name: 'Science 1',      words: ['物理学', '生じる', '変化', '実験', '反応', '学者', '生物学', '用意', '地質学', '化学', '専攻', '量る', '秤', '深さ', '高さ', '長さ', '幅', '測る', '変える', '研究', '比べる', '大きさ', '科学', '変わる', '調べる', '柔らかい', '固い'] },
+  { level: 61, name: 'Emergency',      words: ['駐車', '必死', '落とす', '打つ', '状態', '救急車', '倒れる', '地面', '落ちる', '床', '場合', '交通', '非常', '地震', '警察', '突然', '逮捕', '火事', '明らか', '危険', '助け', '不明', '拾う', '席', '起こす', '起こる', '女性', '原因', '事故', '事件', '寄る'] },
 
   //{ level: 61, name: 'Review',         words: ["召す","古い","差す","意味","頼み","言葉","終わる","夫","掃除","鉄","大切","横","通り","得意","外れる","緩い","渡す","書留","出す","怖い","新聞","変更","冷たい","通る","建物","咲く","湾","椅子","店内","中身","必要","最初","指","箱","住所","暗い","定規","腕","独身","姉","交番","嬉しい","今夜","別れる","出る","妻","取る","送る","牛乳","親切","被る","悲しい","切手","宿題","奥さん"] },
   { level: 61, name: 'Review', words: ["疲れ","宿題","磨き","辞書","最初","作る","指","中身","痩せ","親切","嬉しい","伝説","緩い","腹","渡す","通る","返す","被る","小包","呼ぶ","撮る","交番","別れる","通知","怖い","多分","動物","自転車","頭","便利","住所","体","写真","外れる","咲く","顔","携帯","差す","必要","店内","配達","奥さん","雑誌","送る","取る","軽い","大切","娘"] },
@@ -180,6 +181,11 @@ var VOCABULARY = [
   {"symbol":"地質学","name":"Geology","reading":"ちしつがく","level":"61"},
   {"symbol":"生じる","name":"Produce/Yield","reading":"しょうじる","level":"61"},
   {"symbol":"物理学","name":"Physics","reading":"ぶつりがく","level":"61"},
+
+  // Duo Level 61/62/63/64
+  {"symbol":"助け","name":"Help/Assistance","reading":"たすけ","level":"61"},
+  {"symbol":"明らか","name":"Clearly/Obviously","reading":"あきらか","level":"61"},
+  {"symbol":"駐車","name":"Parking","reading":"ちゅうしゃ","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -756,7 +762,7 @@ var VOCABULARY = [
   {"symbol":"小学生","name":"Elementary School Student","reading":"しょうがくせい","level":"7"},
   {"symbol":"月末","name":"End Of The Month","reading":"げつまつ","level":"7"},
   {"symbol":"魚","name":"Fish","reading":"さかな","level":"7"},
-  {"symbol":"必死","name":"Frantic","reading":"ひっし","level":"7"},
+  {"symbol":"必死","name":"Frantic/For Dear Life","reading":"ひっし","level":"7"},
   {"symbol":"自由","name":"Freedom","reading":"じゆう","level":"7"},
   {"symbol":"氏名","name":"Full Name","reading":"しめい","level":"7"},
   {"symbol":"未来","name":"Future","reading":"みらい","level":"7"},
@@ -1462,7 +1468,7 @@ var VOCABULARY = [
   {"symbol":"登る","name":"To Climb","reading":"のぼる","level":"12"},
   {"symbol":"集まる","name":"To Come Together","reading":"あつまる","level":"12"},
   {"symbol":"要求する","name":"To Demand","reading":"ようきゅうする","level":"12"},
-  {"symbol":"落とす","name":"To Drop So...","reading":"おとす","level":"12"},
+  {"symbol":"落とす","name":"To Drop Something","reading":"おとす","level":"12"},
   {"symbol":"消す","name":"To Extinguish","reading":"けす","level":"12"},
   {"symbol":"転ぶ","name":"To Fall Over","reading":"ころぶ","level":"12"},
   {"symbol":"流す","name":"To Flow","reading":"ながす","level":"12"},
@@ -1713,7 +1719,7 @@ var VOCABULARY = [
   {"symbol":"勉強する","name":"To Study","reading":"べんきょうする","level":"14"},
   {"symbol":"囲む","name":"To Surround","reading":"かこむ","level":"14"},
   {"symbol":"旅行する","name":"To Travel","reading":"りょこうする","level":"14"},
-  {"symbol":"起こす","name":"To Wake So...","reading":"おこす","level":"14"},
+  {"symbol":"起こす","name":"To Wake Someone/Cause Incident","reading":"おこす","level":"14"},
   {"symbol":"温める","name":"To Warm Up","reading":"あたためる","level":"14"},
   {"symbol":"望む","name":"To Wish","reading":"のぞむ","level":"14"},
   {"symbol":"旅行者","name":"Traveler","reading":"りょこうしゃ","level":"14"},
@@ -1978,7 +1984,7 @@ var VOCABULARY = [
   {"symbol":"劇的","name":"Dramatic","reading":"げきてき","level":"17"},
   {"symbol":"干天","name":"Dry Weather","reading":"かんてん","level":"17"},
   {"symbol":"東側","name":"East Side","reading":"ひがしがわ","level":"17"},
-  {"symbol":"非常","name":"Emergency","reading":"ひじょう","level":"17"},
+  {"symbol":"非常","name":"Emergency/Extremely","reading":"ひじょう","level":"17"},
   {"symbol":"虚しい","name":"Empty","reading":"むなしい","level":"17"},
   {"symbol":"日常","name":"Everyday Life","reading":"にちじょう","level":"17"},
   {"symbol":"悪因悪果","name":"Evil Breed...","reading":"あくいんあっか","level":"17"},
