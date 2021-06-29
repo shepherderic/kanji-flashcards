@@ -1299,7 +1299,7 @@ var KANJI = [
   {"symbol":"避","name":"Dodge","reading":"ひ","level":"38","radicals":""},
   {"symbol":"描","name":"Draw","reading":"びょう","level":"38","radicals":"fingers,flowers,rice paddy"},
   {"symbol":"刊","name":"Edition","reading":"かん","level":"38","radicals":""},
-  {"symbol":"逃","name":"Escape","reading":"とう","level":"38","radicals":""},
+  {"symbol":"逃","name":"Escape","reading":"とう","level":"38","radicals":"scooter,omen"},
   {"symbol":"扱","name":"Handle","reading":"あつか","level":"38","radicals":""},
   {"symbol":"奥","name":"Interior","reading":"おく","level":"38","radicals":"drop,head,rice,big"},
   {"symbol":"併","name":"Join","reading":"へい","level":"38","radicals":""},
