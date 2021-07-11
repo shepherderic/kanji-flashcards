@@ -7,6 +7,8 @@ var VOCABULARY_LEVELS = [
   { name: 'reality',  levels: [51,52,53,54,55,56,57,58,59,60] },
 ];
 
+// 引く this belongs in an earlier section than 65 - where was it from?
+
 var DUO_KANJI = [
   { level: 1,  name: 'Hiragana 1',     words: [] },
   { level: 2,  name: 'Hiragana 2',     words: [] },
@@ -43,7 +45,7 @@ var DUO_KANJI = [
   { level: 31, name: 'Dates',          words: ['毎週', '出かける', '一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月', '四月', '年', '今年', '二十日', '十日', '九日', '八日', '七日', '六日', '五日', '四日', '三日', '二日', '一日', '誕生日', 'お誕生日おめでとう', '休み', '毎晩', '毎月', '毎年', '去年'] },
   { level: 32, name: 'Shopping 1',     words: ['違う', '必要', '要る', '買い物', '汚い', '売る', '売る', '本屋', '〜屋', '持つ', '同じ', '大切', '入れる', '出す', '大好き', '軽い', '丈夫', '色々', '重い', '他', '腕時計', '腕', '花', 'お金', '時計', '財布', '鞄', '荷物'] },
   // CASTLE 3
-  { level: 33, name: 'People 1',       words: ['皆さん', '別れる', '独身', '彼氏', '祖母', '祖父', '死', '父親', '母親', '似る', '生まれる', '赤ちゃん', '死ぬ', '亡くなる', '大人', '若い', '離婚', '結婚', '有名', '少し', '男性', '男の子', '女の子', '大勢', '呼ぶ', '立派', '片', '女', '女の人', '男', '男の人'] },
+  { level: 33, name: 'People 1',       words: ['恋人', '皆さん', '別れる', '独身', '彼氏', '祖母', '祖父', '死', '父親', '母親', '似る', '生まれる', '赤ちゃん', '死ぬ', '亡くなる', '大人', '若い', '離婚', '結婚', '有名', '少し', '男性', '男の子', '女の子', '大勢', '呼ぶ', '立派', '片', '女', '女の人', '男', '男の人'] },
   { level: 34, name: 'Activity 2',     words: ['一台', '携帯', '勤める', '消す', '待つ', '電気', '立つ', '早い', '座る', '閉める', '開ける', '浴びる', '帰る', '洗濯する', '掃除'] },
   { level: 35, name: 'Nature 1',       words: ['賑やか', '差す', '生まれる', '雲', '馬', '牛', '曇る', '鹿', '咲く', '静か', '傘', '動物園', '動物', '〜匹', '鳴く', '声', '瓶', '花瓶', '山', '登る', '木', '海', '池', '川'] },
   { level: 36, name: 'Classroom 1',    words: ['辞書', '意味', '葉', '言葉', '覚える', '字', '漢字', '教科書', '難しい', '易しい', '終わる', '授業', '宿題', '始める'] },
@@ -76,7 +78,8 @@ var DUO_KANJI = [
   { level: 62, name: 'Transit 2',      words: ['港', '歩道', '運ぶ', '乗客', '船', '乗り物', '信号', '駐車場', '裏', '空く', '乗り換える', '別', '換える', '車両', '年寄り', '女性', '専用', '降り出す', '途中', '急行', '間もなく', '終点', '出発', '到着', '売り場', '新幹線', '右側', '左側', '側'] },
   { level: 63, name: 'Education',      words: ['独学', '合格する', '頑張れ', '出席', '文学', '準備', '医学', '終わり', '地理', '提出', '講義', '締め切り', '説明', '成績', '歴史', '入学試験', '入学', '試験', '卒業', '失礼', '続ける', '教育', '生徒', '受ける', '成功', '会議'] },
   { level: 64, name: 'Work 1',         words: ['お疲れ様', '失礼', '無理', '相談', '金持ち', '貧しい', '工場', '残業', '事務所', '続ける', '上げる', '下げる', '通訳', '書類', '決める', '社長', '上司', '成功', '複雑', '名刺', '会議', '給料', '値段'] },
-  { level: 65, name: 'Numbers',        words: [''] },
+  { level: 65, name: 'Numbers',        words: ['少数派', '少数', '相当', '多数', '占める', '平均', '電卓', '合計', '計算', '分ける', '等しい', '掛ける', '割る', '順番', '数秒', '足す', '数年', '数える', '引く', '秒', '数学', '増す', '〜回', '一回'] },
+  { level: 66, name: 'Obligation',     words: ['守る', '破る', '約束', '注意', '禁煙', '二倍', '任せる', '立入禁止', '歯磨き', '禁止', '任せ', '預ける', '参加者', '会話', '参加', '目的', '幸せ', '捨てる', '興味', '眺める', '涙', '燃える'] },
 
   //{ level: 61, name: 'Review',         words: ["召す","古い","差す","意味","頼み","言葉","終わる","夫","掃除","鉄","大切","横","通り","得意","外れる","緩い","渡す","書留","出す","怖い","新聞","変更","冷たい","通る","建物","咲く","湾","椅子","店内","中身","必要","最初","指","箱","住所","暗い","定規","腕","独身","姉","交番","嬉しい","今夜","別れる","出る","妻","取る","送る","牛乳","親切","被る","悲しい","切手","宿題","奥さん"] },
   //{ level: 61, name: 'Review', words: ["疲れ","宿題","磨き","辞書","最初","作る","指","中身","痩せ","親切","嬉しい","伝説","緩い","腹","渡す","通る","返す","被る","小包","呼ぶ","撮る","交番","別れる","通知","怖い","多分","動物","自転車","頭","便利","住所","体","写真","外れる","咲く","顔","携帯","差す","必要","店内","配達","奥さん","雑誌","送る","取る","軽い","大切","娘"] },
@@ -186,7 +189,7 @@ var VOCABULARY = [
   {"symbol":"生じる","name":"Produce/Yield","reading":"しょうじる","level":"61"},
   {"symbol":"物理学","name":"Physics","reading":"ぶつりがく","level":"61"},
 
-  // Duo Level 61/62/63/64
+  // Duo Level 61/62/63/64/65
   {"symbol":"助け","name":"Help/Assistance","reading":"たすけ","level":"61"},
   {"symbol":"明らか","name":"Clearly/Obviously","reading":"あきらか","level":"61"},
   {"symbol":"駐車","name":"Parking","reading":"ちゅうしゃ","level":"61"},
@@ -196,7 +199,17 @@ var VOCABULARY = [
   {"symbol":"年寄り","name":"Old Person","reading":"としより","level":"61"},
   {"symbol":"空く","name":"To Be Free","reading":"あく","level":"61"},
   {"symbol":"乗客","name":"Passenger","reading":"じょうきゃく","level":"61"},
-  {"symbol":"締め切り","name":"Deadline","reading":"しめきり","level":"29"},
+  {"symbol":"締め切り","name":"Deadline","reading":"しめきり","level":"61"},
+  {"symbol":"数秒","name":"A Few Seconds","reading":"すうびょう","level":"61"},
+  {"symbol":"多数","name":"Majority","reading":"たすう","level":"61"},
+  {"symbol":"相当","name":"Considerably/Appropriately","reading":"そうとう","level":"61"},
+  {"symbol":"少数","name":"Minority","reading":"しょうすう","level":"61"},
+  {"symbol":"少数派","name":"In The Minority","reading":"しょうすうは","level":"61"},
+
+  // Duo Level 66/
+  {"symbol":"任せ","name":"Leaving (A Task) To Someone","reading":"まかせ","level":"61"},
+  {"symbol":"任せる","name":"Leave (A Task) To Someone","reading":"まかせる","level":"61"},
+  {"symbol":"歯磨き","name":"Brushing One's Teeth","reading":"はみがき","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -379,7 +392,7 @@ var VOCABULARY = [
   {"symbol":"太る","name":"To Get Fat","reading":"ふとる","level":"3"},
   {"symbol":"生む","name":"To Give Birth","reading":"うむ","level":"3"},
   {"symbol":"生きる","name":"To Live","reading":"いきる","level":"3"},
-  {"symbol":"引く","name":"To Pull/Look Up/Consult","reading":"ひく","level":"3"},
+  {"symbol":"引く","name":"To Pull/Subtract/Consult","reading":"ひく","level":"3"},
   {"symbol":"分ける","name":"To Separate","reading":"わける","level":"3"},
   {"symbol":"止まる","name":"To Stop","reading":"とまる","level":"3"},
   {"symbol":"止める","name":"To Stop Something","reading":"とめる","level":"3"},
@@ -1945,7 +1958,7 @@ var VOCABULARY = [
   {"symbol":"残す","name":"To Leave Behind","reading":"のこす","level":"16"},
   {"symbol":"固める","name":"To Make Hard","reading":"かためる","level":"16"},
   {"symbol":"約束する","name":"To Promise","reading":"やくそくする","level":"16"},
-  {"symbol":"守る","name":"To Protect","reading":"まもる","level":"16"},
+  {"symbol":"守る","name":"To Protect (Keep Promise)","reading":"まもる","level":"16"},
   {"symbol":"辞める","name":"To Quit","reading":"やめる","level":"16"},
   {"symbol":"希望する","name":"To Request","reading":"きぼうする","level":"16"},
   {"symbol":"取る","name":"To Take","reading":"とる","level":"16"},
@@ -2984,7 +2997,7 @@ var VOCABULARY = [
   {"symbol":"抜く","name":"To Extract","reading":"ぬく","level":"25"},
   {"symbol":"与える","name":"To Give","reading":"あたえる","level":"25"},
   {"symbol":"渡す","name":"To Hand Over","reading":"わたす","level":"25"},
-  {"symbol":"掛ける","name":"To Hang","reading":"かける","level":"25"},
+  {"symbol":"掛ける","name":"To Hang/Multiply","reading":"かける","level":"25"},
   {"symbol":"隠す","name":"To Hide","reading":"かくす","level":"25"},
   {"symbol":"含む","name":"To Include","reading":"ふくむ","level":"25"},
   {"symbol":"増す","name":"To Increase","reading":"ます","level":"25"},
@@ -4109,7 +4122,7 @@ var VOCABULARY = [
   {"symbol":"蒸し返す","name":"To Rehash","reading":"むしかえす","level":"35"},
   {"symbol":"尊敬する","name":"To Respect","reading":"そんけいする","level":"35"},
   {"symbol":"閉じる","name":"To Shut","reading":"とじる","level":"35"},
-  {"symbol":"破る","name":"To Tear","reading":"やぶる","level":"35"},
+  {"symbol":"破る","name":"To Tear (Break Promise)","reading":"やぶる","level":"35"},
   {"symbol":"裏切り者","name":"Traitor","reading":"うらぎりもの","level":"35"},
   {"symbol":"厄介","name":"Troublesome","reading":"やっかい","level":"35"},
   {"symbol":"亀","name":"Turtle","reading":"かめ","level":"35"},
