@@ -611,7 +611,7 @@ var KANJI = [
   {"symbol":"原","name":"Original","reading":"げん","level":"17","radicals":"original"},
   {"symbol":"栄","name":"Prosper","reading":"えい","level":"17","radicals":""},
   {"symbol":"喜","name":"Rejoice","reading":"き","level":"17","radicals":""},
-  {"symbol":"恋","name":"Romance","reading":"れん","level":"17","radicals":""},
+  {"symbol":"恋","name":"Romance","reading":"れん","level":"17","radicals":"red,heart"},
   {"symbol":"悲","name":"Sad","reading":"ひ","level":"17","radicals":"criminal,heart"},
   {"symbol":"塩","name":"Salt","reading":"しお","level":"17","radicals":"dirt,gun,mouth,plate"},
   {"symbol":"席","name":"Seat","reading":"せき","level":"17","radicals":"yurt,towel"},
