@@ -81,6 +81,8 @@ var DUO_KANJI = [
   { level: 65, name: 'Numbers',        words: ['少数派', '少数', '相当', '多数', '占める', '平均', '電卓', '合計', '計算', '分ける', '等しい', '掛ける', '割る', '順番', '数秒', '足す', '数年', '数える', '引く', '秒', '数学', '増す', '〜回', '一回'] },
   { level: 66, name: 'Obligation',     words: ['上の空', '守る', '破る', '約束', '注意', '禁煙', '二倍', '任せる', '立入禁止', '歯磨き', '禁止', '任せ', '預ける', '参加者', '会話', '参加', '目的', '幸せ', '捨てる', '興味', '眺める', '涙', '燃える'] },
   { level: 67, name: 'Desires 1',      words: ['安心', '集める', '趣味', '残念', '流す', '眺め', '向く', '夢', '生きがい'] },
+  { level: 68, name: 'Thoughts',       words: ['理由', '絶対', '返事', '反対', '言語', '単語', '表現', '初めて', '気づく', '邪魔', '自由', '秘密', '自分', '学ぶ', '人生', '書類', '嘘', '話し合う', '約束通り', '意見', '考える', '考え'] },
+  { level: 69, name: 'Airport',        words: [''] },
 ];
 
 var VOCABULARY = [
@@ -210,6 +212,9 @@ var VOCABULARY = [
   {"symbol":"歯磨き","name":"Brushing One's Teeth","reading":"はみがき","level":"61"},
   {"symbol":"生きがい","name":"Reason For Living","reading":"いきがい","level":"61"},
   {"symbol":"上の空","name":"Inattention/Absent-Mindedness","reading":"うわのそら","level":"61"},
+  {"symbol":"約束通り","name":"As Promised","reading":"やくそくどおり","level":"61"},
+  {"symbol":"話し合う","name":"To Discuss Together","reading":"はなしあう","level":"61"},
+  {"symbol":"気づく","name":"To Notice/Perceive/Recognize","reading":"きづく","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -1545,7 +1550,7 @@ var VOCABULARY = [
   {"symbol":"熱","name":"Fever","reading":"ねつ","level":"13"},
   {"symbol":"指先","name":"Fingertip","reading":"ゆびさき","level":"13"},
   {"symbol":"〜様","name":"Formal Name Title","reading":"さま","level":"13"},
-  {"symbol":"初めて","name":"For The Fi...","reading":"はじめて","level":"13"},
+  {"symbol":"初めて","name":"For The First Time","reading":"はじめて","level":"13"},
   {"symbol":"仲良く","name":"Friendly","reading":"なかよく","level":"13"},
   {"symbol":"駅前","name":"Front Of S...","reading":"えきまえ","level":"13"},
   {"symbol":"福島","name":"Fukushima","reading":"ふくしま","level":"13"},
