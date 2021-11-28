@@ -82,7 +82,7 @@ var DUO_KANJI = [
   { level: 66, name: 'Obligation',     words: ['上の空', '守る', '破る', '約束', '注意', '禁煙', '二倍', '任せる', '立入禁止', '歯磨き', '禁止', '任せ', '預ける', '参加者', '会話', '参加', '目的', '幸せ', '捨てる', '興味', '眺める', '涙', '燃える'] },
   { level: 67, name: 'Desires 1',      words: ['安心', '集める', '趣味', '残念', '流す', '眺め', '向く', '夢', '生きがい'] },
   { level: 68, name: 'Thoughts',       words: ['理由', '絶対', '返事', '反対', '言語', '単語', '表現', '初めて', '気づく', '邪魔', '自由', '秘密', '自分', '学ぶ', '人生', '書類', '嘘', '話し合う', '約束通り', '意見', '考える', '考え'] },
-  { level: 69, name: 'Airport',        words: [''] },
+  { level: 69, name: 'Airport',        words: ['苦しむ', '時差ぼけ', '時差', '手荷物', '離陸', '着陸', '無事', '持ち込み', '機内', '通路', '絶対', '塞ぐ', '便', '手続き', '済ます', '〜券', '搭乗', '観光', '観光客', '入国', '切れる', '拝見する'] },
 ];
 
 var VOCABULARY = [
@@ -206,7 +206,7 @@ var VOCABULARY = [
   {"symbol":"少数","name":"Minority","reading":"しょうすう","level":"61"},
   {"symbol":"少数派","name":"In The Minority","reading":"しょうすうは","level":"61"},
 
-  // Duo Level 66/67
+  // Duo Level 66/67/68/69
   {"symbol":"任せ","name":"Leaving (A Task) To Someone","reading":"まかせ","level":"61"},
   {"symbol":"任せる","name":"Leave (A Task) To Someone","reading":"まかせる","level":"61"},
   {"symbol":"歯磨き","name":"Brushing One's Teeth","reading":"はみがき","level":"61"},
@@ -215,6 +215,16 @@ var VOCABULARY = [
   {"symbol":"約束通り","name":"As Promised","reading":"やくそくどおり","level":"61"},
   {"symbol":"話し合う","name":"To Discuss Together","reading":"はなしあう","level":"61"},
   {"symbol":"気づく","name":"To Notice/Perceive/Recognize","reading":"きづく","level":"61"},
+  {"symbol":"入国","name":"Entry Into A Country","reading":"にゅうこく","level":"61"},
+  {"symbol":"便","name":"Service/Flight","reading":"びん","level":"61"},
+  {"symbol":"塞ぐ","name":"To Block/Obstruct","reading":"ふさぐ","level":"61"},
+  {"symbol":"通路","name":"Aisle/Passage","reading":"つうろ","level":"61"},
+  {"symbol":"機内","name":"On The Aircraft","reading":"きない","level":"61"},
+  {"symbol":"持ち込み","name":"Carry On","reading":"もちこみ","level":"61"},
+  {"symbol":"着陸","name":"Landing/Touchdown","reading":"ちゃくりく","level":"61"},
+  {"symbol":"離陸","name":"Takeoff","reading":"りりく","level":"61"},
+  {"symbol":"成田","name":"Narita","reading":"なりた","level":"61"},
+  {"symbol":"時差ぼけ","name":"Jet Lag","reading":"じさぼけ","level":"61"},
 
   // WANIKANI LEVELS 1-10
 
@@ -390,7 +400,7 @@ var VOCABULARY = [
   {"symbol":"万","name":"Ten Thousand","reading":"まん","level":"3"},
   {"symbol":"今月","name":"This Month","reading":"こんげつ","level":"3"},
   {"symbol":"生まれる","name":"To Be Born","reading":"うまれる","level":"3"},
-  {"symbol":"切れる","name":"To Be Cut","reading":"きれる","level":"3"},
+  {"symbol":"切れる","name":"To Be Cut/Expired","reading":"きれる","level":"3"},
   {"symbol":"外れる","name":"To Be Disconnected","reading":"はずれる","level":"3"},
   {"symbol":"切る","name":"To Cut","reading":"きる","level":"3"},
   {"symbol":"今日","name":"Today","reading":"きょう","level":"3"},
@@ -2071,7 +2081,7 @@ var VOCABULARY = [
   {"symbol":"結果","name":"Result","reading":"けっか","level":"17"},
   {"symbol":"右側","name":"Right Side","reading":"みぎがわ","level":"17"},
   {"symbol":"川底","name":"Riverbed","reading":"かわぞこ","level":"17"},
-  {"symbol":"無事","name":"Safe And S...","reading":"ぶじ","level":"17"},
+  {"symbol":"無事","name":"Safe And Sound/Without Incident","reading":"ぶじ","level":"17"},
   {"symbol":"塩","name":"Salt","reading":"しお","level":"17"},
   {"symbol":"塩水","name":"Salt Water","reading":"しおみず","level":"17"},
   {"symbol":"塩味","name":"Salty Taste","reading":"しおあじ","level":"17"},
@@ -2881,7 +2891,7 @@ var VOCABULARY = [
   {"symbol":"株","name":"Stock","reading":"かぶ","level":"24"},
   {"symbol":"主観的","name":"Subjective","reading":"しゅかんてき","level":"24"},
   {"symbol":"対象","name":"Target","reading":"たいしょう","level":"24"},
-  {"symbol":"時差","name":"Time Diffe...","reading":"じさ","level":"24"},
+  {"symbol":"時差","name":"Time Difference","reading":"じさ","level":"24"},
   {"symbol":"援助する","name":"To Assist","reading":"えんじょする","level":"24"},
   {"symbol":"届く","name":"To Be Delivered/Reach","reading":"とどく","level":"24"},
   {"symbol":"違う","name":"To Be Different","reading":"ちがう","level":"24"},
