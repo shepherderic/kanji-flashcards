@@ -83,6 +83,10 @@ var DUO_KANJI = [
   { level: 67, name: 'Desires 1',      words: ['安心', '集める', '趣味', '残念', '流す', '眺め', '向く', '夢', '生きがい'] },
   { level: 68, name: 'Thoughts',       words: ['理由', '絶対', '返事', '反対', '言語', '単語', '表現', '初めて', '気づく', '邪魔', '自由', '秘密', '自分', '学ぶ', '人生', '書類', '嘘', '話し合う', '約束通り', '意見', '考える', '考え'] },
   { level: 69, name: 'Airport',        words: ['苦しむ', '時差ぼけ', '時差', '手荷物', '離陸', '着陸', '無事', '持ち込み', '機内', '通路', '絶対', '塞ぐ', '便', '手続き', '済ます', '〜券', '搭乗', '観光', '観光客', '入国', '切れる', '拝見する'] },
+  { level: 70, name: 'Education 2',    words: ['具体的', '語', '成功', '例', '典型的', '中々', '学位', '不可能', '物理的', '教授', '文法', '理解', '対する', '関心事', '対して', '関心', '専門家', '分野', '専門', '科目', '間違い', '間違える', '正しい', '少なくとも', '通う', '背負う', '校長', '欠席', '予習', '法律', '教師']},
+  { level: 71, name: 'Religion',       words: []},
+  { level: 72, name: 'Health 2',       words: []},
+  { level: 73, name: 'Seafood',        words: []},
 ];
 
 var VOCABULARY = [
@@ -206,7 +210,7 @@ var VOCABULARY = [
   {"symbol":"少数","name":"Minority","reading":"しょうすう","level":"61"},
   {"symbol":"少数派","name":"In The Minority","reading":"しょうすうは","level":"61"},
 
-  // Duo Level 66/67/68/69
+  // Duo Level 66/67/68/69/70
   {"symbol":"任せ","name":"Leaving (A Task) To Someone","reading":"まかせ","level":"61"},
   {"symbol":"任せる","name":"Leave (A Task) To Someone","reading":"まかせる","level":"61"},
   {"symbol":"歯磨き","name":"Brushing One's Teeth","reading":"はみがき","level":"61"},
@@ -225,6 +229,21 @@ var VOCABULARY = [
   {"symbol":"離陸","name":"Takeoff","reading":"りりく","level":"61"},
   {"symbol":"成田","name":"Narita","reading":"なりた","level":"61"},
   {"symbol":"時差ぼけ","name":"Jet Lag","reading":"じさぼけ","level":"61"},
+  {symbol:'予習',name:'Prepare For A Lesson',reading:'よしゅう',level:61},
+  {symbol:'校長',name:'Principal/Headmaster',reading:'こうちょう',level:61},
+  {symbol:'背負う',name:'Carry On The Back',reading:'せおう',level:61},
+  {symbol:'少なくとも',name:'At Least',reading:'すくなくとも',level:61},
+  {symbol:'分野',name:'Field/Area/Division',reading:'ぶんや',level:61},
+  {symbol:'専門家',name:'Specialist/Expert',reading:'せんもんか',level:61},
+  {symbol:'対して',name:'For/Regarding',reading:'たいして',level:61},
+  {symbol:'関心事',name:'Matter Of Concern',reading:'かんしんじ',level:61},
+  {symbol:'物理的',name:'Physical',reading:'ぶつりてき',level:61},
+  {symbol:'学位',name:'Academic Degree',reading:'がくい',level:61},
+  {symbol:'例',name:'Example',reading:'れい',level:61},
+  {symbol:'語',name:'Word',reading:'ご',level:61},
+  {symbol:'具体的',name:'Concrete/Specific',reading:'ぐたいてき',level:61},
+
+  // Duo Level 71/72/73/74/75
 
   // WANIKANI LEVELS 1-10
 
@@ -1887,7 +1906,7 @@ var VOCABULARY = [
   {"symbol":"字典","name":"Character ...","reading":"じてん","level":"16"},
   {"symbol":"古典的","name":"Classical","reading":"こてんてき","level":"16"},
   {"symbol":"全治","name":"Complete R...","reading":"ぜんち","level":"16"},
-  {"symbol":"関心","name":"Concern","reading":"かんしん","level":"16"},
+  {"symbol":"関心","name":"Concern/Interest","reading":"かんしん","level":"16"},
   {"symbol":"関係","name":"Connection","reading":"かんけい","level":"16"},
   {"symbol":"保守的","name":"Conservative","reading":"ほしゅてき","level":"16"},
   {"symbol":"取材","name":"Covering A...","reading":"しゅざい","level":"16"},
@@ -1950,7 +1969,7 @@ var VOCABULARY = [
   {"symbol":"場面","name":"Scene","reading":"ばめん","level":"16"},
   {"symbol":"画面","name":"Screen","reading":"がめん","level":"16"},
   {"symbol":"笑顔","name":"Smile","reading":"えがお","level":"16"},
-  {"symbol":"専門","name":"Specialty","reading":"せんもん","level":"16"},
+  {"symbol":"専門","name":"Specialty/Expertise","reading":"せんもん","level":"16"},
   {"symbol":"留学","name":"Study Abroad","reading":"りゅうがく","level":"16"},
   {"symbol":"急死","name":"Sudden Death","reading":"きゅうし","level":"16"},
   {"symbol":"急に","name":"Suddenly","reading":"きゅうに","level":"16"},
@@ -3037,7 +3056,7 @@ var VOCABULARY = [
   {"symbol":"再び","name":"Again","reading":"ふたたび","level":"26"},
   {"symbol":"再度","name":"Again","reading":"さいど","level":"26"},
   {"symbol":"独り","name":"Alone","reading":"ひとり","level":"26"},
-  {"symbol":"間違い","name":"A Mistake","reading":"まちがい","level":"26"},
+  {"symbol":"間違い","name":"A Mistake/Doubt","reading":"まちがい","level":"26"},
   {"symbol":"人造","name":"Artificial","reading":"じんぞう","level":"26"},
   {"symbol":"獣","name":"Beast","reading":"けもの","level":"26"},
   {"symbol":"獣類","name":"Beasts","reading":"じゅうるい","level":"26"},
@@ -3122,7 +3141,7 @@ var VOCABULARY = [
   {"symbol":"汗","name":"Sweat","reading":"あせ","level":"26"},
   {"symbol":"汗臭い","name":"Sweaty Smell","reading":"あせくさい","level":"26"},
   {"symbol":"象徴","name":"Symbol","reading":"しょうちょう","level":"26"},
-  {"symbol":"教授","name":"Teaching","reading":"きょうじゅ","level":"26"},
+  {"symbol":"教授","name":"Teaching/Professor","reading":"きょうじゅ","level":"26"},
   {"symbol":"燃え付く","name":"To Catch Fire","reading":"もえつく","level":"26"},
   {"symbol":"届ける","name":"To Deliver","reading":"とどける","level":"26"},
   {"symbol":"差別する","name":"To Discrim...","reading":"さべつする","level":"26"},
@@ -3365,7 +3384,7 @@ var VOCABULARY = [
   {"symbol":"逆らう","name":"To Go Against","reading":"さからう","level":"28"},
   {"symbol":"輸入する","name":"To Import","reading":"ゆにゅうする","level":"28"},
   {"symbol":"面接する","name":"To Intervi...","reading":"めんせつする","level":"28"},
-  {"symbol":"間違える","name":"To Make A ...","reading":"まちがえる","level":"28"},
+  {"symbol":"間違える","name":"To Make A Mistake","reading":"まちがえる","level":"28"},
   {"symbol":"回復する","name":"To Recover","reading":"かいふくする","level":"28"},
   {"symbol":"絶つ","name":"To Sever","reading":"たつ","level":"28"},
   {"symbol":"移す","name":"To Shift","reading":"うつす","level":"28"},
