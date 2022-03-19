@@ -91,6 +91,7 @@ var VOCABULARY = [
 
   // ADDED - LEVEL "61"
 
+  // Duo levels 1-49
   {symbol:"出身",name:"Place of Origin",reading:"しゅっしん",level:"61"},
   {symbol:"今晩",name:"This Evening",reading:"こんばん",level:"61"},
   {symbol:"両親",name:"Parents",reading:"りょうしん",level:"61"},
@@ -246,6 +247,7 @@ var VOCABULARY = [
   {symbol:'寺院',name:'Temple/Religious Building',reading:'じいん',level:61},
   {symbol:'教徒',name:'Follower Of A Religion',reading:'きょうと',level:61},
   {symbol:'不滅',name:'Immortal/Undying',reading:'ふめつ',level:61},
+
 
   // WANIKANI LEVELS 1-10
 

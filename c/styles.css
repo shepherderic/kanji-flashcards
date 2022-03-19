@@ -116,8 +116,15 @@ body {
   }
 }
 
-  .selection-level-container h2 {
+  .selection-level-container h2,{
     font-size: 14px;
+  }
+
+  /* TODO: why is this not right? */
+  .btn.level-submit {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 20px 0;
   }
 
   #flashcard-level-all {
