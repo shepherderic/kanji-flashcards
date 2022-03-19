@@ -83,8 +83,9 @@ var DUO_KANJI = [
   { level: 69, name: 'Airport',        words: ['苦しむ', '時差ぼけ', '時差', '手荷物', '離陸', '着陸', '無事', '持ち込み', '機内', '通路', '絶対', '塞ぐ', '便', '手続き', '済ます', '〜券', '搭乗', '観光', '観光客', '入国', '切れる', '拝見する'] },
   { level: 70, name: 'Education 2',    words: ['具体的', '語', '成功', '例', '典型的', '中々', '学位', '不可能', '物理的', '教授', '文法', '理解', '対する', '関心事', '対して', '関心', '専門家', '分野', '専門', '科目', '間違い', '間違える', '正しい', '少なくとも', '通う', '背負う', '校長', '欠席', '予習', '法律', '教師']},
   { level: 71, name: 'Religion',       words: ['奇跡', '聖書', '坊さん', '魂', '不滅', '教徒', '葬式', '式', '存在', '寺院', '教会', '神', '信仰', '宗教', '祈る', '天国', '地獄', '悪魔', '仏教', '仏教徒', '寺', '神道', '神社']},
-  { level: 72, name: 'Health 2',       words: []},
+  { level: 72, name: 'Health 2',       words: ['舞', 'お見舞い', '看護師', '退院する', '入院', '脳', '心臓', '熱', '体重', '体調', '具合', '力', '治す', '大事', '健康', '身長', '注射', '血', '膝', '骨', '調子', '眠る', '肩', '爪', 'お握り', '海老', '肘', '喉', '首']},
   { level: 73, name: 'Seafood',        words: []},
+  { level: 74, name: 'Society',        words: []},
 ];
 
 var VOCABULARY = [
@@ -247,7 +248,10 @@ var VOCABULARY = [
   {symbol:'寺院',name:'Temple/Religious Building',reading:'じいん',level:61},
   {symbol:'教徒',name:'Follower Of A Religion',reading:'きょうと',level:61},
   {symbol:'不滅',name:'Immortal/Undying',reading:'ふめつ',level:61},
-
+  {symbol:'肘',name:'Elbow',reading:'ひじ',level:61},
+  {symbol:'海老',name:'Shrimp',reading:'えび',level:61},
+  {symbol:'身長',name:'Height/Stature',reading:'しんちょう',level:61},
+  {symbol:'体調',name:'Physical Condition/Health',reading:'たいちょう',level:61},
 
   // WANIKANI LEVELS 1-10
 
@@ -3255,7 +3259,7 @@ var VOCABULARY = [
   {"symbol":"逮捕する","name":"To Arrest","reading":"たいほする","level":"27"},
   {"symbol":"昇る","name":"To Ascend","reading":"のぼる","level":"27"},
   {"symbol":"招く","name":"To Beckon","reading":"まねく","level":"27"},
-  {"symbol":"退院する","name":"To Be Disc...","reading":"たいいんする","level":"27"},
+  {"symbol":"退院する","name":"To Be Discharged","reading":"たいいんする","level":"27"},
   {"symbol":"抜ける","name":"To Be Extr...","reading":"ぬける","level":"27"},
   {"symbol":"隠れる","name":"To Be Hidden","reading":"かくれる","level":"27"},
   {"symbol":"掛かる","name":"To Be Hung","reading":"かかる","level":"27"},
@@ -4449,7 +4453,7 @@ var VOCABULARY = [
   {"symbol":"内緒","name":"Secret","reading":"ないしょ","level":"38"},
   {"symbol":"選択","name":"Selection","reading":"せんたく","level":"38"},
   {"symbol":"対称","name":"Symmetry","reading":"たいしょう","level":"38"},
-  {"symbol":"お見舞い","name":"Sympathy V...","reading":"おみまい","level":"38"},
+  {"symbol":"お見舞い","name":"Sympathy Visit","reading":"おみまい","level":"38"},
   {"symbol":"傾向","name":"Tendency","reading":"けいこう","level":"38"},
   {"symbol":"廃止する","name":"To Abolish","reading":"はいしする","level":"38"},
   {"symbol":"伴う","name":"To Accompany","reading":"ともなう","level":"38"},
